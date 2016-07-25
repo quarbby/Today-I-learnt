@@ -138,6 +138,17 @@ Compact everything in this directory to a war file: `jar -cvf A.war .`
 ### 12/07/16 - Copy in Linux and force overwrite
 `\cp <SOURCE> <DESTINATION>`
 
+### 13/07/16 - A Gulp Application
+(Glup.js)[http://gulpjs.com/] helps automate your web workflow to watch your files for changes and build them. More information can be found on the (Github Repo)[https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md]
+
+```
+$npm install -g gulp
+$gulp start
+```
+
+### 13/07/16 - Jade template Engine
+(Jade)[http://jade-lang.com/tutorial/] is an interesting HTML template engine. You don't have to add HTML tags but it is white space sensitive.
+
 ### 20/7/16 - To Add an entry into /etc/fstab
 You need to use the following format:
 ```
@@ -154,10 +165,6 @@ your permission but >> uses reduced permissions again.
 From man page 
 
 With --follow (-f), tail defaults to following the file descriptor, which means that even if a tail'ed file is renamed, tail will continue to track its end. This default behavior is not desirable when you really want to track the actual name of the file, not the file descriptor (e.g., log rotation). Use --follow=name in that case. That causes tail to track the named file in a way that accommodates renaming, removal and creation.
-whoa sorry for the big text
-i learnt something today!!!
-
-
 
 ### 26/7/16 - Tail -f a log file from a server 
 `ssh user@serverIP sudo tail -f <FILE_NAME>`
