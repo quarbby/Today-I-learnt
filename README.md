@@ -171,3 +171,6 @@ With --follow (-f), tail defaults to following the file descriptor, which mean
 
 If ssh failed due to tty allocation: 
 `ssh -t user@serverIP sudo tail -f <FILE_NAME>`
+
+### 27/7/16 - Windows computer get Serial Number
+Go to command prompt. Type: `wmic bios get serialnumber`
