@@ -174,3 +174,15 @@ If ssh failed due to tty allocation:
 
 ### 27/7/16 - Windows computer get Serial Number
 Go to command prompt. Type: `wmic bios get serialnumber`
+
+### 2/8/16 - Bash previous command substitution
+
+`^x^y` to replace first instance of `x` with `y` in previous command.
+`!!:gs/x/y/` to replace all instances of `x` with `y` in previous command.
+
+```
+$ ./a.out < B-small-practice.in > B-small-practice.out
+$ !!:gs/small/large/
+  ./a.out < B-large-practice.in > B-large-practice.out
+```
+
