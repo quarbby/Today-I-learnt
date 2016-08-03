@@ -191,3 +191,8 @@ $ !!:gs/small/large/
 ```
 git log --graph --oneline --all
 ```
+
+### 3/8/16 - Git clone with username and password
+```
+git clone https://username:password@github.com/username/repository.git
+```
