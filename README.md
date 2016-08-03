@@ -186,3 +186,8 @@ $ !!:gs/small/large/
   ./a.out < B-large-practice.in > B-large-practice.out
 ```
 
+### 3/8/16 - Git tree in terminal
+
+```
+git log --graph --oneline --all
+```
