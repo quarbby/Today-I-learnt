@@ -196,3 +196,10 @@ git log --graph --oneline --all
 ```
 git clone https://username:password@github.com/username/repository.git
 ```
+
+### 4/8/16 - Bash loop through all directories
+```
+for d in */ ; do
+    echo $d
+done
+```
