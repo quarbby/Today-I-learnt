@@ -203,3 +203,10 @@ for d in */ ; do
     echo $d
 done
 ```
+
+### 8/8/16 - Installing g++, Git, Vim, and Bash on Windows
+
+- Install Git for Windows to get Git Bash (includes Bash, basic Unix tools and vim, reads `.bashrc` and `.vimrc`)
+- Install gVim for a better Windows Vim (reads `.vimrc` and `.gvimrc`)
+- Install [Nuwen's MinGW Distro (without Git)](https://nuwen.net/mingw.html) for g++
+- Add `PATH=$PATH:c/MinGW/bin` to `.bashrc` to use MinGW binaries in Git Bash (default MinGW shell is terrible)
