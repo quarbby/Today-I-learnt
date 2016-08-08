@@ -210,3 +210,18 @@ done
 - Install gVim for a better Windows Vim (reads `.vimrc` and `.gvimrc`)
 - Install [Nuwen's MinGW Distro (without Git)](https://nuwen.net/mingw.html) for g++
 - Add `PATH=$PATH:c/MinGW/bin` to `.bashrc` to use MinGW binaries in Git Bash (default MinGW shell is terrible)
+
+### 8/8/16 - Mount windows share into /etc/fstab
+- Windows share at C:\, i.e. <IP_ADDRESS>/<SHARED_FOLDER_NAME>
+- Folder created in Linux machine at <LINUX_SHARE_FOLDER_PATH>
+```
+$sudo vim /etc/fstab
+
+add to end of file
+
+//<IP_ADDRESS>/<SHARED_FOLDER_NAME> <LINUX_SHARE_FOLDER_PATH> cifs username=username,password=password,file_mod=0777,dir_mod=0777
+```
+- Eg: `//192.168.201.91/neo4j /home/super/Desktop/mountFolder cifs username=lynnette,password=lynnette,file_mod=0777,dir_mod=0777`
+- On Ubuntu you can `sudo mount -a` to reboot, CentOS just reboot
+- [Ubuntu's Guide to mounting Window's share](https://help.ubuntu.com/community/MountWindowsSharesPermanently)
+- [Wiki guide to fstab](https://en.wikipedia.org/wiki/Fstab)
