@@ -225,3 +225,8 @@ add to end of file
 - On Ubuntu you can `sudo mount -a` to reboot, CentOS just reboot
 - [Ubuntu's Guide to mounting Window's share](https://help.ubuntu.com/community/MountWindowsSharesPermanently)
 - [Wiki guide to fstab](https://en.wikipedia.org/wiki/Fstab)
+
+### 12/8/16 - Disable IP Tables in CentOS
+```
+$sudo chkconfig iptables off
+```
