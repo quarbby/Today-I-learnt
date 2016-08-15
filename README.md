@@ -235,3 +235,6 @@ $sudo chkconfig iptables off
 - Edit cron commands: `crontab -e`
 - Add `@reboot /usr/bin/python /home/user/Desktop/test.py` in the file to run
 - Reboot runs on startup and reboot
+
+### 15/08/16 - Echo new line and escape characters in batch files 
+`echo.` for new line. `^` is escape character, i.e. `^\`
