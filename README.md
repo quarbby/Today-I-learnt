@@ -230,3 +230,8 @@ add to end of file
 ```
 $sudo chkconfig iptables off
 ```
+
+### 15/08/16 - Running a script in cron on reboot
+- Edit cron commands: `crontab -e`
+- Add `@reboot /usr/bin/python /home/user/Desktop/test.py` in the file to run
+- Reboot runs on startup and reboot
