@@ -238,3 +238,6 @@ $sudo chkconfig iptables off
 
 ### 15/08/16 - Echo new line and escape characters in batch files 
 `echo.` for new line. `^` is escape character, i.e. `^\`
+
+### 16/08/16 - Disassemble a C++ code in Visual Studio 2010
+Put a break point. Press F5. Upon break, type CTRL-ALT-D.
