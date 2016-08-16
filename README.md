@@ -2,6 +2,10 @@
 
 A collection of little snippets that I learnt along the way.
 
+### 16/08/16 - In view of Schooling's achievement, TIL
+USA has not won any Olympic medals in handball, badminton and table tennis.
+
+
 ### 13/06/16 - Add a local apt-mirror to Ubuntu
 Edit `/etc/apt/sources.list` to change the Ubuntu server with your own IP Address server
 
