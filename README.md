@@ -1,10 +1,32 @@
 # Today-I-learnt
 
-A collection of little snippets that I learnt along the way.
+A collection of little snippets that we learnt along the way.
+
+### 21/08/16 - Linux Journey and Vim Game
+[Learning Linux Journey](https://linuxjourney.com)
+[Vim game](http://vim-adventures.com)
+
+### 20/08/16 - USA Olympics Gymnastics Team
+1996 was the first time the Women Olympics team won gold. That's 20 years ago. There were 7 members in the team then, called The Magnificent Seven. The Gymnastics team has since reduce the number of members to 6 then 5. Following this Olympics, the number of girls will be reduced to 4. 
+
+### 16/08/16 - Disassemble a C++ code in Visual Studio 2010
+Put a break point. Press F5. Upon break, type CTRL-ALT-D.
+
+### 15/08/16 - Running a script in cron on reboot
+- Edit cron commands: `crontab -e`
+- Add `@reboot /usr/bin/python /home/user/Desktop/test.py` in the file to run
+- Reboot runs on startup and reboot
+
+### 15/08/16 - Echo new line and escape characters in batch files 
+`echo.` for new line. `^` is escape character, i.e. `^\`
+
+### 12/8/16 - Disable IP Tables in CentOS
+```
+$sudo chkconfig iptables off
+```
 
 ### 16/08/16 - In view of Schooling's achievement, TIL
 USA has not won any Olympic medals in handball, badminton and table tennis.
-
 
 ### 13/06/16 - Add a local apt-mirror to Ubuntu
 Edit `/etc/apt/sources.list` to change the Ubuntu server with your own IP Address server
@@ -230,18 +252,4 @@ add to end of file
 - [Ubuntu's Guide to mounting Window's share](https://help.ubuntu.com/community/MountWindowsSharesPermanently)
 - [Wiki guide to fstab](https://en.wikipedia.org/wiki/Fstab)
 
-### 12/8/16 - Disable IP Tables in CentOS
-```
-$sudo chkconfig iptables off
-```
 
-### 15/08/16 - Running a script in cron on reboot
-- Edit cron commands: `crontab -e`
-- Add `@reboot /usr/bin/python /home/user/Desktop/test.py` in the file to run
-- Reboot runs on startup and reboot
-
-### 15/08/16 - Echo new line and escape characters in batch files 
-`echo.` for new line. `^` is escape character, i.e. `^\`
-
-### 16/08/16 - Disassemble a C++ code in Visual Studio 2010
-Put a break point. Press F5. Upon break, type CTRL-ALT-D.
