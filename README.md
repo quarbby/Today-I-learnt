@@ -2,6 +2,36 @@
 
 A collection of little snippets that we learnt along the way.
 
+### 23/08/16 - Bash keyboard shortcuts
+
+These are very useful when typing long commands.
+
+`Ctrl-C` - cancels current input, and yes it also kills the current process
+
+`Ctrl-L` - clears screen
+
+`Ctrl-U` - deletes everything from cursor to start of line
+
+`Ctrl-K` - deletes everything from cursor to end of line
+
+`Ctrl-A` - moves cursor to start of line
+
+`Ctrl-E` - moves cursor to end of line
+
+`Ctrl-W` - deletes previous word
+
+#### "But I will never use this!"
+
+Arrow keys are for the weak, but I'm still weak for now because I don't use Vi mode in Bash. But I digress.
+
+`Ctrl-C` is not a great command because it creates a new prompt (hence ugly). I use `Ctrl-E` (move cursor to end of line) and `Ctrl-U` to delete the current input. If I'm typing at the end of the line and I want to clear the input, I just use `Ctrl-U`.
+
+`Ctrl-W` is useful if you mistyped an argument. I rarely use `Ctrl-K`, because such situations don't occur often.
+
+`Ctrl-A` is useful if you want to append something to the front of some previous command, say.
+
+"But I can use `!!`" I hear someone scream. Yes, `sudo !!` is very useful. However today I found myself stuck in a SQL shell with no support for `!!`. The stupid way to append `EXPLAIN` to a previous SQL query is to use the left arrow key and traverse back to the very beginning. A smarter way is to use `Ctrl-A` to jump there. The smartest way is still unknown, suspected to be in the mind of some wizened SQL guru in his sunlight-deprived room.
+
 ### 21/08/16 - Linux Journey and Vim Game
 [Learning Linux Journey](https://linuxjourney.com)
 [Vim game](http://vim-adventures.com)
