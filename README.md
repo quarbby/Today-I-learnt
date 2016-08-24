@@ -2,6 +2,18 @@
 
 A collection of little snippets that we learnt along the way.
 
+### 24/08/16 - Visual Studio & Eclipse shortcuts
+| Function        | Visual Studio           | Eclipse  |
+| ------------- |:-------------:| -----:|
+| Go to method | F12 | F3 |
+| Run     | F5 | Ctrl + F11 |
+| Run with Debugging     | F5     |   F11 |
+| Stop  | Shift + F5 | Stop button |
+| Continue | F5      |    F8 |
+| Step Into | F11 | F5 |
+| Step Over | F10 | F6 |
+| Step Out  | Shift + F11 | F7 |
+
 ### 23/08/16 - Bash keyboard shortcuts
 
 These are very useful when typing long commands.
@@ -36,9 +48,6 @@ Arrow keys are for the weak, but I'm still weak for now because I don't use Vi m
 [Learning Linux Journey](https://linuxjourney.com)
 [Vim game](http://vim-adventures.com)
 
-### 20/08/16 - USA Olympics Gymnastics Team
-1996 was the first time the Women Olympics team won gold. That's 20 years ago. There were 7 members in the team then, called The Magnificent Seven. The Gymnastics team has since reduce the number of members to 6 then 5. Following this Olympics, the number of girls will be reduced to 4. 
-
 ### 16/08/16 - Disassemble a C++ code in Visual Studio 2010
 Put a break point. Press F5. Upon break, type CTRL-ALT-D.
 
@@ -54,9 +63,6 @@ Put a break point. Press F5. Upon break, type CTRL-ALT-D.
 ```
 $sudo chkconfig iptables off
 ```
-
-### 16/08/16 - In view of Schooling's achievement, TIL
-USA has not won any Olympic medals in handball, badminton and table tennis.
 
 ### 13/06/16 - Add a local apt-mirror to Ubuntu
 Edit `/etc/apt/sources.list` to change the Ubuntu server with your own IP Address server
