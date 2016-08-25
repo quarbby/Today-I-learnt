@@ -2,6 +2,20 @@
 
 A collection of little snippets that we learnt along the way.
 
+### 25/08/16 - Patching Apollo 14
+
+Or "*What I Don't Want to Ever Have to Do in My Life*".
+
+#### [NASA](https://www.hq.nasa.gov/alsj/a14/a14AbortDiscrete.html)
+
+> The intermittent short circuit of the ABORT button represented the most dramatic moment for the MIT computer folks in the entire Apollo program. They had between three and four hours to find a way for the computer to ignore it, test the fix at Grumman, then test it in Houston before sending it to the crew in time for PDI .
+
+#### [Wikipedia](https://en.wikipedia.org/wiki/Apollo_14#Launch_and_flight_to_lunar_orbit)
+
+> If the problem recurred after the descent engine fired, the computer would think the signal was real and would initiate an auto-abort, causing the ascent stage to separate from the descent stage and climb back into orbit.
+>
+> NASA and the software teams at the Massachusetts Institute of Technology scrambled to find a solution, and determined the fix would involve reprogramming the flight software to ignore the false signal. The software modifications were transmitted to the crew via voice communication, and Mitchell manually entered the changes (amounting to over 80 keystrokes on the LM computer pad) just in time.
+
 ### 25/08/16 - Building resilient systems
 
 #### [Netflix Chaos Monkey](http://techblog.netflix.com/2015/09/chaos-engineering-upgraded.html)
