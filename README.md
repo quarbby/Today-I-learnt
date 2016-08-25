@@ -2,6 +2,32 @@
 
 A collection of little snippets that we learnt along the way.
 
+### 25/08/16 - Building resilient systems
+
+#### [Netflix Chaos Monkey](http://techblog.netflix.com/2015/09/chaos-engineering-upgraded.html)
+
+> Several years ago we introduced a tool called Chaos Monkey. This service pseudo-randomly plucks a server from our production deployment on AWS and kills it. At the time we were met with incredulity and skepticism. Are we crazy? In production?!?
+>
+> ...
+>
+>  Building on the success of Chaos Monkey, we looked at an extreme case of infrastructure failure. We built Chaos Kong, which doesn’t just kill a server. It kills an entire AWS Region.
+
+#### [Space software](https://www.fastcompany.com/28121/they-write-right-stuff)
+
+> Four identical machines, running identical software, pull information from thousands of sensors, make hundreds of milli-second decisions, vote on every decision, check with each other 250 times a second. A fifth computer, with different software, stands by to take control should the other four malfunction.
+>
+> ...
+>
+> This software never crashes. It never needs to be re-booted. This software is bug-free. It is perfect, as perfect as human beings have achieved. Consider these stats : the last three versions of the program — each 420,000 lines long-had just one error each. The last 11 versions of this software had a total of 17 errors.
+>
+> ...
+>
+> The group's most important creation is not the perfect software they write — it's the process they invented that writes the perfect software.
+>
+> ...
+>
+> The central group breaks down into two key teams: the coders - the people who sit and write code — and the verifiers — the people who try to find flaws in the code.
+
 ### 24/08/16 - Visual Studio & Eclipse shortcuts
 | Function        | Visual Studio           | Eclipse  |
 | ------------- |:-------------:| -----:|
