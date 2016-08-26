@@ -1,6 +1,11 @@
 # Today-I-learnt
 
-A collection of little snippets that we learnt along the way.
+### 26/08/16 - PanChromatic Images 
+[Gis answer](http://gis.stackexchange.com/questions/113896/panchromatic-image-association-with-high-spatial-resolution)
+
+> [remote sensing] A single band image generally displayed as shades of gray.
+>
+> Panchromatic images are created when the imaging sensor is sensitive to a wide range of wavelengths of light, typically spanning a large part of the visible part of the spectrum.
 
 ### 25/08/16 - Patching Apollo 14
 
