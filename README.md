@@ -1,5 +1,12 @@
 # Today-I-learnt
 
+### 27/08/16 - You can regex replace an emoji
+In Chrome console
+```
+> '👪'.replace(/👩/g, '👱')
+<- "👪"
+```
+
 ### 26/08/16 - PanChromatic Images 
 [Gis answer](http://gis.stackexchange.com/questions/113896/panchromatic-image-association-with-high-spatial-resolution)
 
