@@ -1,5 +1,11 @@
 # Today-I-learnt
 
+### 28/08/16 Latency versus Bandwidth
+
+Or "*I Regret Not Paying Attention in My Computer Networks Course*": [It's the Latency, Stupid](https://web.archive.org/web/20141204094820/http://www.stuartcheshire.org/rants/Latency.html)
+
+> Years ago David Cheriton at Stanford taught me something that seemed very obvious at the time -- that if you have a network link with low bandwidth then it's an easy matter of putting several in parallel to make a combined link with higher bandwidth, but if you have a network link with bad latency then no amount of money can turn any number of them into a link with good latency.
+
 ### 27/08/16 - You can regex replace an emoji
 In Chrome console
 ```
