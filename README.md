@@ -1,5 +1,11 @@
 # Today-I-learnt
 
+### 29/08/16 Computing checksums in PowerShell
+
+`Get-FileHash [file] -Algorithm MD5` or `SHA256`
+
+Extra tip: you can open `powershell` in `cmd`. But `bash` is still king!
+
 ### 28/08/16 Latency versus Bandwidth
 
 Or "*I Regret Not Paying Attention in My Computer Networks Course*": [It's the Latency, Stupid](https://web.archive.org/web/20141204094820/http://www.stuartcheshire.org/rants/Latency.html)
