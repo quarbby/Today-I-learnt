@@ -1,5 +1,13 @@
 # Today-I-learnt
 
+### 30/08/16 Transferring files without `scp`
+
+Or you *do* have `scp`, but you're just really lazy to run `ssh-keygen` and stuff.
+
+Go to the folder containing the file you want to share and run `python -m SimpleHTTPServer`. A HTTP server on port 8000 will be created.
+
+Assuming the receiving machine is on the same network, `curl -O 192.168.X.Y:8000/file.extension` will do the job. Yes, you don't have `wget` too.
+
 ### 29/08/16 Talking to UFOs
 [Wikipedia](https://en.wikipedia.org/wiki/Communication_with_extraterrestrial_intelligence)
 
