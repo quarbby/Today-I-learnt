@@ -1,5 +1,9 @@
 # Today-I-learnt
 
+### 30/08/16 Verifying RPM packages
+
+Don't have the checksums for a `.rpm` file? Run `rpm -Kv X.rpm` on your favourite RPM-based Linux distro.
+
 ### 30/08/16 Transferring files without `scp`
 
 Or you *do* have `scp`, but you're just really lazy to run `ssh-keygen` and stuff.
