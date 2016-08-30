@@ -12,13 +12,6 @@ Go to the folder containing the file you want to share and run `python -m Simple
 
 Assuming the receiving machine is on the same network, `curl -O 192.168.X.Y:8000/file.extension` will do the job. Yes, you don't have `wget` too.
 
-### 29/08/16 Talking to UFOs
-[Wikipedia](https://en.wikipedia.org/wiki/Communication_with_extraterrestrial_intelligence)
-
-> Communication with extraterrestrial intelligence (CETI) is a branch of the search for extraterrestrial intelligence that focuses on composing and deciphering messages that could theoretically be understood by another technological civilization. 
-
-This is a pretty elaborate branch of intelligence science, comprising of making sense of mathematical & scientific languages, binary languages (Lone Signal transmission), pictorial messages, mult-modal messages and even algorithmic messages (Logic Gate Matrices). 
-
 ### 29/08/16 Computing checksums in PowerShell
 
 `Get-FileHash [file] -Algorithm MD5` or `SHA256`
