@@ -1,6 +1,9 @@
 # Trivia 
 Or `Cool stuff we learnt along the way`
 
+### 03/09/16 Emoji Keyboard on Mac
+To use the Emoji Keyboard on mac, press Cmd + Ctrl + Space bar.
+
 ### 29/08/16 Talking to UFOs
 [Wikipedia](https://en.wikipedia.org/wiki/Communication_with_extraterrestrial_intelligence)
 
