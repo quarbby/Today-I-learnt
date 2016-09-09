@@ -1,5 +1,26 @@
 # Today-I-learnt
 
+###  09/09/16 Writing multiple lines to a file in bash
+
+Due to the need for creation of multiple scripts from one script in bash
+
+```
+cat >/home/ubuntu/Desktop/script.sh <<EOL
+line 1, ${var1}
+line 2, ${var2}
+
+EOL
+```
+
+If you don't want the variables to be replaced, surround EOL with single quotes 
+```
+cat >/home/ubuntu/Desktop/script.sh <<'EOL'
+line 1, ${var1}
+line 2, ${var2}
+
+EOL
+```
+
 ### 30/08/16 Verifying RPM packages
 
 Don't have the checksums for a `.rpm` file? Run `rpm -Kv X.rpm` on your favourite RPM-based Linux distro.
