@@ -1,5 +1,11 @@
 # Today-I-learnt
 
+### 10/9/16 Watson Developer Cloud and Emotion Analysis
+
+TIL that [Watson Developer Cloud Tone Analyzer](http://www.ibm.com/watson/developercloud/tone-analyzer/api/v3/?python#post-tone) only classifies the tones `Anger, Disgust, Fear, Joy, Sadness`. As compared to the six [Universally Recognised Face Expressions of  Emotions](https://www.kairos.com/blog/the-universally-recognized-facial-expressions-of-emotion) -- Yes I know that Face Emotions and Tone Emotions are slightly different, but for the purposes of this argument, let's leave it first -- Watson does not have surprise. This is because *surprise* is an emotion that is usually very quick, then follower by *fear* or *joy*. 
+
+In summary, TIL that after less than a second of shock, I will be feeling in awe (*joy*) or scared (*fear*). 
+
 ###  09/09/16 Writing multiple lines to a file in bash
 
 Due to the need for creation of multiple scripts from one script in bash
