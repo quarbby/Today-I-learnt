@@ -1,5 +1,34 @@
 # Today-I-learnt
 
+### 14/09/16 - Local NTP server
+
+If you need to keep the clocks of your network computers synchronised, you need to designate one computer as the reference (NTP server); the others are NTP clients. I'm assuming this network is not connected to the Internet, or to put it simply, is not connected to any authoritative low-stratum NTP server like `time.nist.gov`.
+
+#### NTP server
+
+Add the following in `/etc/ntp.conf`:
+```
+restrict 192.168.1.0 mask 255.255.255.0 nomodify notrap nopeer
+...
+server 127.127.1.0
+fudge 127.127.1.0 stratum 10
+```
+
+modifying `192.168.1.0` and `255.255.255.0` to suit your network. The magic IP address is `127.127.1.0`; leave that alone.
+
+Without the last two lines, any connecting clients will see that your server is stratum 16, i.e. lousy.
+
+#### NTP client
+
+Add the following in `/etc/ntp.conf`:
+```
+server XXX.XXX.XXX.XXX
+```
+
+where `XXX.XXX.XXX.XXX` is the IP address (or hostname) of your NTP server.
+
+On the server and client, run `ntpq -p`, `ntpstat`, and `ntpdate -q XXX.XXX.XXX.XXX` for juicy NTP statistics.
+
 ### 10/9/16 Watson Developer Cloud and Emotion Analysis
 
 TIL that [Watson Developer Cloud Tone Analyzer](http://www.ibm.com/watson/developercloud/tone-analyzer/api/v3/?python#post-tone) only classifies the tones `Anger, Disgust, Fear, Joy, Sadness`. As compared to the six [Universally Recognised Face Expressions of  Emotions](https://www.kairos.com/blog/the-universally-recognized-facial-expressions-of-emotion) -- Yes I know that Face Emotions and Tone Emotions are slightly different, but for the purposes of this argument, let's leave it first -- Watson does not have surprise. This is because *surprise* is an emotion that is usually very quick, then follower by *fear* or *joy*. 
