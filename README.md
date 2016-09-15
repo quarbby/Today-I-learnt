@@ -1,5 +1,11 @@
 # Today-I-learnt
 
+### 15/09/16 - :p in bash
+
+:p is not an emoticon. Type `!sa:p` and you'll see what the previous command you executed that starts with sa is. `:p`, that's colon with a lower case p, would show you the command then you can press the enter key if that's what you want to execute.
+
+Also, [Advancing in the Bash Shell](http://samrowe.com/wordpress/advancing-in-the-bash-shell/)
+
 ### 15/09/16 - su hyphen
 
 The difference between `su user` and `su - user` ([ArchWiki](
