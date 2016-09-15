@@ -1,5 +1,20 @@
 # Today-I-learnt
 
+### 15/09/16 - su hyphen
+
+The difference between `su user` and `su - user` ([ArchWiki](
+https://wiki.archlinux.org/index.php/Su)):
+
+```
+The hyphen has two effects:
+
+1) switches from the current directory to the home directory of the new user (e.g., to /root in the case of the root user) by logging in as that user
+
+2) changes the environmental variables to those of the new user as dictated by their ~/.bashrc. That is, if the first argument to su is a hyphen, the current directory and environment will be changed to what would be expected if the new user had actually logged on to a new session (rather than just taking over an existing session).
+```
+
+In fact, avoid `su` if you can `sudo`.
+
 ### 14/09/16 - Local NTP server
 
 If you need to keep the clocks of your network computers synchronised, you need to designate one computer as the reference (NTP server); the others are NTP clients. I'm assuming this network is not connected to the Internet, or to put it simply, is not connected to any authoritative low-stratum NTP server like `time.nist.gov`.
