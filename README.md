@@ -1,5 +1,9 @@
 # Today-I-learnt
 
+### 18/09/16 - Output files in directory in Windows
+
+An equivalent of `ls` in Unix. Shift + Right click on the directory you want and Open Command Window. Then, `dir /b > dir.txt`. dir.txt comes out a list of files in the folder. This is windows. In Linux its just `ls > dir.txt`. Sweet and Simple.
+
 ### 15/09/16 - :p in bash
 
 :p is not an emoticon. Type `!sa:p` and you'll see what the previous command you executed that starts with sa is. `:p`, that's colon with a lower case p, would show you the command then you can press the enter key if that's what you want to execute.
