@@ -1,5 +1,135 @@
 # Today-I-learnt
 
+### 18/09/16 - Switching working directories with cd
+
+`cd -` switches you to your previous working directory (`pwd`). Doing it again switches you back!
+
+### 18/09/16 - SSH commands
+
+`ssh user@hostname command` does what it says: it logs in as `user` at `hostname`, executes `command`, and leaves.
+
+For the lazy, having a `~/.ssh/config` file is useful:
+
+```
+Host cl
+ User cydf2
+ HostName sandy.cl.cam.ac.uk
+ IdentityFile ~/.ssh/id_rsa
+ ServerAliveInterval 60
+```
+
+I only have to type `ssh cl`.
+
+### 18/09/16 - Inverse grep
+
+`grep -v pattern` returns lines that *do not* match `pattern`. I had to use it once (and piped it to `wc -l`, of course).
+
+### 18/09/16 - Shell history
+
+We all know `history`. `!42` executes the 42nd entry in `history`. `!!` or `!-1` executes the previous command.
+
+`!*` returns the previous command minus the first word (i.e. just arguments), `!^` returns the first argument of the previous command, and `!$` returns the last argument of the previous command.
+
+### 18/09/16 - Subshells
+
+Let's say you're writing a script which involves a `cd` to some other directory followed by some other commands there. Unfortunately, this will not work.
+
+What needs to be done is:
+
+```
+(cd somedir && \
+command1 && \
+command2 && \
+command3)
+```
+
+The parentheses causes execution of the commands in a subshell.
+
+### 18/09/16 - File
+
+`file filename` tells you the type of file of `filename`.
+
+### 18/09/16 - Shell variables
+
+```
+$ variable=value // no whitespace!
+$ export variable
+$ export variable=value
+$ variable=value command // variable set to value for just this command
+```
+
+`set` shows all shell variables. `printenv` shows all exported environment variables.
+
+### 18/09/16 - Job control
+
+`command &` runs the command in the background, with `fg` to bring it into foreground (console) and `Ctrl-Z` (suspend)  followed by `bg` to run it in background. No more opening multiple console windows!
+
+`fg`, `bg`, and `kill` accept process ID, `%+jobnumber`, and `%+commandname` as arguments.
+
+`jobs` shows jobs in the current shell.
+
+### 18/09/16 - Quotes
+
+- Single quotes: suppresses all special character meanings
+- Double quotes: suppresses all special character meanings, except for `$`, `\`, and `` ` ``.
+- Backslash: suppresses all special character meanings for next character (we all know this already, right?)
+
+In more complicated scripts with variables and string outputs, the use of single quotes, double quotes, and backticks (to evalute commands!) is very important.
+
+I think that we should quote *strictly*, i.e. single quotes for all strings unless there is a need to include variables, special characters, or inline evaluation of commands, in which case double quotes are used.
+
+### 18/09/16 - Expansions
+
+```
+$ echo {1..10}
+1 2 3 4 5 6 7 8 9 10
+$ echo document{A,B,C}.pdf
+documentA.pdf documentB.pdf documentC.pdf
+$ echo ${HOME}
+/home/darren
+$ echo $HOME // alternative to ${variablename}
+/home/darren
+$ echo $(whoami)
+darren
+$ echo `whoami` // alternative to $(command)
+darren
+```
+
+### 18/09/16 - Double hyphens
+
+Let's say, for some reason, you have a file that starts with a hyphen, and you want to remove it with `rm`. Unfortunately running `rm` the usual way will probably throw an error because your file name will be parsed as options, not an argument.
+
+`rm -- -i` signals (in many tools) that subsequent words are arguments, not options.
+
+### 18/09/16 - File redirection
+
+Most people probably know `>` (send output to file) and `>>` (append output to file). However it must be noted that it is stdout that is sent, not stderr, although both are usually sent to the console.
+
+To send *both* stdout and stderr to the same file, it suffices to add `2>&1` after the first redirection:
+
+```
+command > filename 2>&1
+```
+
+What's going on? stderr (with file descriptor 2) is sent to (think pointer) stdout (file descriptor 1). File descriptor 0 is stdin.
+
+What if stderr is flooding your console? Use `2>/dev/null`.
+
+### 18/09/16 - Bash sequential commands
+
+A semi-colon executes commands in sequence.
+
+```
+command1 ; command2 ; command3
+```
+
+A double ampersand (`AND`) or double pipe (`OR`) ([short-circuit evaluation] (https://en.wikipedia.org/wiki/Short-circuit_evaluation)) executes *conditionally* commands in sequence.
+
+```
+command1 && command2 // command2 will execute if command1 succeeds
+command1 || command2 // command2 will execute if command1 fails
+```
+
 ### 18/09/16 - Output files in directory in Windows
 
 An equivalent of `ls` in Unix. Shift + Right click on the directory you want and Open Command Window. Then, `dir /b > dir.txt`. dir.txt comes out a list of files in the folder. This is windows. In Linux its just `ls > dir.txt`. Sweet and Simple.
