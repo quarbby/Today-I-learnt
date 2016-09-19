@@ -99,7 +99,7 @@ darren
 
 Let's say, for some reason, you have a file that starts with a hyphen, and you want to remove it with `rm`. Unfortunately running `rm` the usual way will probably throw an error because your file name will be parsed as options, not an argument.
 
-`rm -- -i` signals (in many tools) that subsequent words are arguments, not options.
+`--` signals (in many tools) that subsequent words are arguments, not options, e.g. `rm -- -i` removes the file called `-i`.
 
 ### 18/09/16 - File redirection
 
