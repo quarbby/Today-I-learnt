@@ -13,7 +13,7 @@ The `-i` option means *in-place*. This command is especially useful when combine
 To delete lines containing `re` in `file`, run
 
 ```
-sed -i 're/d' file
+sed -i '/re/d' file
 ```
 
 ### 18/09/16 - Switching working directories with cd
