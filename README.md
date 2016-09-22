@@ -1,5 +1,21 @@
 # Today-I-learnt
 
+### 22/09/16 - Replacing words in files
+
+To replace all instances of `apple` with `orange` (technically `apply` can be a regular expression) in `file`, run
+
+```
+sed -i 's/apple/orange/g' file
+```
+
+The `-i` option means *in-place*. This command is especially useful when combined by `ssh` in a for loop (use case: editing `/etc/hosts` of a machines in a cluster!).
+
+To delete lines containing `re` in `file`, run
+
+```
+sed -i 're/d' file
+```
+
 ### 18/09/16 - Switching working directories with cd
 
 `cd -` switches you to your previous working directory (`pwd`). Doing it again switches you back!
