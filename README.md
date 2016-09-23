@@ -1,5 +1,15 @@
 # Today-I-learnt
 
+### 23/09/16 - Turning off IP tables in CentOS6
+
+```
+$service iptables save
+$service iptables stop
+$chkconfig iptables off
+```
+
+`chkconfig` saves the configuration. sysadmin skills levelling up... slowly but surely
+
 ### 22/09/16 - Replacing words in files
 
 To replace all instances of `apple` with `orange` (technically `apply` can be a regular expression) in `file`, run
