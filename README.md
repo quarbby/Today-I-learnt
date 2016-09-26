@@ -1,5 +1,15 @@
 # Today-I-learnt
 
+### 26/09/16 - NatCat UDP
+
+In other words, *talking between two linux VMs*. Because it is a pain to keep walking up and down but there is an elegant solution.
+
+At the sender side: `natcat -u <host> <port>`. So that's `natcat -u 192.168.101.111 9888`. That's opening a UDP connection to the IP address 192.168.101.111 on port 9888.
+
+At the receiver side: `natcat -ul <port>`. For the sender in the previous paragraph, you would use `natcat -ul 9888` to open a UDP listener at port 9888. So you'll be able to communicate easily. 
+
+Of course `natcat` can be used for way more than this. [Like that](https://www.digitalocean.com/community/tutorials/how-to-use-netcat-to-establish-and-test-tcp-and-udp-connections-on-a-vps)
+
 ### 23/09/16 - Turning off IP tables in CentOS6
 
 ```
