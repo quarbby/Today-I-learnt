@@ -1,5 +1,13 @@
 # Today-I-learnt
 
+### 01/10/16 - Ping Pong
+
+In case you want to pingtest your network and put a date to the output string and then append that string to a text file:
+```
+ping 8.8.8.8 | while read poing; do echo $(date):$pong"; done >> pingtest.txt
+```
+Very useful for `tail -F pingtest.txt` later to check network connectivity. 
+
 ### 26/09/16 - NatCat UDP
 
 In other words, *talking between two linux VMs*. Because it is a pain to keep walking up and down but there is an elegant solution.
