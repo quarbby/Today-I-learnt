@@ -1,5 +1,8 @@
 # Trivia 
-Or `Cool stuff we learnt along the way`
+Or *Cool stuff we learnt along the way*
+
+### 03/10/16 Britian's Invasions 
+In the colonisation years, Britian has invaded all but 22 countries. But do note that Britain isn't a country. Great Britain is the name of the island that England, Scotland and Wales is located on. So God Save the Queen. 
 
 ### 03/09/16 Emoji Keyboard on Mac
 To use the Emoji Keyboard on mac, press Cmd + Ctrl + Space bar.
