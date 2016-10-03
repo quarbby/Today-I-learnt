@@ -1,5 +1,11 @@
 # Today-I-learnt
 
+### 03/10/16 - Apple's first iPhones
+
+[The first iPhones were buggy as hell](http://gizmodo.com/the-iphones-first-demo-was-buggy-as-hell-1441324523 )
+
+> Hours of trial and error had helped the iPhone team develop what engineers called “the golden path,” a specific set of tasks, performed in a specific way and order, that made the phone look as if it worked.
+
 ### 01/10/16 - Ping Pong
 
 In case you want to pingtest your network and put a date to the output string and then append that string to a text file:
