@@ -1,5 +1,16 @@
 # Today-I-learnt
 
+### 08/10/16 - Untar and tar a file
+
+Because I keep forgetting
+
+```
+$tar -czf archive.tar.gz /path/to/directory
+$tar -xzf archive.tar.gz
+```
+
+[And a lot more commands with tar](http://www.howtogeek.com/248780/how-to-compress-and-extract-files-using-the-tar-command-on-linux/)
+
 ### 03/10/16 - Apple's first iPhones
 
 [The first iPhones were buggy as hell](http://gizmodo.com/the-iphones-first-demo-was-buggy-as-hell-1441324523 )
