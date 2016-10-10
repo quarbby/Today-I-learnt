@@ -21,6 +21,8 @@ $tar -xzf archive.tar.gz
 
 [And a lot more commands with tar](http://www.howtogeek.com/248780/how-to-compress-and-extract-files-using-the-tar-command-on-linux/)
 
+**Update**: one can save a few keystrokes by using `tar czf` and `tar xf` (both without the hyphen, the latter without `z`). The latter works because the modern versions of tar detect the compression algorithm. See [here](https://www.gnu.org/software/tar/manual/html_section/tar_69.html). 
+
 ### 03/10/16 - Apple's first iPhones
 
 [The first iPhones were buggy as hell](http://gizmodo.com/the-iphones-first-demo-was-buggy-as-hell-1441324523 )
