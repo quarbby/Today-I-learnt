@@ -1,5 +1,26 @@
 # Today-I-learnt
 
+### 10/10/16 - The Joel Test
+
+[12 Steps to Better Code](http://www.joelonsoftware.com/articles/fog0000000043.html):
+
+1. Do you use source control?
+2. Can you make a build in one step?
+3. Do you make daily builds?
+4. Do you have a bug database?
+5. Do you fix bugs before writing new code?
+6. Do you have an up-to-date schedule?
+7. Do you have a spec?
+8. Do programmers have quiet working conditions?
+9. Do you use the best tools money can buy?
+10. Do you have testers?
+11. Do new candidates write code during their interview?
+12. Do you do hallway usability testing?
+
+> A score of 12 is perfect, 11 is tolerable, but 10 or lower and you've got serious problems. The truth is that most software organizations are running with a score of 2 or 3, and they need serious help, because companies like Microsoft run at 12 full-time.
+
+My team satisfies 1, 7 (dubious), definitely not 8, a bit of 9, none whatsoever of 10, and 11 will happen the day that I die.
+
 ### 10/10/16 - Sorting a comma-delimited CSV file by a certain column
 
 If we want to sort `foo.csv` by the values in its fourth column and then pretty print it in the shell:
