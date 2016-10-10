@@ -1,5 +1,15 @@
 # Today-I-learnt
 
+### 10/10/16 - Sorting a comma-delimited CSV file by a certain column
+
+If we want to sort `foo.csv` by the values in its fourth column and then pretty print it in the shell:
+
+```
+sort -t',' -nk4 foo.csv | column -s',' -t | less
+```
+
+The `-t` option of `sort` and `-s` option of `column` are followed by the delimiter (in this case, a comma).
+ 
 ### 08/10/16 - Untar and tar a file
 
 Because I keep forgetting
