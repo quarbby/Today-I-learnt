@@ -1,5 +1,9 @@
 # Today-I-learnt
 
+### 24/10/16 - nohup 
+
+To prevent processes from being killed upon logout, `nohup` it. i.e. `nohup python -m SimpleHTTPServer`. 
+
 ### 10/10/16 - The Joel Test
 
 [12 Steps to Better Code](http://www.joelonsoftware.com/articles/fog0000000043.html):
