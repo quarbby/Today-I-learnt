@@ -1,5 +1,13 @@
 # Loads of Random Readings For A Day I'm Lazing on the bed
 
+### 26/10/2016 - Containers
+
+[boycott docker](http://www.boycottdocker.org/)
+
+[Linux Containers](https://linuxcontainers.org/)
+
+[FreeBSD jails](https://www.freebsd.org/doc/handbook/jails.html)
+
 ### 07/10/16 - Google Interview University
 
 [Get That job at Google](https://github.com/jwasham/google-interview-university)
