@@ -1,5 +1,14 @@
 # Today-I-learnt
 
+### 26/10/16 - Introducing Systems Engineering At Enterprise Scale: A Success Story In The Automative Industry
+
+It's a talk by Prof Daniel Krob, the president of Center of Excellence on Systems Architecture, Management, Economy & Strategy (CESAMES).
+
+I learnt you can break a System Engineering into a few levels: 
+* Service Engineering - What your system offers to the world
+* Component Engineering/ Interface Engineering - What components are required to offer a service 
+* Part Engineering - What are the technicalities of the hardware and software to engineer the components, i.e. the nitty gritties
+
 ### 24/10/16 - nohup 
 
 To prevent processes from being killed upon logout, `nohup` it. i.e. `nohup python -m SimpleHTTPServer`. 
