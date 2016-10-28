@@ -1,5 +1,16 @@
 # Loads of Random Readings For A Day I'm Lazing on the bed
 
+### 28/10/16 - DDOS in US 
+
+Too huge a thing not to be documented, because many sites such as Reddit, SoundCloud etc all went down 
+
+[Dyn Analysis Summary](http://hub.dyn.com/dyn-blog/dyn-analysis-summary-of-friday-october-21-attack)
+[DDOS Outage Map](http://heavy.com/tech/2016/10/ddos-attack-outage-map-what-websites-areas-regions-are-affected-source/)
+
+### 28/10/16 - GHC 2016 Conference Materials 
+
+[The listing of slides from the Grace Hopper 2016 Conference](http://signage.showprg.com/GHC2016/)
+
 ### 26/10/2016 - Containers
 
 [boycott docker](http://www.boycottdocker.org/)
