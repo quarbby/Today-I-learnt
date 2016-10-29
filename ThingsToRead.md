@@ -1,5 +1,9 @@
 # Loads of Random Readings For A Day I'm Lazing on the bed
 
+### 29/10/16 - Naming schemes
+
+Thinking of a naming scheme for your cluster of computers? Enter [Naming Schemes](https://namingschemes.com/).
+
 ### 28/10/16 - DDOS in US 
 
 Too huge a thing not to be documented, because many sites such as Reddit, SoundCloud etc all went down 
