@@ -1,5 +1,24 @@
 # Today-I-learnt
 
+### 30/10/16 - tmux
+
+- Start a new session: `tmux`
+- Detach from currently attached session: `Ctrl-B d`
+- Re-attach a detached session: `tmux attach`
+- Split pane horizontally: `Ctrl-B "`
+- Split pane vertically: `Ctrl-B %`
+- Kill pane: `Ctrl-B x`
+- Switch pane: `Ctrl-B o`
+- Cycle panes: `Ctrl-B Ctrl-O`
+- Navigate panes: `Ctrl-B [arrow key]`
+- Re-arrange panes: `Ctrl-B [space]`
+- Show pane IDs: `Ctrl-B q`
+- Scroll: `Ctrl-B PgUp`, `Ctrl-B PgDn`
+- Help I cannot type in my window/pane: `q`
+- Create window: `Ctrl-B c`
+- Next window: `Ctrl-B n`
+- Previous window: `Ctrl-B p`
+
 ### 26/10/16 - Introducing Systems Engineering At Enterprise Scale: A Success Story In The Automative Industry
 
 It's a talk by Prof Daniel Krob, the president of Center of Excellence on Systems Architecture, Management, Economy & Strategy (CESAMES).
