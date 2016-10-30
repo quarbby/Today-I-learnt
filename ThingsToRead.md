@@ -1,5 +1,9 @@
 # Loads of Random Readings For A Day I'm Lazing on the bed
 
+### 30/10/16 - CCNA Free Video Training Course
+
+[CCNA Free Video Training Course](https://www.youtube.com/playlist?list=PLmdYg02XJt6QRQfYjyQcMPfS3mrSnFbRC). A good networking course refresher.
+
 ### 29/10/16 - Naming schemes
 
 Thinking of a naming scheme for your cluster of computers? Enter [Naming Schemes](https://namingschemes.com/).
