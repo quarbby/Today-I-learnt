@@ -1,5 +1,17 @@
 # Loads of Random Readings For A Day I'm Lazing on the bed
 
+
+### 31/10/16 - Big Data Frameworks Compared
+[A tutorial by Digital Ocean](https://www.digitalocean.com/community/tutorials/hadoop-storm-samza-spark-and-flink-big-data-frameworks-compared) 
+
+> Big data is a blanket term for the non-traditional strategies and technologies needed to gather, organize, process, and gather insights from large datasets. While the problem of working with data that exceeds the computing power or storage of a single computer is not new, the pervasiveness, scale, and value of this type of computing has greatly expanded in recent years.
+
+> Batch-only frameworks: Apache Hadoop
+
+> Stream-only frameworks: Apache Storm, Apache Samza
+
+> Hybrid frameworks: Apache Spark, Apache Flink
+
 ### 30/10/16 - CCNA Free Video Training Course
 
 [CCNA Free Video Training Course](https://www.youtube.com/playlist?list=PLmdYg02XJt6QRQfYjyQcMPfS3mrSnFbRC). A good networking course refresher.
