@@ -6,9 +6,9 @@ I initially thought that it's quite difficult and possibly impossible to log in 
 
 Just for completeness sake, let's add some code: 
 
-```
 SERVER SIDE 
 
+```
 var winston = require('winston');
 winston.emitErrs = true;
 
@@ -37,7 +37,7 @@ serverLogger.info(request);
 
 ```
 
-Also, 
+Also, CLIENT SIDE
 
 ```
 var logger = require('morgan');
