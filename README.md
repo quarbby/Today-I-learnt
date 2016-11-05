@@ -1,5 +1,11 @@
 # Today-I-learnt
 
+### 05/11/16 - Home key in shell
+
+The Home key is a perfectly good substitute for `Ctrl-A` to move the cursor to the start of the line.
+
+Conversely, the End key does the same thing as `Ctrl-E`.
+
 ### 03/11/16 - Logging in an Express.js app 
 
 I initially thought that it's quite difficult and possibly impossible to log in an Express.js web app, which has both clients and server side code. But I learnt today through random explorations that you can log the server side to a file using the nodejs package [Winston](http://tostring.it/2014/06/23/advanced-logging-with-nodejs/) which provides colours for different logging levels such as info, warn, fatal, debug and error. For writing the client side to a log file, you can use some middleware called.... logger. Yes, [express.logger()](http://expressjs.com/en/api.html) allows you to redirect the log on the client side to a file. 
