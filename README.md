@@ -1,5 +1,11 @@
 # Today-I-learnt
 
+### 09/11/16 - cp only subfolders
+
+You can copy only the sub folders with `cp -r folderA/* folderB`. 
+
+If you want to copy and replace folders, use the `-al` flag. Alternatively, `rsync -av source/* dest/*` does the same thing.
+
 ### 05/11/16 - Home key in shell
 
 The Home key is a perfectly good substitute for `Ctrl-A` to move the cursor to the start of the line.
