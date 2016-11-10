@@ -1,5 +1,13 @@
 # Today-I-learnt
 
+### 10/11/16 - sudoers
+
+The proper way to edit `/etc/sudoers` is to use `visudo`, which strangely does not necessarily launch good ol' `vi` but the default editor of choice (`nano` on Debian).
+
+"But I *just* want to give X sudo powers! What's up with the syntax?"
+
+There is likely to be a `sudo` group in `/etc/sudoers`, so you can just add X to the `sudo` group with `gpasswd -a X sudo`.
+
 ### 09/11/16 - cp only subfolders
 
 You can copy only the sub folders with `cp -r folderA/* folderB`. 
