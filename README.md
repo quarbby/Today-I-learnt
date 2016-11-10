@@ -1,5 +1,21 @@
 # Today-I-learnt
 
+### 10/11/16 - find and xargs
+
+`find` and `xargs` have very weird syntax; the number of times I have seen `find . -name X -type f -exec rm -f '{}' \;` as a Stack Exchange example is *far too many*.
+
+Basic `find` is not that hard: `find [directory to search] -name [pattern of file] -type [f for file, d for directory]`. The default action is to print the list of files (forceable with `-print`); a fancier and hopefully self-explanatory way is `-ls`.
+
+`xargs` constructs commands from standard input. My use case today was to calculate the number of lines of *thousands* of files in *nested* subdirectories of a certain directory. `wc -l *` won't cut it. Enter `find` and `xargs`:
+
+```
+find . -name *.txt | xargs wc -l
+```
+
+The Wikipedia pages for `find` and `xargs` go into tricky cases in fine detail, and I highly recommend reading them. Because one day you may find yourself in such a situation.
+
+And what's `-exec`? Ignore that, stick with `xargs`.
+
 ### 10/11/16 - sudoers
 
 The proper way to edit `/etc/sudoers` is to use `visudo`, which strangely does not necessarily launch good ol' `vi` but the default editor of choice (`nano` on Debian).
