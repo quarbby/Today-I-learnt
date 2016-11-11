@@ -1,5 +1,18 @@
 # Today-I-learnt
 
+### 11/11/16 - cron jobs 
+
+If you need to write a cronjob, write it in `crontab -e`. If the job needs to be run as root, use `sudo crontab -e`. 
+
+Here's some abbreviations on writing cronjobs. If the job starts on system reboot, add `@reboot` in front will do the job. i.e. `@reboot ./runThisScript.sh`. If it's hourly, `@hourly` flag works. 
+
+Cron jobs are written as `m h dom mon dow command`, or minute, hour, day of month, month of year, day of week, command. If you want to repeat for every of that time unit, put \*. 
+`0 5 * * * ./runThisScript.sh` would be minute 0 of hour 5, every day, every month, every day of week, execute `./runThisScript.sh`. 
+
+If you want to run a cron job every 5 minutes, do `*/5 * * * * ./runThisScript.sh`. Every five hours would be: `0 */5 * * * ./runThisScript.sh`. So `0 0 18 Oct * echo Happy Birthday` would print Happy Birthday on the console at 0000hrs on 18 October. 
+
+`cron` is named after the Greek work chronos, which means time. [Here's some reading when you have time](http://www.computerhope.com/unix/ucrontab.htm)
+
 ### 10/11/16 - find and xargs
 
 `find` and `xargs` have very weird syntax; the number of times I have seen `find . -name X -type f -exec rm -f '{}' \;` as a Stack Exchange example is *far too many*.
