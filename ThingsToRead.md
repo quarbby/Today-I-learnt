@@ -1,5 +1,9 @@
 # Loads of Random Readings For A Day I'm Lazing on the bed
 
+### 12/11/16 - Programming Optimizations
+
+[Paul Hsieh's Programming Optimizations](http://www.azillionmonkeys.com/qed/optimize.html) is old but still good. Some information may be rendered obsolete by modern optimising compilers, but full respect to those x86 wizards of the past...
+
 ### 12/11/16 - Unicode
 
 [An Introduction to Writing Systems & Unicode](https://r12a.github.io/scripts/tutorial/index) is a glimpse at the mind-boggling yet fascinating complexity of writing systems, which have features you thought couldn't possibly exist.
