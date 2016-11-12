@@ -1,5 +1,8 @@
 # Loads of Random Readings For A Day I'm Lazing on the bed
 
+### 12/11/16 - Unicode
+
+[An Introduction to Writing Systems & Unicode](https://r12a.github.io/scripts/tutorial/index) is a glimpse at the mind-boggling yet fascinating complexity of writing systems, which have features you thought couldn't possibly exist.
 
 ### 31/10/16 - Big Data Frameworks Compared
 [A tutorial by Digital Ocean](https://www.digitalocean.com/community/tutorials/hadoop-storm-samza-spark-and-flink-big-data-frameworks-compared) 
