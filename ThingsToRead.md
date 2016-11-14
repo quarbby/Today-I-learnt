@@ -1,5 +1,9 @@
 # Loads of Random Readings For A Day I'm Lazing on the bed
 
+### 14/11/16 - Hammock Driven Development
+
+[Talk Transcript](https://github.com/matthiasn/talk-transcripts/blob/master/Hickey_Rich/HammockDrivenDev.md) on Hammock Driven Development. In essence, take a break when you're stuck on a coding problem...
+
 ### 12/11/16 - Programming Optimizations
 
 [Paul Hsieh's Programming Optimizations](http://www.azillionmonkeys.com/qed/optimize.html) is old but still good. Some information may be rendered obsolete by modern optimising compilers, but full respect to those x86 wizards of the past...
