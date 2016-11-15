@@ -11,6 +11,8 @@ Cron jobs are written as `m h dom mon dow command`, or minute, hour, day of mont
 
 If you want to run a cron job every 5 minutes, do `*/5 * * * * ./runThisScript.sh`. Every five hours would be: `0 */5 * * * ./runThisScript.sh`. So `0 0 18 Oct * echo Happy Birthday` would print Happy Birthday on the console at 0000hrs on 18 October. 
 
+If you want a cron job that opens a terminal every minute to run a certain script, that's `* * * * * export DISPLAY=:0 && /usr/bin/gnome-terminal -e "./runThisScript.sh"`
+
 `cron` is named after the Greek work chronos, which means time. [Here's some reading when you have time](http://www.computerhope.com/unix/ucrontab.htm)
 
 ### 10/11/16 - find and xargs
