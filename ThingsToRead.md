@@ -1,5 +1,9 @@
 # Loads of Random Readings For A Day I'm Lazing on the bed
 
+### 19/11/16 - Angular vs React 
+
+[This](http://tutorials.pluralsight.com/front-end-javascript/react-vs-angular-2) will probably come in handy when I"m trying to navigate the web space. 
+
 ### 14/11/16 - Hammock Driven Development
 
 [Talk Transcript](https://github.com/matthiasn/talk-transcripts/blob/master/Hickey_Rich/HammockDrivenDev.md) on Hammock Driven Development. In essence, take a break when you're stuck on a coding problem...
