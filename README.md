@@ -1,5 +1,9 @@
 # Today-I-learnt
 
+### 21/11/16 - Deploying a static app to Heroku
+
+TIL, we can't deploy a static HTML app to Heroku. But there's a way to mock it as a PHP app. [Here's how](https://gist.github.com/wh1tney/2ad13aa5fbdd83f6a489). THis method may come in useful in the future to mock other apps similarly. 
+
 ### 11/11/16 - cron jobs 
 
 If you need to write a cronjob, write it in `crontab -e`. If the job needs to be run as root, use `sudo crontab -e`. 
