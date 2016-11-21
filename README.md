@@ -1,5 +1,9 @@
 # Today-I-learnt
 
+### 21/11/16 - :-!!! in C is not just a nice little emoticon symbol
+
+It's actually in the Linux kernel to effectively check whether the expression e can be evaluated to be 0, and if not, to fail the build.[Read more here](http://stackoverflow.com/questions/9229601/what-is-in-c-code).
+
 ### 21/11/16 - Deploying a static app to Heroku
 
 TIL, we can't deploy a static HTML app to Heroku. But there's a way to mock it as a PHP app. [Here's how](https://gist.github.com/wh1tney/2ad13aa5fbdd83f6a489). THis method may come in useful in the future to mock other apps similarly. 
