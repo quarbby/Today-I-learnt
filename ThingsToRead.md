@@ -1,5 +1,13 @@
 # Loads of Random Readings For A Day I'm Lazing on the bed
 
+### 22/11/16 - What Are Some Bad Programming Ideas That Work?
+
+[Ask Slashdot](https://developers.slashdot.org/story/16/08/15/236236/ask-slashdot-what-are-some-bad-programming-ideas-that-work).
+
+> Goto. I use that (in C) for error handling all the time, and frankly, it is about the cleanest way to do it I have seen.
+
+Some trivia: Java does not have goto, which annoyed me because I *needed* it for my state machine.
+
 ### 19/11/16 - Angular vs React 
 
 [This](http://tutorials.pluralsight.com/front-end-javascript/react-vs-angular-2) will probably come in handy when I"m trying to navigate the web space. 
