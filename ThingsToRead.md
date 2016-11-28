@@ -1,5 +1,9 @@
 # Loads of Random Readings For A Day I'm Lazing on the bed
 
+### 28/11/16 - Wat? 
+
+[A hilarious lighting talk about the weirdest things that happens in Ruby & Javascript](https://www.destroyallsoftware.com/talks/wat)
+
 ### 22/11/16 - What Are Some Bad Programming Ideas That Work?
 
 [Ask Slashdot](https://developers.slashdot.org/story/16/08/15/236236/ask-slashdot-what-are-some-bad-programming-ideas-that-work).
