@@ -1,5 +1,11 @@
 # Today-I-learnt
 
+### 04/12/16 - Bash add comma at the end of each line
+
+`sed "s/$/,/g" 1.js > 2.js`
+
+I know my file names are ridiculous. `g` is for global, that is add for every line. `,` is the character that you want to add to the end (`$`) of each line. I need to level up my regular expressions. 
+
 ### 21/11/16 - :-!!! in C is not just a nice little emoticon symbol
 
 It's actually in the Linux kernel to effectively check whether the expression e can be evaluated to be 0, and if not, to fail the build.[Read more here](http://stackoverflow.com/questions/9229601/what-is-in-c-code).
