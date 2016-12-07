@@ -1,5 +1,9 @@
 # Loads of Random Readings For A Day I'm Lazing on the bed
 
+### 07/12/16 - Google Courses Guide to Tech Development
+
+[Google Courses Guide to Tech Development](https://www.google.com.sg/about/careers/students/guide-to-technical-development.html)
+
 ### 28/11/16 - Wat? 
 
 [A hilarious lighting talk about the weirdest things that happens in Ruby & Javascript](https://www.destroyallsoftware.com/talks/wat)
