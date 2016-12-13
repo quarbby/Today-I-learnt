@@ -1,5 +1,13 @@
 # Today-I-learnt
 
+### 13/12/16 - Cut and paste
+
+`cut -f2 test.csv` extracts the second column of a tab-delimited CSV file. `cut -d, -f2 test.csv` does the same for a comma-delimited CSV file.
+
+I realised that CSV means "comma-separated".
+
+Anyway, `paste -d'\t' file1.csv file2.csv` concatenates both files row-wise with a tab.
+
 ### 04/12/16 - Bash add comma at the end of each line
 
 `sed 's/$/,/g' 1.js > 2.js`
