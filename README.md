@@ -1,5 +1,9 @@
 # Today-I-learnt
 
+### 17/12/16 - Debounce in Javascript
+
+Sometimes you don't want to invoke a function all the time. You can try looking at [Demystifying Debounce](https://john-dugan.com/javascript-debounce/) to understand a `debounce` function that might be helpful.
+
 ### 13/12/16 - Cut and paste
 
 `cut -f2 test.csv` extracts the second column of a tab-delimited CSV file. `cut -d, -f2 test.csv` does the same for a comma-delimited CSV file.
@@ -76,52 +80,6 @@ Conversely, the End key does the same thing as `Ctrl-E`.
 ### 03/11/16 - Logging in an Express.js app 
 
 I initially thought that it's quite difficult and possibly impossible to log in an Express.js web app, which has both clients and server side code. But I learnt today through random explorations that you can log the server side to a file using the nodejs package [Winston](http://tostring.it/2014/06/23/advanced-logging-with-nodejs/) which provides colours for different logging levels such as info, warn, fatal, debug and error. For writing the client side to a log file, you can use some middleware called.... logger. Yes, [express.logger()](http://expressjs.com/en/api.html) allows you to redirect the log on the client side to a file. 
-
-Just for completeness sake, let's add some code: 
-
-SERVER SIDE 
-
-```
-var winston = require('winston');
-winston.emitErrs = true;
-
-var serverLogger = new winston.Logger({
-    transports: [
-        new winston.transports.File({
-            level: 'info',
-            filename: './serverlogs.log',
-            handleExceptions: true,
-            json: true,
-            maxsize: 5242880, //5MB
-            maxFiles: 5,
-            colorize: false
-        }),
-        new winston.transports.Console({
-            level: 'debug',
-            handleExceptions: true,
-            json: false,
-            colorize: true
-        })
-    ],
-    exitOnError: false
-});
-
-serverLogger.info(request);
-
-```
-
-Also, CLIENT SIDE
-
-```
-var logger = require('morgan');
-
-console.log("Hello World!");
-
-app.use(logger({
-  format: 'dev', 
-  stream: fs.createWriteStream('cheerio.log', {'flags': 'a'})
-}));
-```
 
 ### 30/10/16 - tmux
 
