@@ -1,5 +1,9 @@
 # Today-I-learnt
 
+### 20/12/16 - Linux jq
+
+Today I learnt that I can parse JSON files in command line with the library [jq](https://stedolan.github.io/jq/). PRetty useful for parsing structured JSON data rather than using loads of `sed` and `awk` and going bersek 
+
 ### 17/12/16 - Debounce in Javascript
 
 Sometimes you don't want to invoke a function all the time. You can try looking at [Demystifying Debounce](https://john-dugan.com/javascript-debounce/) to understand a `debounce` function that might be helpful.
