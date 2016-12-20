@@ -1,5 +1,13 @@
 # Today-I-learnt
 
+### 20/12/16 - pgrep and pkill
+
+"I want to kill a Java process, but I don't know the process ID. So I run `ps aux | grep java | less` and use my eyeballs..."
+
+Enter `pgrep java` (or `pgrep -a` to show the command). Or `pgrep -u darren` for all processes by `darren`. If you want to kill *one* particular Java process, you need to use `kill 1234`.
+
+On the other hand, if you want to kill *all* Java processes, there is  `pkill java`, which works the same way and is arguably more powerful (and dangerous! See [here](https://unix.stackexchange.com/questions/91527/whats-the-difference-between-pkill-and-killall)) than `killall java`. Both can select by user, and have a lot of other options.
+
 ### 20/12/16 - Linux jq
 
 Today I learnt that I can parse JSON files in command line with the library [jq](https://stedolan.github.io/jq/). PRetty useful for parsing structured JSON data rather than using loads of `sed` and `awk` and going bersek 
