@@ -1,5 +1,43 @@
 # Today-I-learnt
 
+### 20/12/16 - More Vim tips
+
+`:x` - save the file if it has changed, and quit (`:wq` or `ZZ` saves the file in any case, and quits)
+
+`%` - find matching brace/bracket/parentheses
+
+`~` - toggle case
+
+`<` - indent left
+
+`>` - indent right
+
+`=` - auto-indent a block of code
+
+`;` - repeat previous `f/F/t/T` action
+
+`,` - reverse previous `f/F/t/T` action
+
+`"+` - clipboard register
+
+`100|` - go to column 100 (alternatively, you can use `099l`, which brings the cursor to the first column, then advances left 99 times)
+
+`ma` - mark `a`
+
+`` `a `` - go to mark `a`
+
+`'a` - go to first non-blank character of line of mark `a`
+
+`*` - find next occurrence of word under cursor
+
+`#` - find previous occurrence of word under cursor
+
+`ga` - get hex/octal code of character under cursor (damn useful)
+
+`%s/\%xYY/substitute/g` - replace characters with hex code `YY` with `substitute` in the whole file
+
+`s/a/b/gc` - substitute `a` with `b` with **c**onfirmation (whoa...)
+
 ### 20/12/16 - pgrep and pkill
 
 "I want to kill a Java process, but I don't know the process ID. So I run `ps aux | grep java | less` and use my eyeballs..."
