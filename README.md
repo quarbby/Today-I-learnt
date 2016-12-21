@@ -1,5 +1,34 @@
 # Today-I-learnt
 
+### 21/12/16 - Elastic Search Date Queries
+
+ES and Kibana are strange creatures. Assume you have a field in your index that is called `timestamp` of type `date`. If you're searching it 1 month back on Kibana Query bar, use `query: timestamp: [now-1M TO now]`. However, if you send a curl GET request, you can use the following cumbersome JSON format:
+```
+{
+"
+query": {
+ "range": {
+   "timestamp": {
+    "gte": "now-1M/M"
+   }
+  }
+}
+}
+```
+
+[Moer on Range queries](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-range-query.html)
+
+### 21/12/16 - Send mail 
+
+If you have a mail server installed, you can use the `$sendmail` command to send emails.<send mail command> <reciepient email> <subject> <message>
+
+`/usr/sbin/sendmail user01@mail.me.com "Subject: [Read] SendMail" "Hello Sendmail!"`
+
+For a more complex mail liner with a Subject (anything with spaces must be in double quotes), and the message body from a text file, you can use the following command. -t flag denotes the to field while -F flag denotes the from field (left as default user if not specified).
+`echo "Subject: [Read] SendMail" | cat - message.txt | /usr/sbin/sendmail -t user01@mail.me.com -F user02@mail.me.com`
+
+[More on Sendmail](https://jpsoft.com/help/sendmail.htm)
+
 ### 20/12/16 - More Vim tips
 
 `:x` - save the file if it has changed, and quit (`:wq` or `ZZ` saves the file in any case, and quits)
@@ -48,7 +77,26 @@ On the other hand, if you want to kill *all* Java processes, there is  `pkill ja
 
 ### 20/12/16 - Linux jq
 
-Today I learnt that I can parse JSON files in command line with the library [jq](https://stedolan.github.io/jq/). PRetty useful for parsing structured JSON data rather than using loads of `sed` and `awk` and going bersek 
+Today I learnt that I can parse JSON files in command line with the library [jq](https://stedolan.github.io/jq/). PRetty useful for parsing structured JSON data rather than using loads of `sed` and `awk` and going bersek. If you download the binary, you can simply add it to your system by `chmod +x jq && sudo cp jq /usr/bin`
+
+If you have an array of JSON, like this:
+```
+{'hits':
+[
+{name: 'Ali', age: 23},
+]name: 'Bob', age: 25}
+]
+}
+```
+you can iterate them through using jq by: `jq '.hits[]`, where the ending `[]` means iterate through all items in the array. Note the `.` before the hits, because that's how jq identify fields. It's important Now if you want to collect the items and output to another JSON object, do: `jq '.hits[] | {author: .name, yearsOld: .age}`. That outputs: 
+```
+{author: 'Ali', yearsOld: 23}, {author: 'Bob', yearsOld: 25}
+```
+
+If you want to put them in an array, add the array braces:  `[jq '.hits[] | {author: .name, yearsOld: .age}]`. This outputs:
+```
+[{author: 'Ali', yearsOld: 23}, {author: 'Bob', yearsOld: 25}]
+```
 
 ### 17/12/16 - Debounce in Javascript
 
