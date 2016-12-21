@@ -1,5 +1,11 @@
 # Today-I-learnt
 
+### 21/12/16 - History timestamps
+
+The `history` command is incredibly useful, but it doesn't come with timestamps... or does it?
+
+If you set `HISTTIMEFORMAT='%F %T '` (note the trailing space!), `history` will record timestamps. Why is this not the default?
+
 ### 21/12/16 - Elastic Search Date Queries
 
 ES and Kibana are strange creatures. Assume you have a field in your index that is called `timestamp` of type `date`. If you're searching it 1 month back on Kibana Query bar, use `query: timestamp: [now-1M TO now]`. However, if you send a curl GET request, you can use the following cumbersome JSON format:
