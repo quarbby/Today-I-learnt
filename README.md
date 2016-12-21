@@ -1,5 +1,21 @@
 # Today-I-learnt
 
+### 21/12/16 - Maximum subarray in O(n)
+
+Problem: Suppose you have an array A[0...n-1] and you wish to find a subarray S[l, r] such that sum(S[l...r]) is maximal.
+
+Solution: Kadane's algorithm, which uses dynamic programming
+
+```
+Let DP[i - 1] be the maximum subarray that ends at i - 1.
+Then DP[i] = max(DP[i - 1] + A[i], A[i])
+Then the maximal subarray over A is simply max(DP[0...n - 1]).
+```
+
+This algorithm uses O(n) time, O(1) space.
+
+Quiz: How do you find the k-th maximal subarray in O(n + k)?
+
 ### 21/12/16 - History timestamps
 
 The `history` command is incredibly useful, but it doesn't come with timestamps... or does it?
