@@ -1,5 +1,9 @@
 # Today-I-learnt
 
+### 22/12/16 - Awk for removing the last column of a file
+
+There was previously cut and paste, here's the awk version for removing the last column of a (space separated) file. `awk '{$(NF--)=""; print $0}' <in >out`. First note the absence of spaces after the carets. Then, NF means number of fields in the line. So $(NF--) means the last field in the line; and you set that to "". Then you print $0 which is the line. 
+
 ### 22/12/16 - More jq
 
 So in jq, you can pipe your JSON child element to string operations, but you have to use the jq operations. Here's one: `jq '.[] | {date: (.source.timestamp | gsub("T"; " ") | rtrimstr("+08.00"))}`. Okay, so my date is stored as a string of timestamp in the format 2016-22-12T09:28:00+08.00. First I pipe it to an operation called `gsub` that changes the `T` to a space; note the semicolon (`;`) and double quotes (`"`). Then i pipe it to an operation that trims the string from the right side for the timestamp. Then I will get `{date: 2016-22-12 09:00:00}` for my output.
