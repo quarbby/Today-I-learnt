@@ -1,5 +1,11 @@
 # Today-I-learnt
 
+### 22/12/16 - More jq
+
+So in jq, you can pipe your JSON child element to string operations, but you have to use the jq operations. Here's one: `jq '.[] | {date: (.source.timestamp | gsub("T"; " ") | rtrimstr("+08.00"))}`. Okay, so my date is stored as a string of timestamp in the format 2016-22-12T09:28:00+08.00. First I pipe it to an operation called `gsub` that changes the `T` to a space; note the semicolon (`;`) and double quotes (`"`). Then i pipe it to an operation that trims the string from the right side for the timestamp. Then I will get `{date: 2016-22-12 09:00:00}` for my output.
+
+Now just for the sake of it, I can trim the `+08:00` from a string in bash as such: `echo "2016-22-12T09:28:00+08:00 | sed "s@+08:00@@g"`. Double quotes make a difference. For another time.
+
 ### 21/12/16 - Maximum subarray in O(n)
 
 Problem: Suppose you have an array A[0...n-1] and you wish to find a subarray S[l, r] such that sum(S[l...r]) is maximal.
