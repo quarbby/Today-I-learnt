@@ -1,5 +1,19 @@
 # Loads of Random Readings For A Day I'm Lazing on the bed
 
+### 24/12/16 - Unix Recovery Legend
+
+[Unix Recovery Legend](http://www.ee.ryerson.ca/~elf/hack/recovery.html)
+
+>  When I arrived at his office, his door was ajar, and within ten seconds I realised what the problem was. James, our manager, was sat down, head in hands, hands between knees, as one whose world has just come to an end. Our newly-appointed system programmer, Neil, was beside him, gazing listlessly at the screen of his terminal. And at the top of the screen I spied the following lines:
+>
+> \#cd
+>
+> \#rm -rf * 
+>
+> ...
+>
+> Now, you're asking yourself (as I am), what's the moral of this story? Well, for one thing, you must always remember the immortal words, DON'T PANIC. Our initial reaction was to reboot the machine and try everything as single user, but it's unlikely it would have come up without /etc/init and /bin/sh. Rational thought saved us from this one.
+
 ### 07/12/16 - Google Courses Guide to Tech Development
 
 [Google Courses Guide to Tech Development](https://www.google.com.sg/about/careers/students/guide-to-technical-development.html)
