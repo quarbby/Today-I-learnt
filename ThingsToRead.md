@@ -6,9 +6,9 @@
 
 >  When I arrived at his office, his door was ajar, and within ten seconds I realised what the problem was. James, our manager, was sat down, head in hands, hands between knees, as one whose world has just come to an end. Our newly-appointed system programmer, Neil, was beside him, gazing listlessly at the screen of his terminal. And at the top of the screen I spied the following lines:
 >
-> \#cd
+> \# cd
 >
-> \#rm -rf * 
+> \# rm -rf * 
 >
 > ...
 >
