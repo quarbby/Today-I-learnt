@@ -1,5 +1,9 @@
 # Loads of Random Readings For A Day I'm Lazing on the bed
 
+### 24/12/16 - Compiler Explorer
+
+[Compiler Explorer](https://gcc.godbolt.org/) - disassembles GCC/ICC output in your browser!
+
 ### 24/12/16 - Unix Recovery Legend
 
 [Unix Recovery Legend](http://www.ee.ryerson.ca/~elf/hack/recovery.html)
