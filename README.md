@@ -1,5 +1,9 @@
 # Today-I-learnt
 
+### 24/12/16 - More tar
+
+`tar cf` produces an *uncompressed* archive, while `tar czf` produces an archive compressed by `gzip`. It's quite obvious that I don't use `tar` much to compress stuff, but `tar xf` has become muscle memory.
+
 ### 22/12/16 - Awk for removing the last column of a file
 
 There was previously cut and paste, here's the awk version for removing the last column of a (space separated) file. `awk '{$(NF--)=""; print $0}' <in >out`. First note the absence of spaces after the carets. Then, NF means number of fields in the line. So $(NF--) means the last field in the line; and you set that to "". Then you print $0 which is the line. 
