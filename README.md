@@ -1,5 +1,9 @@
 # Today-I-learnt
 
+### 29/12/16 - SSH without password in GNOME terminal
+
+If you have put your public key into the server, yet when you try to ssh from a GNOME terminal (i.e. CentOS6) and it doesn't work, add `SSH_AUTH_SOCK=0` before the ssh command. So type `SSH_AUTH_SOCK=0 ssh admin@<IPADDRESS>`. THat should get you in without password
+
 ### 24/12/16 - More tar
 
 `tar cf` produces an *uncompressed* archive, while `tar czf` produces an archive compressed by `gzip`. It's quite obvious that I don't use `tar` much to compress stuff, but `tar xf` has become muscle memory.
