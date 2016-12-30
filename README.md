@@ -16,7 +16,7 @@ Here are my observations of what to try:
 3. Buffers (i.e. sliding windows in TCP parlance) on transmitter and receiver to support the above
 4. Congestion control (max number of unacknowledged packets in flight) to prevent choking the network
 5. Flow control (changing the size of sliding windows on both ends in response to receiver's ability to receive) to make sure receiver doesn't get swamped
-7. Buy better hardware
+6. Buy better hardware
 
 As more steps are taken to build The Reliable Protocol, there are extra processing costs and memory costs (but if you can, as I always say, "throw money at the problem"...) in exchange for higher reliability.
 
@@ -25,6 +25,8 @@ Implementing 1 to 4 was sufficient for low loads. A high load destroyed our hope
 Implementing flow control showed *no lost packets*, but we were probably just lucky because it could handle our maximum expected load. With some imagination, it is easy to see that there is a point beyond which even flow control cannot help, and it's time to buy better hardware.
 
 Of course, if you can afford not to send so many things in the first place, don't!
+
+Addendum: raw Markdown shows that it's steps 0 to 6. Step 6 was meant to be step `n` but then it wouldn't be rendered properly as a list.
 
 ### 29/12/16 - SSH without password in GNOME terminal
 
