@@ -1,5 +1,31 @@
 # Today-I-learnt
 
+### 30/12/16 - Building a reliable protocol
+
+I found myself having to investigate why an implementation of a "reliable protocol" was losing packets like crazy. It turns out that building a reliable protocol on top of an unreliable one is extremely tricky, as I should have realised in my networking classes, and I encourage everyone to view network engineers with greater respect.
+
+TCP is perhaps the most famous reliable protocol of all. But there are *many versions* of TCP, some very recent and some probably in development to adapt to the changing network needs of today. So it is *hard* to develop a reliable protocol, as I realised while investigating and trying to recall my networking stuff from 2.5 years ago.
+
+Almost everything in computer science is about trade-offs. In this case, it's reliability versus performance. A fire-and-forget protocol is really fast and also really unreliable; requiring high reliability requires huge buffers and multiple round-trips for all those acknowledgements and retries, and you will still never get 100% reliability (this is something one must accept from the very beginning).
+
+Here are my observations of what to try:
+
+0. Don't send so many things in the first place
+1. Acknowledgements
+2. Sequence numbers for ordering (you do want your packets to be ordered, right?)
+3. Buffers (i.e. sliding windows in TCP parlance) on transmitter and receiver to support the above
+4. Congestion control (max number of unacknowledged packets in flight) to prevent choking the network
+5. Flow control (changing the size of sliding windows on both ends in response to receiver's ability to receive) to make sure receiver doesn't get swamped
+7. Buy better hardware
+
+As more steps are taken to build The Reliable Protocol, there are extra processing costs and memory costs (but if you can, as I always say, "throw money at the problem"...) in exchange for higher reliability.
+
+Implementing 1 to 4 was sufficient for low loads. A high load destroyed our hopes and wishes because it turns out that we were swamping the poor receiver (or even a poor switch in the middle!) without throttling our sending rate. It is quite counter-intuitive that reducing sending rate increases performance but that's networking engineering...
+
+Implementing flow control showed *no lost packets*, but we were probably just lucky because it could handle our maximum expected load. With some imagination, it is easy to see that there is a point beyond which even flow control cannot help, and it's time to buy better hardware.
+
+Of course, if you can afford not to send so many things in the first place, don't!
+
 ### 29/12/16 - SSH without password in GNOME terminal
 
 If you have put your public key into the server, yet when you try to ssh from a GNOME terminal (i.e. CentOS6) and it doesn't work, add `SSH_AUTH_SOCK=0` before the ssh command. So type `SSH_AUTH_SOCK=0 ssh admin@<IPADDRESS>`. THat should get you in without password
