@@ -10,18 +10,18 @@ The general idea is this - quicksort until the pivot is in the k-th position. If
 
 Clearly, this does not work if pivot selection does not eliminate a proportion of the search array each iteration (This case degenerates to O(n<sup>2</sup>). Otherwise, this approach is O(n). Here's how median-of-medians selects a suitable pivot to ensure deterministic O(n):
 
-'''
+```
 fn select_pivot(subarray):
     if length of subarray <= 5,
         find true median and return that.
     otherwise
         foreach group of 5 elements in subarray, find true median in group.
         return true median amongst the group medians. (I.e median-of-medians)
-'''
+```
 
 Why does this work?
 
-Observe that at least half of the groups have median <= the median-of-medians. There are (subarray length / 5) groups, so the number of group medians is 20% of the subarray length. For each group, at least 3 items are <= their respective group median. Therefore 3 * 10% of the subarray will be <= the median-of-medians. This means the selected pivot will eliminate at least 30% of the search array each iteration.
+Observe that at least half of the groups have median <= the median-of-medians. There are (subarray length / 5) groups, so the number of group medians is 20% of the subarray length. For each group, at least 3 items are less than or equal to their respective group median. Therefore 3 * 10% of the subarray will be less than or equal to the median-of-medians. This means the selected pivot will eliminate at least 30% of the search array each iteration.
 
 ### 30/12/16 - Building a reliable protocol
 
