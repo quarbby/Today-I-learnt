@@ -1,5 +1,28 @@
 # Today-I-learnt
 
+### 31/12/16 - Selecting the k-th largest item in O(n)
+
+Let's suppose you need to find the k-th largest item in an array A[0...n-1]. This is trivial for k=n (smallest item) and k=1 (largest item) so we ignore those cases. How do you find the k-th largest item in O(n)?
+
+Solution: Median-of-medians, which is based off quicksort.
+
+The general idea is this - quicksort until the pivot is in the k-th position. If the pivot is not in the k-th position, quicksort the subarray that contains the k-th position.
+
+Clearly, this does not work if pivot selection does not eliminate a proportion of the search array each iteration (This case degenerates to O(n<sup>2</sup>). Otherwise, this approach is O(n). Here's how median-of-medians selects a suitable pivot to ensure deterministic O(n):
+
+'''
+fn select_pivot(subarray):
+    if length of subarray <= 5,
+        find true median and return that.
+    otherwise
+        foreach group of 5 elements in subarray, find true median in group.
+        return true median amongst the group medians. (I.e median-of-medians)
+'''
+
+Why does this work?
+
+Observe that at least half of the groups have median <= the median-of-medians. There are (subarray length / 5) groups, so the number of group medians is 20% of the subarray length. For each group, at least 3 items are <= their respective group median. Therefore 3 * 10% of the subarray will be <= the median-of-medians. This means the selected pivot will eliminate at least 30% of the search array each iteration.
+
 ### 30/12/16 - Building a reliable protocol
 
 I found myself having to investigate why an implementation of a "reliable protocol" was losing packets like crazy. It turns out that building a reliable protocol on top of an unreliable one is extremely tricky, as I should have realised in my networking classes, and I encourage everyone to view network engineers with greater respect.
