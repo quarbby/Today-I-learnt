@@ -1,5 +1,28 @@
 # Loads of Random Readings For A Day I'm Lazing on the bed
 
+### 02/01/16 - How to ask good questions
+
+[How to ask good questions](https://jvns.ca/blog/good-questions/)
+
+> To start out – I'm actually kind of a big believer in asking dumb questions or questions that aren't "good". I ask people kind of dumb questions all the time, questions that I could have answered with Google or by searching our codebase. I mostly try not to, but sometimes I do it anyway and I don't think it's the end of the world.
+
+Similar to my approach of asking questions:
+
+- confirming all assumptions, no matter how obvious/stupid they are ("is this a database?")
+- asking yes/no questions
+- "reading back" to ensure both sides have a common understanding
+- doing prior research to show that you did some homework
+
+Not forgetting the pleasantries before and after.
+
+To digress on how to be good *answerer*:
+
+I have a bad habit of sometimes jumping to conclusions ("The problem is definitely...") without complete evidence, only to realise the mistake later ("...oops"). The best thing to do is to admit the mistake.
+
+I've since learnt to be *really sure* with *compelling evidence* ("I did this and this and printed out all these...").
+
+There's also nothing wrong with saying "I don't know, but I can Google it for you, and we'll both learn something new at the end of the day".
+
 ### 02/01/16 - How I Write Tests
 
 [How I Write Tests](https://blog.nelhage.com/2016/12/how-i-test/)
