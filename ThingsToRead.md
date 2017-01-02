@@ -1,6 +1,6 @@
 # Loads of Random Readings For A Day I'm Lazing on the bed
 
-### 02/01/16 - How to ask good questions
+### 02/01/17 - How to ask good questions
 
 [How to ask good questions](https://jvns.ca/blog/good-questions/)
 
@@ -23,7 +23,7 @@ I've since learnt to be *really sure* with *compelling evidence* ("I did this an
 
 There's also nothing wrong with saying "I don't know, but I can Google it for you, and we'll both learn something new at the end of the day".
 
-### 02/01/16 - How I Write Tests
+### 02/01/17 - How I Write Tests
 
 [How I Write Tests](https://blog.nelhage.com/2016/12/how-i-test/)
 
