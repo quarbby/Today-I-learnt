@@ -1,5 +1,9 @@
 # Loads of Random Readings For A Day I'm Lazing on the bed
 
+### 02/01/16 - How I Write Tests
+
+[How I Write Tests](https://blog.nelhage.com/2016/12/how-i-test/)
+
 ### 24/12/16 - Compiler Explorer
 
 [Compiler Explorer](https://gcc.godbolt.org/) - disassembles GCC/ICC output in your browser!
