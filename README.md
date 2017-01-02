@@ -1,5 +1,13 @@
 # Today-I-learnt
 
+### 02/01/17 - i++ vs ++i
+
+[Is there a performance difference between i++ and ++i in C?](https://stackoverflow.com/questions/24886/is-there-a-performance-difference-between-i-and-i-in-c)
+
+No. But (emphasis mine):
+
+> So the question one should be asking is not which of these two operations is faster, it is **which of these two operations expresses more accurately what you are trying to accomplish**. I submit that if you are not using the value of the expression, there is never a reason to use i++ instead of ++i, because there is never a reason to copy the value of a variable, increment the variable, and then throw the copy away.
+
 ### 31/12/16 - Selecting the k-th largest item in O(n)
 
 Let's suppose you need to find the k-th largest item in an array A[0...n-1]. This is trivial for k=n (smallest item) and k=1 (largest item) so we ignore those cases. How do you find the k-th largest item in O(n)?
