@@ -1,5 +1,11 @@
 # Loads of Random Readings For A Day I'm Lazing on the bed
 
+### 08/01/17 - Car allergic to vanilla ice cream
+
+[Car allergic to vanilla ice cream](http://www.cgl.uwaterloo.ca/smann/IceCream/humor.html)
+
+> It was vanilla ice cream that night and, sure enough, after they came back to the car, it wouldn't start. 
+
 ### 02/01/17 - How to ask good questions
 
 [How to ask good questions](https://jvns.ca/blog/good-questions/)
