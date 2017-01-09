@@ -1,5 +1,16 @@
 # Today-I-learnt
 
+### 09/07/17 - HTML5 Speech Synthesis API
+
+In HTML5, web apps can talk using the `SpeechSynthesisUtterance`. Like seriously. And there's a whole bunch of different languages and voices. It's really cool, like: 
+
+```
+var msg = new SpeechSynthesisUtterance('Hello World');
+window.speechSynthesis.speak(msg);
+```
+
+Downside, you need to be able to host the web app, i.e. it cannot be a static HTML page. [Google tells you more about the API](https://developers.google.com/web/updates/2014/01/Web-apps-that-talk-Introduction-to-the-Speech-Synthesis-API)
+
 ### 02/01/17 - i++ vs ++i
 
 [Is there a performance difference between i++ and ++i in C?](https://stackoverflow.com/questions/24886/is-there-a-performance-difference-between-i-and-i-in-c)
