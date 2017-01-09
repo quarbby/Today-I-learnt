@@ -1,6 +1,9 @@
 # Trivia 
 Or *Cool stuff we learnt along the way*
 
+### 09/01/17 Elephants and Tigers
+Fun fact: Tigers ignore elephants. Documentaries of tigers are filmed by sitting on elephants to get up close to that predator. 
+
 ### 03/10/16 Britian's Invasions 
 In the colonisation years, Britian has invaded all but 22 countries. But do note that Britain isn't a country. Great Britain is the name of the island that England, Scotland and Wales is located on. So God Save the Queen. 
 
