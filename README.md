@@ -1,6 +1,17 @@
 # Today-I-learnt
 
-### 09/07/17 - HTML5 Speech Synthesis API
+### 13/01/17 - String concatenation in bash script
+
+In bash script, you can concatenate strings with the `+=` operator. If they have new lines, you need to print new lines via echo with the `-e` flag. If you want to print new lines to a txt file, use `"${aString}"`.
+
+```
+aString=""
+aString+="one\n"
+aString+="two"
+echo "${aString}" > aFile.txt
+```
+
+### 09/01/17 - HTML5 Speech Synthesis API
 
 In HTML5, web apps can talk using the `SpeechSynthesisUtterance`. Like seriously. And there's a whole bunch of different languages and voices. It's really cool, like: 
 
