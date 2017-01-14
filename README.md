@@ -1,5 +1,25 @@
 # Today-I-learnt
 
+### 14/01/17 - Some lessons
+
+- If you are running a network of virtual machines on the same host, they are using a *virtual* switch. The packets never go out of the physical interface. The good thing is that you can throttle the bandwidth and latency to simulate a real network.
+- Check everything. Time was wasted because something was not configured properly, but we *thought* it was configured properly and concluded that this configuration doesn't work. We were wrong. I hate XML files. And it was embarrassing.
+- If your test conditions are wrong, your test is invalid by definition. A test may work at a small scale but fail at a large scale because you didn't cater for it.
+- If you are doing a load test, check all resource usage. CPU, memory, and network. Measure while *slowly increasing* the load, not opening up the graphs when it's at full load and things start burning. This allows you to observe resource usage as a function of load.
+- `gnome-system-monitor` is rubbish at measuring throughput. `iftop` and `iperf` are excellent. Trust numbers, not graphs.
+- `tc` can add latency, but not throttle bandwidth.
+- If there is a acknowledgement storm, the amount of traffic coming back must be large. It wasn't. So there wasn't an acknowledgement storm.
+- Don't manually increase your TCP window sizes. Check if your operating system comes with TCP window scaling.
+- Use a calculator for calculating network stuff. Conversion from bytes to bits and back is not mentally sustainable.
+- Throughput = TCP window size / round trip time.
+- Bursty traffic is *very different* from continuous, sustained traffic. The above equation will not work.
+- Don't trust ping for RTT. Use Wireshark + `tcptrace`.
+- Don't rely on the payload checksum in the TCP header. It's wrong. Google it.
+- The best way to test if certain OS settings have been really changed is to restart the machine and check.
+- JVisualVM is the undisputed king of monitoring a Java program.
+- If something fails to start up, delete all remnants of a prevous invocation (the hard part is to know that they even exist), and start it up again. It's a bad sign if a system cannot handle the existence of remnants, or throws enigmatic error messages that lead users down the wrong path.
+- If you have a network issue, especially if you are using readable addresses, the chances are very high that it's because of DNS.
+
 ### 13/01/17 - String concatenation in bash script
 
 In bash script, you can concatenate strings with the `+=` operator. If they have new lines, you need to print new lines via echo with the `-e` flag. If you want to print new lines to a txt file, use `"${aString}"`.
