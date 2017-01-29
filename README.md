@@ -1,5 +1,21 @@
 # Today-I-learnt
 
+### 29/01/17 - Bottle Python Framework
+
+You can make web microservices with `bottle.py`. That simulates a server. 
+
+```
+@get("/")
+def index():
+	response.content_type = "application/json"
+	return json.dumps([{"date":"08-01-2017", "id":1},{"date":"12-01-2017", "id":2},{"date":"19-01-2017","id":3}])
+
+run(host="0.0.0.0", port=4242, reloader=False, debug=False, quiet=True)
+```
+Then head to `localhost:4242` and you will see the JSON string returned as output.
+
+[More Bottle](https://bottlepy.org/docs/dev/)
+
 ### 18/01/17 - System Timings and Services 
 
 THe system time bug bites. When you change the system timing, remember to update the services that use the timing, for an example, cron jobs and sys logs. That's done by: 
