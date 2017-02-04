@@ -1,5 +1,13 @@
 # Loads of Random Readings For A Day I'm Lazing on the bed
 
+### 04/02/17 - Blameless Postmortems
+
+[Etsy’s Debriefing Facilitation Guide for Blameless Postmortems](https://codeascraft.com/2016/11/17/debriefing-facilitation-guide/)
+
+> All too often, when teams get together to discuss an event, they walk into the room with a story they've already rationalized about what happened. This urge to point to a "root" cause is seductive — it allows us to believe that we've understood the event well enough, and can move on towards fixing things.
+
+A blame culture is toxic, and I'm partially guilty of that. This is made worse by the occasional desire to appear smart ("I am always right"), another toxic trait.
+
 ### 04/02/17 - Yesmen
 
 [If Your Team Agrees on Everything, Working Together Is Pointless](https://hbr.org/2017/01/if-your-team-agrees-on-everything-working-together-is-pointless)
