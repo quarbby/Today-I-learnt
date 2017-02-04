@@ -1,5 +1,18 @@
 # Today-I-learnt
 
+### 04/02/17 - Some Linux Command lines commands
+
+- Print the last 5 lines of test.txt: `tail -5 test.txt`
+- Print all the lines in test.txt containing the string "HELLO": `grep HELLO test.txt`
+- Print the number of lines in test.txt containing the string "HELLO": `grep HELLO test.txt | wc -l`
+- Print all files in the directory that contain the string "HELLO": `grep -rl * -e HELLO` 
+- Print all file names that starts with test: `find . -name "test*"
+- Print the contents of test.txt, sorted: `sort test.txt`
+- Print number sequence 1 to 100 separated by space: echo {1..100}
+- Print all the files in current directory recursively without leading directory path: `find . -type f -printf "%f\n"
+- Replace spaces in file name with . in all the files in current directory: `find . -type f -printf "%f\n" | xargs -0 -T {} echo {} | tr ' ' '.'`
+- Print the 15th line of the file test.txt: `sed '25q;d' test.txt`
+
 ### 29/01/17 - Bottle Python Framework
 
 You can make web microservices with `bottle.py`. That simulates a server. 
