@@ -1,5 +1,13 @@
 # Loads of Random Readings For A Day I'm Lazing on the bed
 
+### 04/02/17 - Yesmen
+
+[If Your Team Agrees on Everything, Working Together Is Pointless](https://hbr.org/2017/01/if-your-team-agrees-on-everything-working-together-is-pointless)
+
+> If you think beyond the trite clichés, it’s obvious: Collaborating is unnecessary if you agree on everything. Building on one another's ideas only gets you incremental thinking. If you avoid disagreeing, you leave faulty assumptions unexposed. As Walter Lippmann said, "Where all think alike, no one thinks very much." To maximize the benefit of collaborating, you need to diverge before you converge.
+
+Recommended by my big boss. Worth a read.
+
 ### 04/02/17 - On Code Reviews
 
 [On Code Reviews](https://tailordev.fr/blog/2017/02/03/on-code-reviews/)
