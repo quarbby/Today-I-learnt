@@ -1,5 +1,15 @@
 # Loads of Random Readings For A Day I'm Lazing on the bed
 
+### 04/02/17 - 8 Signs an Employee Should Be Fired (Which Never Appear on Performance Evaluations)
+
+[8 Signs an Employee Should Be Fired] (http://www.inc.com/jeff-haden/8-signs-an-employee-should-be-fired-that-never-appear-on-performance-evaluations.html)
+
+> Before a meeting, some of us were talking about supervisors in another department when our new boss looked up and said, "Stop. From now on we will never say anything bad about anyone unless they are actually in the room. Period."
+>
+> Not only do employees who create a culture of gossip waste time better spent on productive conversations, but they also cause other people to respect their co-workers a little less -- and anything that diminishes the dignity or respect of any employee should never be tolerated.
+
+Guilty of some of these too. I am trying not to gossip anymore.
+
 ### 04/02/17 - Blameless Postmortems
 
 [Etsy’s Debriefing Facilitation Guide for Blameless Postmortems](https://codeascraft.com/2016/11/17/debriefing-facilitation-guide/)
