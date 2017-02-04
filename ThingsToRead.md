@@ -1,5 +1,9 @@
 # Loads of Random Readings For A Day I'm Lazing on the bed
 
+### 04/02/17 - On Code Reviews
+
+[On Code Reviews](https://tailordev.fr/blog/2017/02/03/on-code-reviews/)
+
 ### 04/02/17 - Lessons from 7 highly successful software engineering cultures
 
 [Lessons from 7 highly successful software engineering cultures](https://techbeacon.com/lessons-7-highly-successful-software-engineering-cultures)
