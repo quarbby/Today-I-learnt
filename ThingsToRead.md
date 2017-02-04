@@ -1,5 +1,17 @@
 # Loads of Random Readings For A Day I'm Lazing on the bed
 
+### 04/02/17 - Lessons from 7 highly successful software engineering cultures
+
+[Lessons from 7 highly successful software engineering cultures](https://techbeacon.com/lessons-7-highly-successful-software-engineering-cultures)
+
+> - Cut the red tape. Don’t impose processes for every little thing.
+> - Hire responsible people. The best people require less process and overhead, and people with good ethical judgment and time management skills require fewer policies for guidance.
+> - Reduce complexity. Smaller teams and simpler solutions are more adaptable and maintainable. Shorter, smaller projects keep teams from getting bogged down and losing momentum.
+> - Exercise kindness, good communication, and humility. Along with data-driven debates, these qualities help companies remove barriers to productive collaboration.
+> - Allow mistakes. Place greater emphasis on learning from mistakes and focus less on repercussions. Doing so creates a more innovative, experimental, and versatile organization that can adapt quickly to changing markets.
+
+I believe these have to be tackled first, followed by some serious upgrading in technical skills, before anyone can talk about "innovation" or the "fourth industrial revolution".
+
 ### 08/01/17 - Car allergic to vanilla ice cream
 
 [Car allergic to vanilla ice cream](http://www.cgl.uwaterloo.ca/smann/IceCream/humor.html)
