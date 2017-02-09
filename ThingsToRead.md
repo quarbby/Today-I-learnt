@@ -1,5 +1,13 @@
 # Loads of Random Readings For A Day I'm Lazing on the bed
 
+### 09/02/17 - Why Jargon Feeds on Lazy Minds
+
+[Why Jargon Feeds on Lazy Minds](https://hbr.org/2008/08/why-jargon-feeds-on-lazy-minds.html)
+
+> Pay attention to who uses the most jargon: it’s never the brightest. It’s those who want to be perceived as the best and the brightest, something they know they are not. They use cheap language tricks to intimidate, distract, and confuse, hoping to sneak past those afraid to ask what they really mean.
+
+"Ideation" makes an appearance.
+
 ### 04/02/17 - 8 Signs an Employee Should Be Fired (Which Never Appear on Performance Evaluations)
 
 [8 Signs an Employee Should Be Fired] (http://www.inc.com/jeff-haden/8-signs-an-employee-should-be-fired-that-never-appear-on-performance-evaluations.html)
