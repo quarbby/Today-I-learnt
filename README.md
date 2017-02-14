@@ -1,5 +1,10 @@
 # Today-I-learnt
 
+### 14/02/17 - Diner's Dilemma and German Tank Problem
+
+* [Unscrupulous Diner's Dilemma](https://en.wikipedia.org/wiki/Unscrupulous_diner%27s_dilemma), also known as n-way Prisoner's Dilemma
+* [German Tank Problem](https://en.wikipedia.org/wiki/German_tank_problem)
+
 ### 04/02/17 - Some Linux Command lines commands
 
 - Print the last 5 lines of test.txt: `tail -5 test.txt`
