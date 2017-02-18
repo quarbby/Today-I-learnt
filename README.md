@@ -1,5 +1,11 @@
 # Today-I-learnt
 
+### 18/02/17 - sudoedit
+
+Once you've set `EDITOR` in your environment (it's `vim`, right? Right?), you can use `sudoedit` to edit files instead of `sudo vim ...`
+
+Why? The first reason is that it keeps your editor customisations (`.vimrc`). The real reason is security: `sudo vim` allows the execution of other commands, which is obviously unsafe. `sudoedit` coupled with your favourite editor i.e. `vim` does not allow this to happen.
+
 ### 14/02/17 - Diner's Dilemma and German Tank Problem
 
 * [Unscrupulous Diner's Dilemma](https://en.wikipedia.org/wiki/Unscrupulous_diner%27s_dilemma), also known as n-way Prisoner's Dilemma
