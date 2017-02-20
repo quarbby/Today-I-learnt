@@ -1,5 +1,9 @@
 # Today-I-learnt
 
+### 20/02/17 - Adventures in /usr/bin
+
+[Adventures in /usr/bin](http://ablagoev.github.io/linux/adventures/commands/2017/02/19/adventures-in-usr-bin.html) where we can all up our Linux skills 
+
 ### 18/02/17 - sudoedit
 
 Once you've set `EDITOR` in your environment (it's `vim`, right? Right?), you can use `sudoedit` to edit files instead of `sudo vim ...`
