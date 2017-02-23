@@ -1,5 +1,9 @@
 # Today-I-learnt
 
+### 23/02/17 - git add -p
+
+`git add -p` allows you to stage *parts* of a modified file. This is very useful if you were suddenly overzealous, made many changes, only to realise that you broke the "commit early, commit often" rule.
+
 ### 20/02/17 - Adventures in /usr/bin
 
 [Adventures in /usr/bin](http://ablagoev.github.io/linux/adventures/commands/2017/02/19/adventures-in-usr-bin.html) where we can all up our Linux skills 
