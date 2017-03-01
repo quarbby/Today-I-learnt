@@ -1,5 +1,77 @@
 # Today-I-learnt
 
+### 01/03/17 - Modern JavaScript
+
+I have much to learn about modern JavaScript in 2017, as many things have changed (for the better, but JavaScript still sucks) since I stopped programming in it for a while.
+
+#### `const` keyword
+
+Does *not* mean that the variable is immutable, just that the *reference* is immutable.
+
+#### `let` keyword
+
+My favourite modern addition. This ensures *block* scope, which is far more saner than the function/global scope that JavaScript has been operating with. A good example will be:
+
+```
+for ( let i = 0; i < n; i++ ) {
+  ...
+}
+
+for ( var j = 0; j < m; j++ ) {
+  ...
+}
+
+console.log(j) // m-1
+console.log(i) // error
+```
+
+This ensures that the variable `i` only exists during the `for` loop. Very useful for safe programming. The `let` keyword is reminiscent of the same keyword in ML and Haskell.
+
+#### `for` loops
+
+There's the `for...in` statement that **does not** (I cannot emphasise enough) do what you think it is, i.e. like in Python. This iterates over the **enumerable** properties of an object, **not necessarily in order**. Read this paragraph again.
+
+```
+for ( let key in obj ) {
+  console.log(obj[key]);
+}
+```
+
+Note that the iterating variable is the **key**. What happens if you use this for a plain old array?
+
+```
+var arr = [100, 200, 300];
+for ( let v in arr ) { // using v here, because we all think it's a value, right?
+  console.log(v);
+}
+
+// 0
+// 1
+// 2
+// what?
+```
+
+What if we want Python semantics? Fortunately, there's the `for..of` statement, which iterates over an iterable object (e.g. an array. In JavaScript, an associative array is **not** an array).
+
+```
+for ( let value of arr ) {
+  console.log(value);
+}
+```
+
+Extra tip: you cannot have an associative array with numeric keys in JavaScript. This turns it automatically into a numeric array, which can have disastrous consequences:
+
+```
+var arr = [];
+var id1 = 1;
+var id200 = 200;
+arr[id1] = "value1";
+arr[id200] = "value200";
+console.log(arr.length) // definitely not 2
+```
+
+The trick is to use `var arr = {}`, i.e. an *object*, rather than declaring it as an array.
+
 ### 23/02/17 - git add -p
 
 `git add -p` allows you to stage *parts* of a modified file. This is very useful if you were suddenly overzealous, made many changes, only to realise that you broke the "commit early, commit often" rule.
