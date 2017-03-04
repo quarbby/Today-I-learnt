@@ -1,5 +1,62 @@
 # Today-I-learnt
 
+### 04/03/17 - JavaScript Closure
+
+I agree, JavaScript sucks. Part of the reason is because there are too many black magic going on. Closure is one of those black magic that irks me because we can still reference local variables once the function goes out of scope!
+
+```javascript
+function derp(){
+  var someVar = 0;
+  return function(param){
+    someVar += param;
+    alert(someVar);
+  };
+}
+
+var myderp = derp();
+myderp(10); //Alert 10
+myderp(20); //Alert 30, wtf? I can still change someVar?
+```
+
+Coming from a background of C, this turns my whole world upside down. However, this black magic is quite useful when making charts reusable in d3.js (So I don't have to write that whole bunch of junk everytime). With closures and getter-setters, d3 charts can be quite reusable and reconfigurable.
+
+```javascript
+function chart() {
+  var width = 720, // default width
+      height = 80; // default height
+
+  function my() {
+    // generate chart here, using `width` and `height`
+  }
+
+  // This is brilliant. Its a getter if no argument is passed.
+  // It is a setter if argument is passed. 
+  // But'argument' is another one of those black magic though
+  my.width = function(value) {
+    if (!arguments.length) return width;
+    width = value;
+    return my;
+  };
+
+  my.height = function(value) {
+    if (!arguments.length) return height;
+    height = value;
+    return my;
+  };
+
+  return my;
+}
+
+//Instantiate and render chart of width 720, height 80
+var myChart = chart()
+//Set height 100
+myChart.height(100)
+//Get height will return 100 instead of 80
+myChart.height()
+```
+[More on reusable charts](https://bost.ocks.org/mike/chart/)
+
+For detailed explanation: 
 ### 01/03/17 - Modern JavaScript
 
 I have much to learn about modern JavaScript in 2017, as many things have changed (for the better, but JavaScript still sucks) since I stopped programming in it for a while.
