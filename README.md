@@ -56,7 +56,6 @@ myChart.height()
 ```
 [More on reusable charts](https://bost.ocks.org/mike/chart/)
 
-For detailed explanation: 
 ### 01/03/17 - Modern JavaScript
 
 I have much to learn about modern JavaScript in 2017, as many things have changed (for the better, but JavaScript still sucks) since I stopped programming in it for a while.
