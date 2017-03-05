@@ -1,5 +1,11 @@
 # Today-I-learnt
 
+### 05/03/17 - Syntax highlighting in Markdown
+
+I read Danqi's submission again and realised it was syntax-highlighted. I don't know why I didn't find this out earlier.
+
+[Documentation here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code).
+
 ### 04/03/17 - JavaScript Closure
 
 I agree, JavaScript sucks. Part of the reason is because there are too many black magic going on. Closure is one of those black magic that irks me because we can still reference local variables once the function goes out of scope!
