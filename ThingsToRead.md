@@ -1,5 +1,9 @@
 # Loads of Random Readings For A Day I'm Lazing on the bed
 
+### 05/05/17 - This is why we need Security Testing 
+
+Yes, the literal test as well. On a computer. [Security flaw in Uber](http://www.anandpraka.sh/2017/03/how-anyone-could-have-used-uber-to-ride.html), but too bad its fixed so we can't intercept it anymore. Or so they say. 
+
 ### 05/03/17 - A possibly accurate description of the state of affairs...
 
 [Funny Reddit comment](https://www.reddit.com/r/programming/comments/5xabhs/questions_im_asking_in_interviews/degs1il/), maybe not so funny anymore because it's true!
