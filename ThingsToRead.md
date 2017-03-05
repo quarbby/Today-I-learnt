@@ -1,5 +1,9 @@
 # Loads of Random Readings For A Day I'm Lazing on the bed
 
+### 05/03/17 - A possibly accurate description of the state of affairs...
+
+[Funny Reddit comment](https://www.reddit.com/r/programming/comments/5xabhs/questions_im_asking_in_interviews/degs1il/), maybe not so funny anymore because it's true!
+
 ### 05/03/17 - If the Moon were only a Pixel
 
 [If the Moon Were Only a Pixel Visualisation](http://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html)
