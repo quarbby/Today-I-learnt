@@ -22,21 +22,21 @@ This initiates the uwsgi to python stack using the http protocol and uwsgi liste
 ```
 firewall-cmd --zone=public --add-port=8000/tcp --permanent
 ```
-Now you should be able to visit http://&ltyour IP address&lt:8000/ to see "Hello World!"
+Now you should be able to visit http://&lt;your IP address&rt;8000/ to see "Hello World!"
 
 #### 2. Set up Client <-> uwsgi <-> Django stack
 This one is straightforward. Just initiate a django project and in the project folder, type:
 ```
 uwsgi --http :8000 --module mysite.wsgi
 ```
-Don't worry about mysite.wsgi file. It is created temporarily (some black magic that I don't understand yet) to serve Django project. You should see the Django welcome page on http://&ltyour IP address&lt:8000/
+Don't worry about mysite.wsgi file. It is created temporarily (some black magic that I don't understand yet) to serve Django project. You should see the Django welcome page on http://&lt;your IP address&rt;:8000/
 
 #### 3. Set up Client <-> nginx <-> static files
 This is where things get tricky due to lots of fill in the blanks, so I will try to be more comprehensive. Install nginx with yum, apt-get, build from source, whatever, and start the server with cmd:
 ```
 nginx
 ```
-You should see the http://&ltyour IP address&lt:80/ serving an nginx welcome message (you might need to open port 80 in firewall too).
+You should see the http://&lt;your IP address&rt;:80/ serving an nginx welcome message (you might need to open port 80 in firewall too).
 
 In Django project folder, create the "mysite_nginx.conf" following the tutorial in the link above. Once done, create the symbolic link for this file to /etc/nginx/sites-enabled:
 ```
