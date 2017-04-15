@@ -1,5 +1,88 @@
 # Today-I-learnt
 
+### 15/04/17 - Setting up Nginx, uwsgi, Django
+
+I have played with the Django basic tutorials for quite some time, but the thing I really dislike about basic "Getting Started" tutorials is the lack of transition guide from development to production environment. So I decided to figure out how exactly we can serve a Django app on a full-fledged web server like Nginx.
+
+The stack that we want to set up is:
+```
+Web Client <-> Nginx <-> uwsgi <-> Django
+```
+I did this on RHEL7 VM in virtualbox. I followed the tutorial from [official uwsgi page](http://uwsgi-docs.readthedocs.io/en/latest/tutorials/Django_and_nginx.html), but there are so many things missing in the tutorial that I had to fill in the blanks from googling and stack overflow. This post is about those blanks I had to fill in.
+
+#### 1. Set up Client <-> uwsgi <-> Python stack 
+
+I assume that everyone reading this knows how to setup virtualenv and uwsgi using pip, and install nginx with yum, apt-get, or build from source. Installing pip using uwsgi requires python-dev tools to be installed in the base OS though, something which the tutorials left out.
+
+After the installation is complete, write a simple test.py which gives a http response of "Hello World" and type the following cmd:
+```
+uwsgi --http :8000 --wsgi-file test.py
+```
+This initiates the uwsgi to python stack using the http protocol and uwsgi listens on port 8000. When working in RHEL/CentOS, we also need to open the port to firewall on public zone:
+```
+firewall-cmd --zone=public --add-port=8000/tcp --permanent
+```
+Now you should be able to visit http://<your IP address>:8000/ to see "Hello World!"
+
+#### 2. Set up Client <-> uwsgi <-> Django stack
+This one is straightforward. Just initiate a django project and in the project folder, type:
+```
+uwsgi --http :8000 --module mysite.wsgi
+```
+Don't worry about mysite.wsgi file. It is created temporarily (some black magic that I don't understand yet) to serve Django project. You should see the Django welcome page on http://<your IP address>:8000/
+
+#### 3. Set up Client <-> nginx <-> static files
+This is where things get tricky due to lots of fill in the blanks, so I will try to be more comprehensive. Install nginx with yum, apt-get, build from source, whatever, and start the server with cmd:
+```
+nginx
+```
+You should see the http://<your IP address>:80/ serving an nginx welcome message (you might need to open port 80 in firewall too).
+
+In Django project folder, create the "mysite_nginx.conf" following the tutorial in the link above. Once done, create the symbolic link for this file to /etc/nginx/sites-enabled:
+```
+sudo ln -s ~/path/to/mysite/mysite_nginx.conf /etc/nginx/sites-enabled
+```
+What the tutorials failed to tell me was that I actually have to mkdir /etc/nginx/sites-enabled because it doesn't come with nginx installation. They also failed to tell me that I have to create a line in /etc/nginx/nginx.conf to include the folder:
+```
+http{
+  ...
+  include /etc/nginx/sites-enabled/*.conf
+  ...
+}
+```
+Make all modifications and restart nginx with:
+```
+nginx -s reload
+```
+At this stage, you would think you are able to serve the static file locations as configured in mysite_nginx.conf (as the tutorials made me believe)...until you realized http://<your IP address>:8000/static gives a **403 Forbidden**.
+
+After 1 day of googling, I realized that the tutorials failed to mention we must set read and execute permissions for the entire path, not just the folder we are serving. So recursively chmod 755 for all directories in your path to static files and chmod 644 for files that you are serving.
+
+#### 3. Set up Client <-> nginx <-> uwsgi <-> Django
+While nginx can serve static files without any python/django involvement, we do want our applications to handle more complex requests from clients (such as a request for data from DB). This is where nginx need to pass request upstream to django via a Web Server Gateway Interface (wsgi), the standard which any python application talks to web servers.
+```
+uwsgi --socket :8001 --wsgi-file test.py
+```
+The above command sets up a webport socket, but the tutorial recommends using unix socket instead. So change the upstream django in "mysite_nginx.conf" to:
+```
+server unix:///path/to/mysite/mysite.sock;
+# server 127.0.0.1:8001; # Comment this out when using unix socket
+```
+Test the interface with:
+```
+uwsgi --socket mysite.sock --wsgi-file test.py --chmod-socket=666
+```
+The socket permission is important.
+
+If the above works, you can run the complete stack with:
+```
+uwsgi --socket mysite.sock --module mysite.wsgi --chmod-socket=666
+```
+Of course I would recommend creating a mysite_uwsgi.ini instead of typing out the whole command above, but now you have a working stack:
+```
+Client <-> nginx <-> uwsgi <-> Django
+```
+
 ### 05/03/17 - Syntax highlighting in Markdown
 
 I read Danqi's submission again and realised it was syntax-highlighted. I don't know why I didn't find this out earlier.
