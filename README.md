@@ -1,5 +1,14 @@
 # Today-I-learnt
 
+### 15/04/17 - Pretty Print JSON on command line 
+
+TIL how to pretty print JSON on command line using the `jq` library. 
+```
+cat file.json | jq '' > prettyfile.json
+```
+
+Alternatively, you can also use [JSON Lint](http://jsonlint.com)
+
 ### 15/04/17 - Setting up Nginx, uwsgi, Django
 
 I have played with the Django basic tutorials for quite some time, but the thing I really dislike about basic "Getting Started" tutorials is the lack of transition guide from development to production environment. So I decided to figure out how exactly we can serve a Django app on a full-fledged web server like Nginx.
