@@ -1,5 +1,13 @@
 # Today-I-learnt
 
+### 03/06/17 - Find latest file and timing command line
+
+To find in a folder the file created the latest: 
+
+```
+ls -Artls | tail -n 1
+```
+
 ### 15/04/17 - Pretty Print JSON on command line 
 
 TIL how to pretty print JSON on command line using the `jq` library. 
