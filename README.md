@@ -1,5 +1,11 @@
 # Today-I-learnt
 
+### 03/06/17 - Bash file manipulation
+
+If you want to cut out the first column of a `csv` file, or any file with a delimited for that matter `cat filename.csv | cut -d ',' -f1`. Putting `f1` cuts the first column, `f2` cuts out the second column and so forth. 
+
+Say you want to split a huge file into smaller chunks of n lines each: `split -l n filename.txt`
+
 ### 03/06/17 - Find latest file and timing command line
 
 To find in a folder the file created the latest: 
