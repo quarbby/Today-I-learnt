@@ -1,5 +1,18 @@
 # Today-I-learnt
 
+### 22/06/17 - Seq2Seq Tensorflow Meetupsg
+
+So we went to Tensorflow MeetupSG held at Google Singapore. Pretty tired so i'll just post some links here 
+* Sam Witteveen [Twitter](https://twitter.com/sam_witteveen?lang=en) spoke on Seq2Seq. Here's [his Github](https://github.com/samwit/TensorFlowTalks) on these talks for some of the notebooks used
+* [Tensorflow Playground](http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.88062&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false) could potentially be useful for creating visualisations and outputs that you don't really know about, but are mostly a bunch of magic neural networks
+* Matin Andrews from Red Cat Labs spoke about Captioning. [Here](https://github.com/mdda/deep-learning-workshop) are a bunch of his deep-learning workshops notebooks. 
+* This is Red Cat Labs [Convolution demo](http://redcatlabs.com/2017-03-20_TFandDL_IntroToCNNs/CNN-demo.html#/)
+* Flikr30K Feat(Image) was used to featureize all the images using InceptionV3
+* The latest deep learning thing is called [Attention is all you need networks](https://arxiv.org/abs/1706.03762). Yes seriously, I need attention. 
+* Martin Andrews also spoke about [Named Entity Recognitions](http://redcatlabs.com/2015-08-27_GTC-SA-2015-Poster/) from GPUs
+
+* Random side link: [A Brief History of CNNs in Image Segmentation](https://blog.athelas.com/a-brief-history-of-cnns-in-image-segmentation-from-r-cnn-to-mask-r-cnn-34ea83205de4)
+
 ### 03/06/17 - Bash file manipulation
 
 If you want to cut out the first column of a `csv` file, or any file with a delimited for that matter `cat filename.csv | cut -d ',' -f1`. Putting `f1` cuts the first column, `f2` cuts out the second column and so forth. 
