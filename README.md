@@ -1,5 +1,12 @@
 # Today-I-learnt
 
+### 24/06/17 - Neural Networks Reading
+
+Just some links for later reading
+* [Stanford University Deep Learning Course](https://web.stanford.edu/class/cs20si/syllabus.html?utm_campaign=Artificial%2BIntelligence%2BWeekly&utm_medium=email&utm_source=Artificial_Intelligence_Weekly_62)
+* [Convolutional Methods for Text](https://medium.com/@TalPerry/convolutional-methods-for-text-d5260fd5675f?ref=aiweekly)
+* [Picasso: A free Visualiser for CNN](https://medium.com/merantix/picasso-a-free-open-source-visualizer-for-cnns-d8ed3a35cfc5)
+
 ### 23/06/17 - Sendmail with HTML formatting
 
 TIL we can use the Linux `sendmail` command and attach a .txt file with HTML formatting. Just add the following on the top of the .txt file 
