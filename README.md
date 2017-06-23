@@ -8,7 +8,7 @@ Mime-Version:1.0
 Content-Type: text/html
 ```
 
-So you can now use html formatting such as <em> <br> <b> and so forth. You can even do inline styles like `<h3 style="color: #1c70db;">NOW $159</h3>`. Cool stuff. 
+So you can now use html formatting like `<em> <br> <b>`. You can even do inline styles like `<h3 style="color: #1c70db;">NOW $159</h3>`. Cool stuff. 
 
 ### 22/06/17 - Seq2Seq Tensorflow Meetupsg
 
