@@ -1,5 +1,15 @@
 # Today-I-learnt
 
+### 23/06/17 - Sendmail with HTML formatting
+
+TIL we can use the Linux `sendmail` command and attach a .txt file with HTML formatting. Just add the following on the top of the .txt file 
+```
+Mime-Version:1.0
+Content-Type: text/html
+```
+
+So you can now use html formatting such as <em> <br> <b> and so forth. You can even do inline styles like `<h3 style="color: #1c70db;">NOW $159</h3>`. Cool stuff. 
+
 ### 22/06/17 - Seq2Seq Tensorflow Meetupsg
 
 So we went to Tensorflow MeetupSG held at Google Singapore. Pretty tired so i'll just post some links here 
