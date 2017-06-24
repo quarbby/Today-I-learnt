@@ -1,5 +1,9 @@
 # Today-I-learnt
 
+### 24/06/17 - Concatenate smaller text files 
+
+To concatenate smaller text files into one huge big text file, use `ls *.txt | xargs -L 1 cat >> input.txt`
+
 ### 24/06/17 - Neural Networks Reading
 
 Just some links for later reading
