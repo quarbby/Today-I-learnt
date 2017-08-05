@@ -1,5 +1,14 @@
 # Today-I-learnt
 
+### 05/08/17 - Visual Studio Code Switch between Terminal and Editor
+
+The great thing about Visual Studio Code is how everything is keyboard defined and your fingers don't have to leave the vicinity of the keyboard. But when you want to switch within the Integrated Terminal and Editor, you have to add the following keybindings into your user preferences keybindings json. 
+
+```
+{ "key": "ctrl+`", "command": "workbench.action.terminal.focus"},
+{ "key": "ctrl+`", "command": "workbench.action.focusActiveEditorGroup", "when": "terminalFocus"}
+```
+
 ### 24/06/17 - Concatenate smaller text files 
 
 To concatenate smaller text files into one huge big text file, use `ls *.txt | xargs -L 1 cat >> input.txt`
