@@ -1,5 +1,9 @@
 # Today-I-learnt
 
+### 10/08/17 - Batch rename .png to .jpg files with Bash
+
+`for i in *.png; do mv $i $Pi%%.png}.jpg; done`
+
 ### 05/08/17 - Visual Studio Code Switch between Terminal and Editor
 
 The great thing about Visual Studio Code is how everything is keyboard defined and your fingers don't have to leave the vicinity of the keyboard. But when you want to switch within the Integrated Terminal and Editor, you have to add the following keybindings into your user preferences keybindings json. 
