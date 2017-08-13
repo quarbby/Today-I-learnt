@@ -1,5 +1,9 @@
 # Today-I-learnt
 
+### 13/08/17 - Recursively download files in a directory
+
+`wget -r --no-parent http://donhopkins.com/home/TheSimsDesignDocuments/`
+
 ### 10/08/17 - Batch rename .png to .jpg files with Bash
 
 `for i in *.png; do mv $i $Pi%%.png}.jpg; done`
