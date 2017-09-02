@@ -1,5 +1,9 @@
 # Today-I-learnt
 
+### 02/09/17 - The Mathematics of Machine Learning
+
+Perhaps its time to get a little into the heart of machine learning [From the IBM Blog](http://datascience.ibm.com/blog/the-mathematics-of-machine-learning/)
+
 ### 13/08/17 - Recursively download files in a directory
 
 `wget -r --no-parent http://donhopkins.com/home/TheSimsDesignDocuments/`
