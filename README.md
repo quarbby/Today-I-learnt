@@ -1,5 +1,30 @@
 # Today-I-learnt
 
+### 01/10/17 - Pandas Dataframe from Json
+
+You can create a dataframe from a JSON object with the fields you want. 
+
+Say you have a JSON object in which the data is an array of JSON objects within `hits` like follows: 
+```
+{
+    "hits": [
+        {
+            "created_at": "2017-09-29T13:30:21.000Z",
+            "title": "SCION: A Secure Internet Architecture [pdf]",
+            "url": "https://www.scion-architecture.net/pdf/SCION-book.pdf",
+            "author": "cimnine",
+            "points": 1,
+            "story_text": null,
+...
+```
+
+Easily create a pandas dataframe with the fields you want: 
+```
+df = DataFrame()
+requested_keys = ["title", "author", "url"]
+data = DataFrame(data["hits"])[requested_keys]
+```
+
 ### 02/09/17 - The Mathematics of Machine Learning
 
 Perhaps its time to get a little into the heart of machine learning [From the IBM Blog](http://datascience.ibm.com/blog/the-mathematics-of-machine-learning/)
