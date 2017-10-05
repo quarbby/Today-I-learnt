@@ -1,5 +1,9 @@
 # Today-I-learnt
 
+### 05/10/17 - Positive Integer Solutions
+
+[I can't solve this. Read it](https://www.quora.com/How-do-you-find-the-positive-integer-solutions-to-frac-x-y%2Bz-%2B-frac-y-z%2Bx-%2B-frac-z-x%2By-4/answer/Alon-Amit)
+
 ### 01/10/17 - Pandas Dataframe from Json
 
 You can create a dataframe from a JSON object with the fields you want. 
