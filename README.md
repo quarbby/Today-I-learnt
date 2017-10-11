@@ -1,5 +1,9 @@
 # Today-I-learnt
 
+### 11/10/17 - Node.JS 'Error: SSL Error: SELF_SIGNED_CERT_IN_CHAIN'
+
+Sometimes when you do an `npm install` you encounter a SELF_SIGNED_CERT error, especially if you're behind a firewall or proxy. Here's the trick: `npm config set strict-ssl false`
+
 ### 05/10/17 - Positive Integer Solutions
 
 [I can't solve this. Read it](https://www.quora.com/How-do-you-find-the-positive-integer-solutions-to-frac-x-y%2Bz-%2B-frac-y-z%2Bx-%2B-frac-z-x%2By-4/answer/Alon-Amit)
