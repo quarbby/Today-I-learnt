@@ -1,5 +1,12 @@
 # Today-I-learnt
 
+### 24/10/17 - \[UNIX\] Saving a directory for later
+
+```
+pushd . # this will save the current directory into a stack, for easier restoration
+popd # pops the top directory out of the same stack, restores you back into that directory
+```
+
 ### 11/10/17 - Node.JS 'Error: SSL Error: SELF_SIGNED_CERT_IN_CHAIN'
 
 Sometimes when you do an `npm install` you encounter a SELF_SIGNED_CERT error, especially if you're behind a firewall or proxy. Here's the trick: `npm config set strict-ssl false`
