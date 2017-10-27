@@ -3,10 +3,9 @@
 ### 27/10/17 - Disable Web Security for Chrome 
 
 This allows you to read local files 
-On a mac:
-```
-open -a Google\ Chrome --args --disable-web-security --user-data-dir
-```
+
+On a mac: `open -a Google\ Chrome --args --disable-web-security --user-data-dir`
+On windows: `chrome.exe --disable-web-security`
 
 ### 24/10/17 - \[UNIX\] Saving a directory for later
 
