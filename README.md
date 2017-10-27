@@ -1,5 +1,13 @@
 # Today-I-learnt
 
+### 27/10/17 - Disable Web Security for Chrome 
+
+This allows you to read local files 
+On a mac:
+```
+open -a Google\ Chrome --args --disable-web-security --user-data-dir
+```
+
 ### 24/10/17 - \[UNIX\] Saving a directory for later
 
 ```
