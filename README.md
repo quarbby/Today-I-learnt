@@ -42,6 +42,8 @@ Problem: I have a (Bootstrap) table and the column widths change depend on the s
 
 Solution: [`table-layout: fixed`](https://css-tricks.com/fixing-tables-long-strings/)
 
+Also: `white-space: nowrap`? `text-overflow: ellipsis`? Holy cow I may actually like being a frontend guy now.
+
 Outcome: Will try soon.
 
 Note to self: add other notes on modern CSS goodies (flexbox and grid layout, and to think the latter was only official in March 2017!)
