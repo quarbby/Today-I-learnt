@@ -1,5 +1,51 @@
 # Today-I-learnt
 
+### 01/11/17 - Unicode and friends
+
+Problem: encoding and decoding produces different results on different machines (with different OSes). Analysis of the binary representations of certain fields show that there was a "pointer" error, i.e. the start index (for say, four bytes for an int) was incorrect.
+
+Initial suspicions: must be a decoding problem, because encodings are variable-width, i.e. sometimes more than one byte. As I thought about it I became increasingly convinced, because at some point the program expects a binary input that is converted into characters. What could go wrong?
+
+Let's say the binary input is all ASCII-compliant.
+
+```
+0XXXXXX 0XXXXXXX 0XXXXXXX
+```
+
+Then the converted characters will be nice, universally recognisable ASCII characters that can be decoded back into binary by my program.
+
+However, it's ridiculous to expect the binary input to be ASCII-compliant. Who knows what the format is like? What if the input is:
+
+```
+1110XXXX 10XXXXXX 10XXXXXX
+```
+
+Ouch. That's actually **one** character in UTF-8, and three characters in ISO-8859-1 or other funky encodings.
+
+So the sender must encode the binary input into a string using Encoding 1, let the communications transmit the string, and the receiver must decode the encoded string using the same Encoding 1. What could go wrong? *Everything*.
+
+As long as the data is still encoded in Encoding 1, everything that touches the data needs use Encoding 1 for operations. That's hard to guarantee.
+
+To make matters worse, there are binary sequences which are **invalid** sequences in UTF-8 and other encodings. How they are handled depends on the implementation of whatever's handling it...
+
+Solution: I still haven't found the bug, I've only guessed. But it would be interesting to find out where exactly the encoding/decoding screwed up, and this may also explain why "the messages received in the current system have problems": maybe the decoding has been wrong all this while!
+
+If you're lucky enough to be in this situation, please read [this](https://en.wikipedia.org/wiki/Binary-to-text_encoding) and just use Base-64.
+
+Outcome: Will try soon.
+
+Note to self: if the decoding is wrong, the corrupted input may still be recoverable by guessing the encoding. However this is assuming that Implementations X and Y didn't drop invalid code sequences along the way! #undefinedbehaviour
+
+### 01/11/17 - `table-layout`
+
+Problem: I have a (Bootstrap) table and the column widths change depend on the screen size. I want to lock the widths of certain columns.
+
+Solution: [`table-layout: fixed`](https://css-tricks.com/fixing-tables-long-strings/)
+
+Outcome: Will try soon.
+
+Note to self: add other notes on modern CSS goodies (flexbox and grid layout, and to think the latter was only official in March 2017!)
+
 ### 27/10/17 - Disable Web Security for Chrome 
 
 This allows you to read local files 
