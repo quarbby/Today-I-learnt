@@ -1,5 +1,11 @@
 # Today-I-learnt
 
+### 11/11/17 - Python Graph Gallery
+
+[Python Graph Gallery](https://python-graph-gallery.com/?imm_mid=0f7469&cmp=em-data-na-na-newsltr_20171018)
+
+Brilliant collection of graphs that you can make with Seaborn, useful for front end visualisations. Gives you the input and output formats too. 
+
 ### 04/11/17 - Debugging the front end web 
 
 Useful debugging tools: 
