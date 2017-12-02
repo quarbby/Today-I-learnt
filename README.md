@@ -1,5 +1,9 @@
 # Today-I-learnt
 
+### 02/12/17 - Remove ip addresses tagged to an ethernet interface 
+
+Remove all ip addresses tagged to `eth0`: `ip addr flush dev eth0`
+
 ### 11/11/17 - Python Graph Gallery
 
 [Python Graph Gallery](https://python-graph-gallery.com/?imm_mid=0f7469&cmp=em-data-na-na-newsltr_20171018)
