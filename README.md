@@ -1,5 +1,9 @@
 # Today-I-learnt
 
+### 04/12/17 - Memory in Linux
+
+[Help! Linux ate my RAM!](https://www.linuxatemyram.com/)
+
 ### 02/12/17 - Remove ip addresses tagged to an ethernet interface 
 
 Remove all ip addresses tagged to `eth0`: `ip addr flush dev eth0`
