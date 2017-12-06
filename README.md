@@ -1,5 +1,22 @@
 # Today-I-learnt
 
+### 06/12/17 - Calling subdirectories as modules in python
+
+Say you have a file `mainfile.py` and a subdirectory with a python module `subdir/subfile.py`. Add an `__init__.py` in the subdirectory to call functions in `subfile.py`. The directory structure looks as such: 
+-mainfile.py
+|_ subdir
+  - subfile.py
+  - __init__.py
+  
+To call a function in `subfile.py`, do: 
+```
+In mainfile.py
+
+from subdir import subfile
+
+subfile.function()
+```
+
 ### 04/12/17 - Memory in Linux
 
 [Help! Linux ate my RAM!](https://www.linuxatemyram.com/)
