@@ -1,5 +1,25 @@
 # Today-I-learnt
 
+### 07/12/17 - Python string matching with list 
+
+This uses python. Say you have a list of strings `a = ['hello', 'world']` and a string `str = 'hello world'`. The problem is you want to find whether any strings in `a` appear in `str`. 
+
+If you just want a `True` or `False` boolean, do: `if any(x in str for x in a):`
+
+If you want the first match (with False as a default), do: `match = next((x for x in a if x in str), False)`
+
+If you want to get all matches (including duplicates), do: `matches = [x for x in a if x in str]`
+
+If you want to get all non-duplicate matches (disregarding order), do: `matches = {x for x in a if x in str}`
+
+If you want to get all non-duplicate matches in the right order:
+```
+matches = []
+for x in a:
+    if x in str and x not in matches:
+        matches.append(x)
+```
+
 ### 06/12/17 - Calling subdirectories as modules in python
 
 Say you have a file `mainfile.py` and a subdirectory with a python module `subdir/subfile.py`. Add an `__init__.py` in the subdirectory to call functions in `subfile.py`. The directory structure looks as such: 
