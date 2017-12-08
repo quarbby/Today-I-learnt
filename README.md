@@ -1,5 +1,11 @@
 # Today-I-learnt
 
+### 08/12/17 - Cleaning up Git branches
+
+Recently I've had success in using feature branches for development, but `git checkout [tab autocomplete]` shows a lot of old branches that have already been deleted.
+
+If they've been cleaned up on `remote` and local, you can remove them with `git remote prune origin`.
+
 ### 07/12/17 - Python string matching with list 
 
 This uses python. Say you have a list of strings `a = ['hello', 'world']` and a string `str = 'hello world'`. The problem is you want to find whether any strings in `a` appear in `str`. 
