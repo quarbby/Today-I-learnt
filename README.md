@@ -1,5 +1,18 @@
 # Today-I-learnt
 
+### 09/12/17 - Regex
+
+I've never actually had a good time with Regex.
+
+\w matches alphanumeric characters, which means a-z, A-Z, and 0-9. It also matches the underscore, _, and the dash, -.
+\d matches digits, which means 0-9.
+\s matches whitespace characters, which include the tab, new line, carriage return, and space characters.
+\S matches non-whitespace characters.
+. matches any character except the new line character \n.
++ matches more than 1 character
+
+[Here's More](https://www.dataquest.io/blog/regular-expressions-data-scientists/?imm_mid=0f9342&cmp=em-data-na-na-newsltr_20171206)
+
 ### 08/12/17 - Cleaning up Git branches
 
 Recently I've had success in using feature branches for development, but `git checkout [tab autocomplete]` shows a lot of old branches that have already been deleted.
@@ -630,6 +643,4 @@ Addendum: raw Markdown shows that it's steps 0 to 6. Step 6 was meant to be step
 ### 29/12/16 - SSH without password in GNOME terminal
 
 If you have put your public key into the server, yet when you try to ssh from a GNOME terminal (i.e. CentOS6) and it doesn't work, add `SSH_AUTH_SOCK=0` before the ssh command. So type `SSH_AUTH_SOCK=0 ssh admin@<IPADDRESS>`. THat should get you in without password
-
-### 24/12/16 - More tar
 
