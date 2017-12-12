@@ -1,5 +1,33 @@
 # Today-I-learnt
 
+### 12/12/17 - Sorting a Hashmap in Java
+
+I never actually learnt how to sort a hashmap in Java.
+
+```
+Map<String, Integer> unsortedMap = new HashMap<String, Integer>();
+
+// Add items to unsortedMap here
+
+// Convert unsorted map to a linked list 
+List<Map.Entry<String, Integer>> unsortedList = new LinkedList<Map.Entry<String, Integer>>(unsortedMap.entrySet());
+
+// Sort the linked list in reverse order of values
+Collections.sort(unsortedList, new Comparator<Map.Entry<String, Integer>>(){
+
+	@Override
+	public int compare(Entry<String, Integer>o1, Entry<String, Integer> o2){
+		return (o1.getValue()).compareTo(o2.getValue());
+	}
+}.reversed());
+
+// Put the sorted list back into a linked hashmap
+Map<String, Integer> sortedMap = new LinkedHashMap<String, Integer>();
+for (Map.Entry<String, Integer> entry: unsortedList) {
+	sortedMap.put(entry.getKey(), entry.getValue());
+}
+```
+
 ### 09/12/17 - Regex
 
 I've never actually had a good time with Regex.
