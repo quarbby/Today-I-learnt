@@ -1,5 +1,10 @@
 # Today-I-learnt
 
+### 17/12/17 - Removing all files in .gitignore
+
+Say you commit some code, and then wrote a gitignore file. That means some files in the previous commit should be removed from the git indexed and ignore. Just run this command and you'll be fine
+`git rm -r --cached . `
+
 ### 17/12/17 - Assigning emojis as variables in Swift
 
 I learnt that you can assign emojis to variables in Swift. Check out the below code block! However, not all emojis work as Swift identifiers. [Here's a list of what works](https://stackoverflow.com/questions/39188733/which-emoji-characters-work-as-swift-identifiers)
