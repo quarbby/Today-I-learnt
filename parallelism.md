@@ -39,10 +39,10 @@ techniques, i.e. you can have superscalar processing without pipelining.
 
 Level           | Software               | One processor                | Multiple processors
 ---             | ---                    | ---                          | ---
-Instruction     | VLIW                   | Pipelining, VLIW, Superscalar| N/A
+Instruction     | VLIW                   | Pipelining, VLIW, Superscalar| Impractical
 Thread          | Concurrency primitives | Multithreading (f/c/s)*      | Multiprocessing
 Process         | Kernel scheduler       | Multithreading (f/c/s)*      | Multiprocessing
-Data            | VLIW, Vector           | Vector                       | ???
+Data            | VLIW, Vector           | Vector                       | Hadoop???
 
 *(f/c/s) means (fine/coarse/simultaneous). Fine/coarse multithreading
 runs only one thread at any one time; the "parallelism" arises from
