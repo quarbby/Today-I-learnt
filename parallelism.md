@@ -19,7 +19,7 @@ Computation model:
 - Process has multiple threads
 - Session has multiple processes
 
-Hardware variables:
+Variables:
 - Length of processing pipe (i.e. number of execution stages)
    - Exploit using pipelining
 - Width of processing pipe (i.e. number of simultaneous instructions,
