@@ -28,8 +28,8 @@ amount of data per instruction)
      increase number of simultaneous different instructions (VLIW), or
      increase amount of data per instruction (vector)
 - Throughput of processing pipe
-   - Reduce idleness when blocking/waiting by switch in other threads or
-     processes (multithreading)
+   - Reduce idleness when blocking/waiting by switching in other threads
+     or processes (multithreading)
 - Number of processing pipes (i.e. number of processors)
    - Increase number of processors (multiprocessing)
 
