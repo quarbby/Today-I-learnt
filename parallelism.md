@@ -70,5 +70,5 @@ simultaneously.
 
 ### "Hyperthreading"
 
-## Multiprocessors
+## Multiprocessing
 
