@@ -3,6 +3,10 @@
 Some notes on parallelism (parallel architectures) as my Computer
 Architecture has become really rusty.
 
+Disclaimer: these are adapted from the [Parallel Architectures](https://www.inf.ed.ac.uk/teaching/courses/pa/slides.html)
+course at the University of Edinburgh (because Cambridge has denied me
+access) and paraphrased with my own words.
+
 ## Overview
 
 Instead of asking how can I make my processing faster, ask how can I
