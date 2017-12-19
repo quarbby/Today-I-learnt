@@ -30,7 +30,6 @@ Execution stage | N/A                    | Pipelining                   | N/A
 Instruction     | VLIW                   | VLIW, Superscalar processing | N/A
 Thread          | Concurrency primitives | Multithreading (f/c/s)*      | Multiprocessing
 Process         | Kernel scheduler       | Multithreading (f/c/s)*      | Multiprocessing
----             | ---                    | ---                          | ---
 Data            | VLIW, Vector           | Vector                       | ???
 
 *(f/c/s) means (fine/coarse/simultaneous). Fine/coarse multithreading
