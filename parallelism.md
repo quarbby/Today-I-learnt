@@ -20,10 +20,14 @@ Hardware variables:
    - Exploit using pipelining
 - Width of processing pipe (i.e. number of simultaneous instructions,
 amount of data per instruction)
-   - Increase number of simultaneous instructions (superscalar), or
+   - Increase number of simultaneous same instructions (superscalar),
+     increase number of simultaneous different instructions (VLIW), or
      increase amount of data per instruction (vector)
+- Throughput of processing pipe
+   - Reduce idleness when blocking/waiting by switch in other threads or
+     processes (multithreading)
 - Number of processing pipes (i.e. number of processors)
-   - Increase number of processors
+   - Increase number of processors (multiprocessing)
 
 The techniques in each cell can be implemented independently of other
 techniques, i.e. you can have superscalar processing without pipelining.
