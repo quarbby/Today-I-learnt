@@ -30,7 +30,7 @@ amount of data per instruction)
 - Throughput of processing pipe
    - Reduce idleness when blocking/waiting by switching in other threads
      or processes (multithreading)
-- Number of processing pipes (i.e. number of processors)
+- Number of processing pipes
    - Increase number of processors (multiprocessing)
 
 The techniques in each cell can be implemented independently of other
