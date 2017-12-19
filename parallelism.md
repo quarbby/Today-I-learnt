@@ -34,7 +34,7 @@ Process         | Kernel scheduler       | Multithreading (f/c/s)*      | Multip
 Data            | VLIW, Vector           | Vector                       | ???
 
 *(f/c/s) means (fine/coarse/simultaneous). Fine/coarse multithreading
-runs only one thread at any one time; the parallelism arises from
+runs only one thread at any one time; the "parallelism" arises from
 switching to another thread when the previous thread executes a
 high-latency instruction, thus increasing utilisation. The difference
 between fine and coarse is how often the switching is performed; for
@@ -43,7 +43,7 @@ is executed.
 
 Simultaneous multithreading requires a superscalar processor and can be
 truly parallel in the sense that if the width of the processor pipe is
-large enough (e.g. four instructions), then it can theoretically fetch
+large enough (e.g. four instructions), it can theoretically fetch
 one instruction each from four different threads and execute them
 simultaneously.
 
