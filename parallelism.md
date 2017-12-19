@@ -17,13 +17,13 @@ Programming model:
 
 Hardware variables:
 - Length of processor pipe (i.e. number of execution stages)
- - Exploit using pipelining
+   - Exploit using pipelining
 - Width of processor pipe (i.e. number of simultaneous instructions,
 amount of data per instruction)
- - Increase number of simultaneous instructions (superscalar), or
-   increase amount of data per instruction (vector)
+   - Increase number of simultaneous instructions (superscalar), or
+     increase amount of data per instruction (vector)
 - Number of processor pipes (i.e. number of processors)
- - Increase number of processors
+   - Increase number of processors
 
 The techniques in each cell can be implemented independently of other
 techniques, i.e. you can have superscalar processing without pipelining.
