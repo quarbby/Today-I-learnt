@@ -12,7 +12,7 @@ access) and paraphrased with my own words.
 Instead of asking how can I make my processing faster, ask how can I
 fully utilise all my processing resources?
 
-Programming model:
+Computation model:
 - Execution stage (fetch, decode, execute, write back)
 - Processor instruction (load, store, add, etc.) has multiple stages
 - Thread has multiple instructions
