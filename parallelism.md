@@ -54,17 +54,11 @@ simultaneously.
 
 ## Pipelining
 
+## VLIW
+
 ## Superscalar
 
-## Instruction-level parallelism
-
-## Thread-level parallelism
-
-## Data parallelism
-
-## Transaction-level parallelism
-
-## Multiprocessors
+## Vector
 
 ## Multithreading
 
@@ -75,3 +69,6 @@ simultaneously.
 ### Simultaneous multithreading
 
 ### "Hyperthreading"
+
+## Multiprocessors
+
