@@ -13,7 +13,7 @@ Instead of asking how can I make my processing faster, ask how can I
 fully utilise all my processing resources?
 
 Computation model:
-- Execution stage (fetch, decode, execute, write back)
+- Stage (fetch, decode, execute, write back)
 - Processor instruction (load, store, add, etc.) has multiple stages
 - Thread has multiple instructions
 - Process has multiple threads
@@ -21,7 +21,8 @@ Computation model:
 
 Variables:
 - Length of processing pipe (i.e. number of execution stages)
-   - Exploit using pipelining
+   - Increase number of instructions in the pipe (not at equal stages
+     of execution) using pipelining
 - Width of processing pipe (i.e. number of simultaneous instructions,
 amount of data per instruction)
    - Increase number of simultaneous same instructions (superscalar),
@@ -38,8 +39,7 @@ techniques, i.e. you can have superscalar processing without pipelining.
 
 Level           | Software               | One processor                | Multiple processors
 ---             | ---                    | ---                          | ---
-Execution stage | N/A                    | Pipelining                   | N/A
-Instruction     | VLIW                   | VLIW, Superscalar            | N/A
+Instruction     | VLIW                   | Pipelining, VLIW, Superscalar| N/A
 Thread          | Concurrency primitives | Multithreading (f/c/s)*      | Multiprocessing
 Process         | Kernel scheduler       | Multithreading (f/c/s)*      | Multiprocessing
 Data            | VLIW, Vector           | Vector                       | ???
