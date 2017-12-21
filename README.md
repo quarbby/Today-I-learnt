@@ -1,5 +1,13 @@
 # Today-I-learnt
 
+### 21/12/17 - Looking up past commands in Git Bash
+
+Holidays are apparently bad for work productivity. I learnt this upon coming back yesterday and realizing that I had forgotten how to commit to the Git server's dev branch. Silly Ryan.
+
+If you need to revisit old commands on Git Bash, all you need to type is 'history'. This will return the list of commands that you have keyed into the console over time (limited to 500 entries by default).
+
+If line-by-line archaeology is not your thing, there's always the Ctrl-R shortcut which triggers reverse search. Just type in the opening words of the command you're interested in (assuming you can remember that much) to have it appear in the console again. However, note that commands which have been keyed in later will appear before those which were added earlier, hence the name 'reverse search'.  
+
 ### 17/12/17 - Removing all files in .gitignore
 
 Say you commit some code, and then wrote a gitignore file. That means some files in the previous commit should be removed from the git indexed and ignore. Just run this command and you'll be fine
