@@ -76,7 +76,44 @@ simultaneously.
 
 ### Simultaneous multithreading
 
-### "Hyperthreading"
+### Hyperthreading
+
+Hyperthreading is Intel's implementation of simultaneous multithreading.
+That's it: they are conceptually the same. Each physical Intel processor
+appears as two logical processors ("width of pipe" is two? Anyway it's
+superscalar), but under the hood they share the same resources.
+
+So how does hyperthreading work? Consider a system with one physical
+processor with hyperthreading (i.e. two logical processors). The OS
+(which needs to support hyperthreading, by the way) doesn't know what's
+happening underneath; when it schedules two threads, it could schedule
+a thread to each logical processor.
+
+Then what really happens is simple SMT at work: the single physical
+processor consumes two instructions at each cycle (because it's
+superscalar). If one thread is blocked because of a long instruction,
+then the physical processor can consume two instructions from the other
+thread. The point is, the pipe is big and hyperthreading tries to fill
+idle bubbles (a legit term) in the pipeline.
+
+Hyperthreading is a marketing term. And hyperthreading doesn't scale,
+for obvious reasons: a hyperthreaded physical core is not the same as
+two physical cores. After all, the logical processors share the same
+physical resources, and there will be benefit (read: reduced idleness)
+only if the instructions in two threads cause bubbles.
+
+The OS needs to support hyperthreading, otherwise it may result in
+degraded performance. Consider a system with two physical cores with
+hyperthreading. That's four logical cores. If the OS didn't know
+better (why should it?) and schedules two threads to run on two logical
+processors that actually belong to the same physical processor, there
+will be one completely idle physical processor and one overworked
+physical processor.
+
+What about AMD? AMD's first line of processors that will have SMT is the
+Zen series of processors, which is released in 2017. Apparently AMD
+received flak for dishonest marketing with "cores" and "modules" in
+their previous Bulldozer line.
 
 ## Multiprocessing
 
