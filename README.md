@@ -1,5 +1,12 @@
 # Today I Learnt 2018
 
+### 29/01/18 - Ethernet cables
+
+Cat 5: 100 Mbps (100 metres)
+Cat 5e: 1 Gbps (100 metres)
+Cat 6: 1 Gbps (100 metres), 10 Gbps (55 metres)
+Cat 6a: 10 Gbps (100 metres)
+
 ### 29/01/18 - Gateways on private networks
 
 If you're setting up a private network (e.g. `192.168.0.0/16`), you
