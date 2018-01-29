@@ -1,5 +1,39 @@
 # Today I Learnt 2018
 
+### 29/01/18 - $PS1 generator
+
+You can generate your own `$PS1` (aka custom bash prompt)
+[here](http://bashrcgenerator.com/).
+
+For reference, here's mine:
+
+```
+PS1="\[$(tput bold)\]\[\033[38;5;10m\]\u@\h\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\] [\$?] \[$(tput sg    r0)\]\[\033[38;5;11m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]\n\\$ \[$(tput sgr0)\]"˧
+```
+
+Who knew a two-line `$PS1` would be so useful? It also contains the
+exit status of the previous command.
+
+### 29/01/18 - Dotfiles
+
+Way overdue update as I was learning this while setting up my new
+ThinkPad. The venerable ArchWiki has a handy [table](https://wiki.archlinux.org/index.php/Bash#Configuration_files), but I'll make it simpler (for limited use cases only). Here's how I
+configure my Thinkpad.
+
+- `~/.profile`: exports environment variables.
+- `~/.bashrc`: sets color prompts, `$PS1`, exports aliases and functions
+- `~/.xsessionrc`: loads `.profile` and sets X session stuff (DPI, terminal colors)
+- `/etc/rc.local`: writes values to `/sys/devices/...` to set mouse pointer stuff
+
+Cases:
+- login shells: loads `~/.profile` and `~/.bashrc`
+- X display manager: loads `~/.xsessionrc`, which in turn loads `~/.profile`
+- non-login shells: loads `~/.bashrc` (`~/.profile` would have already been loaded in X)
+
+This is really the simplest configuration I could come up with without
+having too many dotfiles while also covering all use cases
+(X, SSH, TTY).
+
 ### 29/01/18 - Ethernet cables
 
 Cat 5: 100 Mbps (100 metres)
