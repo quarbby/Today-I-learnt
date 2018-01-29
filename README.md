@@ -1,5 +1,84 @@
 # Today I Learnt 2018
 
+### 29/01/18 - $PS1 generator
+
+You can generate your own `$PS1` (aka custom bash prompt)
+[here](http://bashrcgenerator.com/).
+
+For reference, here's mine:
+
+```
+PS1="\[$(tput bold)\]\[\033[38;5;10m\]\u@\h\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\] [\$?] \[$(tput sg    r0)\]\[\033[38;5;11m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]\n\\$ \[$(tput sgr0)\]"˧
+```
+
+Who knew a two-line `$PS1` would be so useful? It also contains the
+exit status of the previous command.
+
+### 29/01/18 - Dotfiles
+
+Way overdue update as I was learning this while setting up my new
+ThinkPad. The venerable ArchWiki has a handy [table](https://wiki.archlinux.org/index.php/Bash#Configuration_files), but I'll make it simpler (for limited use cases only). Here's how I
+configure my ThinkPad.
+
+- `~/.profile`: exports environment variables.
+- `~/.bashrc`: sets color prompts, `$PS1`, exports aliases and functions
+- `~/.xsessionrc`: loads `.profile` and sets X session stuff (DPI, terminal colors)
+- `/etc/rc.local`: writes values to `/sys/devices/...` to set mouse pointer stuff
+
+Cases:
+- login shells: loads `~/.profile` and `~/.bashrc`
+- X display manager: loads `~/.xsessionrc`, which in turn loads `~/.profile`
+- non-login shells: loads `~/.bashrc` (`~/.profile` would have already been loaded in X)
+
+This is really the simplest configuration I could come up with without
+having too many dotfiles while also covering all use cases
+(X, SSH, TTY).
+
+### 29/01/18 - Ethernet cables
+
+- Cat 5: 100 Mbps (100 metres)
+- Cat 5e: 1 Gbps (100 metres)
+- Cat 6: 1 Gbps (100 metres), 10 Gbps (55 metres)
+- Cat 6a: 10 Gbps (100 metres)
+
+### 29/01/18 - Gateways on private networks
+
+If you're setting up a private network (e.g. `192.168.0.0/16`), you
+don't need a gateway *unless* you need to access a network on another
+subnet. This means that you don't need to set a gateway in your network
+settings.
+
+### 29/01/18 - Reverting a revert in GitLab
+
+Situation: you've accidentally merged a merge request in GitLab. Then
+you click `Revert`. However, when you try to create a new merge request
+for the branch to be merged (call it `feature`), you find that there are
+no changes between `feature` and the target branch (call it `dev`).
+
+What happened: when you clicked `Revert`, GitLab *added* extra commits
+on top of `dev`. These commits are *undo* commits, i.e. they undo the
+changes of `feature`. This means that the `feature` tree is still a
+*sub-tree* of `dev`, so it's already *merged*.
+
+How to fix it, fast: you can run this:
+
+```
+git checkout <commit> -- <files>
+```
+
+where `<commit>` the latest commit of `dev` before the merge request
+was merged. This stages the changes to *undo the undo*; commit the
+changes and this will make `feature` a super-tree of `dev`.
+
+### 29/01/18 - Reading files in Java 8
+
+Enough with `BufferedReader`s and `FileInputStream`s; behold Streams in
+Java 8:
+
+```
+Stream<String> stream = Files.lines(Paths.get(filePath));
+```
+
 ### 23/01/18 - Checksums in Windows 
 
 To compute the checksum in windows command line without downloading extra files, use `CertUtil -hashfile C:\myFile.txt MD5`, where `myFile.txt` is the file you want to compute an MD5 sum for. 
