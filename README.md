@@ -1,5 +1,27 @@
 # Today I Learnt 2018
 
+### 29/01/18 - Reverting a revert in GitLab
+
+Situation: you've accidentally merged a merge request in GitLab. Then
+you click `Revert`. However, when you try to create a new merge request
+for the branch to be merged (call it `feature`), you find that there are
+no changes between `feature` and the target branch (call it `dev`).
+
+What happened: when you clicked `Revert`, GitLab *added* extra commits
+on top of `dev`. These commits are *undo* commits, i.e. they undo the
+changes of `feature`. This means that the `feature` tree is still a
+*sub-tree* of `dev`, so it's already `merged`.
+
+How to fix it, fast: you can run this:
+
+```
+git checkout <commit> -- <files>
+```
+
+where `<commit>` the latest commit of `dev` before the merge request
+was merged. This stages the changes to *undo the undo*; commit the
+changes and this will make `feature` a super-tree of `dev`.
+
 ### 29/01/18 - Reading files in Java 8
 
 Enough with `BufferedReader`s and `FileInputStream`s; behold Streams in
