@@ -36,10 +36,10 @@ having too many dotfiles while also covering all use cases
 
 ### 29/01/18 - Ethernet cables
 
-Cat 5: 100 Mbps (100 metres)
-Cat 5e: 1 Gbps (100 metres)
-Cat 6: 1 Gbps (100 metres), 10 Gbps (55 metres)
-Cat 6a: 10 Gbps (100 metres)
+- Cat 5: 100 Mbps (100 metres)
+- Cat 5e: 1 Gbps (100 metres)
+- Cat 6: 1 Gbps (100 metres), 10 Gbps (55 metres)
+- Cat 6a: 10 Gbps (100 metres)
 
 ### 29/01/18 - Gateways on private networks
 
@@ -58,7 +58,7 @@ no changes between `feature` and the target branch (call it `dev`).
 What happened: when you clicked `Revert`, GitLab *added* extra commits
 on top of `dev`. These commits are *undo* commits, i.e. they undo the
 changes of `feature`. This means that the `feature` tree is still a
-*sub-tree* of `dev`, so it's already `merged`.
+*sub-tree* of `dev`, so it's already *merged*.
 
 How to fix it, fast: you can run this:
 
