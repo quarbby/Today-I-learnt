@@ -18,7 +18,7 @@ exit status of the previous command.
 
 Way overdue update as I was learning this while setting up my new
 ThinkPad. The venerable ArchWiki has a handy [table](https://wiki.archlinux.org/index.php/Bash#Configuration_files), but I'll make it simpler (for limited use cases only). Here's how I
-configure my Thinkpad.
+configure my ThinkPad.
 
 - `~/.profile`: exports environment variables.
 - `~/.bashrc`: sets color prompts, `$PS1`, exports aliases and functions
