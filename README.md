@@ -1,5 +1,14 @@
 # Today I Learnt 2018
 
+### 29/01/18 - Reading files in Java 8
+
+Enough with `BufferedReader`s and `FileInputStream`s; behold Streams in
+Java 8:
+
+```
+Stream<String> stream = Files.lines(Paths.get(filePath));
+```
+
 ### 23/01/18 - Checksums in Windows 
 
 To compute the checksum in windows command line without downloading extra files, use `CertUtil -hashfile C:\myFile.txt MD5`, where `myFile.txt` is the file you want to compute an MD5 sum for. 
