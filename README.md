@@ -1,5 +1,12 @@
 # Today I Learnt 2018
 
+### 29/01/18 - Gateways on private networks
+
+If you're setting up a private network (e.g. `192.168.0.0/16`), you
+don't need a gateway *unless* you need to access a network on another
+subnet. This means that you don't need to set a gateway in your network
+settings.
+
 ### 29/01/18 - Reverting a revert in GitLab
 
 Situation: you've accidentally merged a merge request in GitLab. Then
