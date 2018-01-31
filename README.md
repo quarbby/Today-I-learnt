@@ -1,5 +1,15 @@
 # Today I Learnt 2018
 
+### 31/01/18 - tqdm. Easy to implement progress bar on the Python console
+There are times when you are just looping around doing something and wondering when it will finish. Printing dots and astericks with the ```print('*',end='')``` aint't really that cool either.
+tqdm gives the progress bar, progress count, time taken and time to finish by approximation. Kinda cool when i was processing videos of frames.
+```
+pbar = tqdm(total=100)
+for i in range(100):
+    pbar.update(1)
+pbar.close()
+```
+
 ### 29/01/18 - $PS1 generator
 
 You can generate your own `$PS1` (aka custom bash prompt)
