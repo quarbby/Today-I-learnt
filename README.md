@@ -15,7 +15,7 @@ All files in ```folder1``` have the following ownership and permissions:
 ```
 ```folder1``` was copied into its place by a non-root user using ```sudo```, similar to this:
 ```
-$ sudo cp r ~/someFolder /var/www/fileserver/folder1
+$ sudo cp -r ~/someFolder /var/www/fileserver/folder1
 ```
 This configuration works perfectly fine on Ubuntu.
 
