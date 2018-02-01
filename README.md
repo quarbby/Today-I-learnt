@@ -1,5 +1,40 @@
 # Today I Learnt 2018
 
+### 01/02/18 - NGINX on Red Hat Enterprise Linux (RHEL) 7.4
+#### Background
+NGINX installed on RHEL 7.4, configured to serve files from root directory ```/var/www/fileserver``` at ```/```.
+Ownership and permissions for the directory ```/var/www/fileserver``` looks like this:
+```
+drwxr-xr-x root root .
+drwxr-xr-x root root ..
+drwxr-xr-x root root folder1
+```
+All files in ```folder1``` have the following ownership and permissions:
+```
+-r-xr--r-- root root someFile.txt
+```
+```folder1``` was copied into its place by a non-root user using ```sudo```, similar to this:
+```
+$ sudo cp r ~/someFolder /var/www/fileserver/folder1
+```
+This configuration works perfectly fine on Ubuntu.
+
+#### The Problem
+Calling the NGINX service through a web browser at ```http://localhost/``` shows the file index, but all
+child directories and files (i.e., ```folder1``` itself and any other directories and files in it) are not accessible (i.e., HTTP 403).
+
+#### The Solution
+Run the following command:
+```
+$ sudo restorecon -r /var/www/fileserver
+```
+
+#### Explanation
+Something to do with SELinux. The command ```restorecon``` "restores the SELinux context".
+
+#### Moral of the Story
+RHEL isn't called "Enterprise Linux" for nothing.
+
 ### 31/01/18 - tqdm. Easy to implement progress bar on the Python console
 There are times when you are just looping around doing something and wondering when it will finish. Printing dots and astericks with the ```print('*',end='')``` aint't really that cool either.
 tqdm gives the progress bar, progress count, time taken and time to finish by approximation. Kinda cool when i was processing videos of frames.
