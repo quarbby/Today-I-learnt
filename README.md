@@ -1,5 +1,9 @@
 # Today I Learnt 2018
 
+### 02/05/18 - Clearing device cache does the job
+Ran into issues of my logos on my react native android app not working properly. 2 exact same build on two different device yet the device with the older version is working well instead of the newer android version. Reinstalling the apk doesnt solve the issue. Found out that clearing the cache of the device itself actually solve the problem. Who knew the solution will be so straightforward?
+
+
 ### 01/02/18 - NGINX on Red Hat Enterprise Linux (RHEL) 7.4
 #### Background
 NGINX installed on RHEL 7.4, configured to serve files from root directory ```/var/www/fileserver``` at ```/```.
