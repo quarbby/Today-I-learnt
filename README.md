@@ -1,6 +1,14 @@
 # Today I Learnt 2018
 
-### 02/05/18 - Clearing device cache does the job
+### 06/02/18 - Porting Angular 5 CLI offline 
+
+To port your Angular 5 command line installer from an online to offline machine, to save the trouble of installing offline using caches and other activities, simply navigate in the online machine to `C:\Users\<Username>\AppData\Roaming\npm`. Copy out the `ng` and `ng.cmd` and `node_modules/@angular`. In the offline computer, place the modules in the corresponding folder. Test the porting by using `ng serve` in the command line. 
+
+If you have problems finding where your angular installation is in (assuming you installed in your online machine via `npm install -g @angular/cli`, use `npm link @angular/cli`. 
+
+Quick note, when you're done with this, you'll realise that Angular 6 is going to be released. :'( 
+
+### 05/02/18 - Clearing device cache does the job
 Ran into issues of my logos on my react native android app not working properly. 2 exact same build on two different device yet the device with the older version is working well instead of the newer android version. Reinstalling the apk doesnt solve the issue. Found out that clearing the cache of the device itself actually solve the problem. Who knew the solution will be so straightforward?
 
 
