@@ -8,22 +8,12 @@ Here's the tricky part. Do not instantiate the `Service`, in which the `Observab
 
 Also, in case you're wondering on the difference between an `Observable` and a `Subject`, here's something I borrowed from a site i found.
 
-┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃         Observable                  ┃     BehaviorSubject/Subject         ┃      
-┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫ 
-│ Is just a function, no state        │ Has state. Stores data in memory    │
-├─────────────────────────────────────┼─────────────────────────────────────┤
-│ Code run for each observer          │ Same code run                       │
-│                                     │ only once for all observers         │
-├─────────────────────────────────────┼─────────────────────────────────────┤
-│ Creates only Observable             │Can create and also listen Observable│
-│ ( data producer alone )             │ ( data producer and consumer )      │
-├─────────────────────────────────────┼─────────────────────────────────────┤
-│ Usage: Simple Observable with only  │ Usage:                              │
-│ one Obeserver.                      │ * Store data and modify frequently  │
-│                                     │ * Multiple observers listen to data │
-│                                     │ * Proxy between Observable  and     │
-│                                     │   Observer                          │
+Observable | BehaviorSubject/Subject
+--- | ---
+Is just a function, no state  | Has state. Stores data in memory 
+Code run for each observer    | Same code run only once for all observers   
+Creates only Observable (data producer alone) | Can create and also listen Observable (data producer and consumer)
+Usage: Simple Observable with only one Observer | Usage: Store and modify data frequently; Multiple observers listen to data
 
 Alright. End of rant. 
 
