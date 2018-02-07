@@ -6,6 +6,25 @@ One good thing of Angular 5 is the encapsulation of components. So you can defin
 
 Here's the tricky part. Do not instantiate the `Service`, in which the `Observable` is constructed in the individual components if you want to pass information through the same `Observable`. At each instantiation, the reference points to a new object. To make this `Observable` global, instatiate the service in the `providers` array in the typescript file of the main app, i.e. `angular.app.ts`. 
 
+Also, in case you're wondering on the difference between an `Observable` and a `Subject`, here's something I borrowed from a site i found.
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃         Observable                  ┃     BehaviorSubject/Subject         ┃      
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫ 
+│ Is just a function, no state        │ Has state. Stores data in memory    │
+├─────────────────────────────────────┼─────────────────────────────────────┤
+│ Code run for each observer          │ Same code run                       │
+│                                     │ only once for all observers         │
+├─────────────────────────────────────┼─────────────────────────────────────┤
+│ Creates only Observable             │Can create and also listen Observable│
+│ ( data producer alone )             │ ( data producer and consumer )      │
+├─────────────────────────────────────┼─────────────────────────────────────┤
+│ Usage: Simple Observable with only  │ Usage:                              │
+│ one Obeserver.                      │ * Store data and modify frequently  │
+│                                     │ * Multiple observers listen to data │
+│                                     │ * Proxy between Observable  and     │
+│                                     │   Observer                          │
+
 Alright. End of rant. 
 
 [Further details on passing information through components](https://angularfirebase.com/lessons/sharing-data-between-angular-components-four-methods/#Unrelated-Components-Sharing-Data-with-a-Service)
