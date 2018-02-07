@@ -1,5 +1,15 @@
 # Today I Learnt 2018
 
+### 07/02/18 - Observables and Subscriptions in Angular 5
+
+One good thing of Angular 5 is the encapsulation of components. So you can define a dashboard with a tile component, in which the tile component has html, js and css styles that are independent of the overall dashboard styles so they don't conflict/ overwrite each other. But sometimes you need to pass messages through components, in some sort of broadcast style. So they have `Observables` which have `Subject`s or `BehaviourSubject`s which can store data to be broadcasted. In another component, you can use a `Subscription` to get the value of the subject when its changed. 
+
+Here's the tricky part. Do not instantiate the `Service`, in which the `Observable` is constructed in the individual components if you want to pass information through the same `Observable`. At each instantiation, the reference points to a new object. To make this `Observable` global, instatiate the service in the `providers` array in the typescript file of the main app, i.e. `angular.app.ts`. 
+
+Alright. End of rant. 
+
+[Further details on passing information through components](https://angularfirebase.com/lessons/sharing-data-between-angular-components-four-methods/#Unrelated-Components-Sharing-Data-with-a-Service)
+
 ### 06/02/18 - Porting Angular 5 CLI offline 
 
 To port your Angular 5 command line installer from an online to offline machine, to save the trouble of installing offline using caches and other activities, simply navigate in the online machine to `C:\Users\<Username>\AppData\Roaming\npm`. Copy out the `ng` and `ng.cmd` and `node_modules/@angular`. In the offline computer, place the modules in the corresponding folder. Test the porting by using `ng serve` in the command line. 
