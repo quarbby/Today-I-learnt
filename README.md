@@ -1,5 +1,24 @@
 # Today I Learnt 2018
 
+### 13/02/18 - Relearning Git Basics
+
+Git is perfectly easy to use when you're the only one contributing. In such a case, it's also somewhat superfluous. But I digress.
+
+There are cases when you'll want to contribute, but realize that the server's dev branch has changed so drastically that you no longer recognize it. Here's where "git rebase" will save the day.
+
+While in your development branch, type this in:
+
+"git rebase <branch that you want to pull changes from>"
+
+Essentially, "git rebase" takes the base of the branch you want to merge into, and places it into your branch as its new base. Beware of conflicts at this stage, but it's a lot better than manually eyeballing the files for the smallest change.
+
+There are, however, certain cases where git will take issue with your attempts at rebasing, namely when trying to push your shiny new rebased branch on top of your old branch that currently resides in the server. This makes sense - your new branch no longer shares the same tree structure as the old existing branch as it's been rebased - but that doesn't make it any less irritating.
+
+Therefore, I am pleased to report to all highly annoyed users that force is the answer. Push through your changes to shut git up (but first, remember to check that your rebased version actually works, seriously):
+
+"git push --force origin <server branch that you want to push to> <branch that you want the changes to flow from>" 
+
+
 ### 07/02/18 - Observables and Subscriptions in Angular 5
 
 One good thing of Angular 5 is the encapsulation of components. So you can define a dashboard with a tile component, in which the tile component has html, js and css styles that are independent of the overall dashboard styles so they don't conflict/ overwrite each other. But sometimes you need to pass messages through components, in some sort of broadcast style. So they have `Observables` which have `Subject`s or `BehaviourSubject`s which can store data to be broadcasted. In another component, you can use a `Subscription` to get the value of the subject when its changed. 
