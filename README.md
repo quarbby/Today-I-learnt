@@ -1,5 +1,9 @@
 # Today I Learnt 2018
 
+### 17/02/18 - Python Virtual Environments
+
+I keep getting myself confused with virtual environment commands in Windows and Linux. Python virtual environments are awesome. They're these sandbox environments that you can use and `pip install` anything without really messing up your host. To start a virtual environment, do `virtualenv <ENV_NAME>`. If the command isn't found, then you've got to do a global `pip insall virtualenv`. Now here lies the difference. In a windows computer, to start the environment, or they call it source, use `source <ENV_NAME>/env/activate`. If you're using Linux, do `source <ENV_NAME>/bin/activate`. I just keep mixing them up. 
+
 ### 13/02/18 - Relearning Git Basics
 
 Git is perfectly easy to use when you're the only one contributing. In such a case, it's also somewhat superfluous. But I digress.
