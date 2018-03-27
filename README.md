@@ -1,5 +1,9 @@
 # Today I Learnt 2018
 
+### 27/03/18 - Python open IDLE in virtual environment 
+
+Say you sourced a virtual environment, and we want to open up an IDLE that uses the environment, use `python -m idlelib.idle`. This is for windows though. 
+
 ### 17/02/18 - Python Virtual Environments
 
 I keep getting myself confused with virtual environment commands in Windows and Linux. Python virtual environments are awesome. They're these sandbox environments that you can use and `pip install` anything without really messing up your host. To start a virtual environment, do `virtualenv <ENV_NAME>`. If the command isn't found, then you've got to do a global `pip insall virtualenv`. Now here lies the difference. In a windows computer, to start the environment, or they call it source, use `source <ENV_NAME>/env/activate`. If you're using Linux, do `source <ENV_NAME>/bin/activate`. I just keep mixing them up. 
