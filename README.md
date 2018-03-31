@@ -1,5 +1,9 @@
 # Today I Learnt 2018
 
+### 31/03/18 - Opening iBooks Library in Mac
+
+For ebooks you downloaded to iBooks, to find the actual files, use the terminal to open: `open ~/Library/Mobile\ Documents/iCloud\~com\~apple\~iBooks/Documents`. For ebooks that you've purchased from the Apple Store: `open ~/Library/Containers/com.apple.BKAgentService/Data/Documents/iBooks` [More on Apple StackExchange](https://apple.stackexchange.com/questions/259836/where-are-my-ibooks-stored-in-macos-sierra)
+
 ### 27/03/18 - Python open IDLE in virtual environment 
 
 Say you sourced a virtual environment, and we want to open up an IDLE that uses the environment, use `python -m idlelib.idle`. This is for windows though. 
