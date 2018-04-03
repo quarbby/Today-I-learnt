@@ -1,5 +1,28 @@
 # Today I Learnt 2018
 
+### 03/04/18 - Python command line arguments getopts
+
+Generally in python you get your command line arguments by `sys.argv`. But you can add options like `-i`, and use a self-written `getops` function to get the arguments tagged to the options as a dictionary.
+
+```
+import sys
+
+def getopts(argv):
+    opts = {}  # Empty dictionary to store key-value pairs.
+    while argv:  # While there are arguments left to parse...
+        if argv[0][0] == '-':  # Found a "-name value" pair.
+            opts[argv[0]] = argv[1]  # Add key and value to the dictionary.
+        argv = argv[1:]  # Reduce the argument list by copying it starting from index 1.
+    return opts
+
+if __name__ == '__main__':
+    from sys import argv
+    myargs = getopts(argv)
+    if '-i' in myargs:  # Example usage.
+        print(myargs['-i'])
+    print(myargs)
+```
+
 ### 31/03/18 - Opening iBooks Library in Mac
 
 For ebooks you downloaded to iBooks, to find the actual files, use the terminal to open: `open ~/Library/Mobile\ Documents/iCloud\~com\~apple\~iBooks/Documents`. For ebooks that you've purchased from the Apple Store: `open ~/Library/Containers/com.apple.BKAgentService/Data/Documents/iBooks` [More on Apple StackExchange](https://apple.stackexchange.com/questions/259836/where-are-my-ibooks-stored-in-macos-sierra)
