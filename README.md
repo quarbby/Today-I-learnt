@@ -1,5 +1,26 @@
 # Today I Learnt 2018
 
+### 04/04/18 - Notepad++ Add to Every Line of File 
+
+Press Ctrl+H to bring up the Find/Replace Dialog.
+Choose the Regular expression option near the bottom of the dialog.
+
+To add a word, such as test, at the beginning of each line:
+```
+Type ^ in the Find what textbox
+Type test in the Replace with textbox
+Place cursor in the first line of the file to ensure all lines are affected
+Click Replace All button
+```
+
+To add a word, such as test, at the end of each line:
+
+```
+Type $ in the Find what textbox
+Type test in the Replace with textbox
+Place cursor in the first line of the file to ensure all lines are affected
+Click Replace All button
+```
 ### 03/04/18 - Python command line arguments getopts
 
 Generally in python you get your command line arguments by `sys.argv`. But you can add options like `-i`, and use a self-written `getops` function to get the arguments tagged to the options as a dictionary.
