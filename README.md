@@ -1,5 +1,14 @@
 # Today I Learnt 2018
 
+### 10/05/18 - dstat
+
+`dstat` is a great command line tool to obtain system metrics in one
+command. I was looking for a tool to monitor IO.
+
+On a side note, one can use `top` and `htop` to monitor processes,
+`free` to check memory usage quickly, and `iftop` for detailed network
+monitoring.
+
 ### 04/04/18 - Notepad++ Add to Every Line of File 
 
 Press Ctrl+H to bring up the Find/Replace Dialog.
