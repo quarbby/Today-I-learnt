@@ -1,5 +1,9 @@
 # Today I Learnt 2018
 
+### 02/06/18 - Docker Remove all Untagged Images
+
+Docker images that are not tagged are dangling images. Here's how to clean them up. `docker rmi -f $(docker images -q --filter "dangling=true")`
+
 ### 10/05/18 - dstat
 
 `dstat` is a great command line tool to obtain system metrics in one
