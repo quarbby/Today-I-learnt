@@ -1,5 +1,13 @@
 # Today I Learnt 2018
 
+### 16/07/2018 - Elastic Search Java VM Max Count 
+
+Elasticsearch uses a mmapfs directory by default to store its indices. The default operating system limits on mmap counts is likely to be too low, which may result in out of memory exceptions.
+
+On Linux, you can increase the limits by running the following command as root:
+`sysctl -w vm.max_map_count=262144`
+To set this value permanently, update the `vm.max_map_count` setting in `/etc/sysctl.conf`. To verify after rebooting, run sysctl vm.max_map_count.
+
 ### 02/06/18 - Docker Remove all Untagged Images
 
 Docker images that are not tagged are dangling images. Here's how to clean them up. `docker rmi -f $(docker images -q --filter "dangling=true")`
