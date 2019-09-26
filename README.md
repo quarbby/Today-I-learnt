@@ -1,4 +1,38 @@
-# Today I Learnt 2018
+# Today I Learnt 2018/ 2019
+
+### 26/9/2019 - jq conversion of jsonl to json
+
+`jq -s '.' input.jsonl > output.json`
+
+`jq -c '.[]' input.json > output.jsonl`
+
+### 25/9/2019 - Cypher Queries
+
+Cyper is a language of Neo4J Graph Database
+
+MATCH (me: Person{id: '100000'}) -[:FRIEND_OF]-(mf)-[:FRIEND_OF]-(friend:Person {id:'12323223'}) RETURN friend.id AS id, friend.name AS name
+
+MATCH (me: Person{id: '"100000"'}) -[:FRIEND_OF]-(mf)-[:FRIEND_OF]-(friend:Person {id:'"12323223"'}) RETURN friend.id AS id, friend.name AS name, count (DISTINCT mf) AS mutualFriends
+
+MATCH (n:Person{name: 'A'}) OPTIONAL MATCH (n)-[:FRIEND_OF*0..1]-(friends:Person) WITH collect(distinct ID(friends))AS rr MATCH (friend:Person)-[r:FRIEND_OF]0>(friend_of_a_friend:Person) WHERE ID(friend) IN rr AND ID (friend_of_a_friend) IN rr RETURN friend, r, friend_of_a_friend
+
+CREATE (A:Person{name:'A'}), (B:Person{name:'B'}), (C:Person{name:'C'}), (D:Person{name:'D'}), (A)-[:FRIEND_OF]->(D), (B)-[:FRIEND_OF]->(D), (C)-[:FRIEND_OF]->(D)
+
+MATCH (A:Person{name:'A'})-[:FRIEND_OF]-(D:Person), (B:Person{name:'B'})-[:FRIEND_OF]-(D:Person), (C:Person{name:'C'})-[:FRIEND_OF]-(D:Person) RETURN D
+
+MATCH (n:Person{name:'A'}), (r:Person{name:'B'}) CREATE (n)-[:FRIEND_OF]-(r)
+
+nodes[] empty or size[] empty in return response
+
+MATCH (n) DETACH DELETE n
+
+MATCH (n) OPTIONAL MATCH (n)-[r]-() DELETE n,r
+
+WHERE is a very expensive operation
+
+-> For unidirectional
+
+For bidirectional
 
 ### 16/07/2018 - Elastic Search Java VM Max Count 
 
