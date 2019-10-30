@@ -1,5 +1,23 @@
 # Today I Learnt 2018/ 2019
 
+### 30/10/2019 - CentOS increasing partion space of root
+
+```
+df -h
+fdisk /dev/sda
+vgextend
+vgdisplay
+fdisk -l 
+pvcreate /dev/sda3
+reboot
+vgdisplay
+vgextend centos /dev/sda3
+vgdisplay
+lvextend -l +<AMONT> /dev/centos/root
+xfs_growfs /dev/centos/root
+df -h
+```
+
 ### 26/9/2019 - jq conversion of jsonl to json
 
 `jq -s '.' input.jsonl > output.json`
