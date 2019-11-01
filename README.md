@@ -1,5 +1,44 @@
 # Today I Learnt 2018/ 2019
 
+### 1/11/2019 - Dockerfile for Java & Python and multiple commands 
+
+Was trying to construct a dockerfile for [Giveme5W1H](https://github.com/fhamborg/Giveme5W1H)
+
+Problem was: the docker container needed both Java and Python, and the stanford-corenlp needed to be run in the background.
+
+Hence, first put both running commands in a script:
+```
+giveme5w1h-corenlp &
+giveme5w1h-rest
+```
+
+Then form the Dockerfile. First install Linux and the necessary apt-libraries, including Java (openjdk8-jre). Then install python. Then copy the script into the docker volume. 
+```
+FROM alpine:3.7
+
+RUN apk update \
+&& apk upgrade \
+&& apk add --no-cache bash \
+&& apk add --no-cache --virtual=build-dependencies unzip \
+&& apk add --no-cache curl gcc g++ python3-dev \
+&& apk add --no-cache libxml2-dev libxslt-dev \ 
+&& apk add --no-cache openjdk8-jre
+
+RUN apk add --no-cache python3 \
+&& python3 -m ensurepip \
+&& pip3 install --upgrade pip \
+&& rm -r /usr/lib/python*/ensurepip && \
+if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip; fi && \
+if [[ ! -e /usr/bin/python ]]; then ln -sf /usr/bin/python3 /usr/bin/python; fi && \
+rm -r /root/.cache
+
+RUN pip3 install giveme5w1h
+RUN giveme5w1h-corenlp install
+
+COPY giveme5w1h.sh /usr/local/myscripts/giveme5w1h.sh
+CMD ["/bin/bash", "/usr/local/myscripts/giveme5w1h.sh"]
+```
+
 ### 30/10/2019 - CentOS increasing partion space of root
 
 ```
