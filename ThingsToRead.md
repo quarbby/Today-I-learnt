@@ -1,5 +1,9 @@
 # Loads of Random Readings For A Day I'm Lazing on the bed
 
+### 2/11/19 - Speech and Language Processing handbook 2019
+
+[An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition by Daniel Jurafsky and James H. Martin ](https://web.stanford.edu/~jurafsky/slp3/edbook_oct162019.pdf)
+
 ### 05/05/17 - This is why we need Security Testing 
 
 Yes, the literal test as well. On a computer. [Security flaw in Uber](http://www.anandpraka.sh/2017/03/how-anyone-could-have-used-uber-to-ride.html), but too bad its fixed so we can't intercept it anymore. Or so they say. 
