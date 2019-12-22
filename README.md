@@ -1,5 +1,9 @@
 # Today I Learnt 2018/ 2019
 
+### 22/12/2019 - Creating Anaconda environments with different python versions
+
+`conda create -n [NameOfYour VirtualEnvironment] python=3.4.4`
+
 ### 1/11/2019 - Dockerfile for Java & Python and multiple commands 
 
 Was trying to construct a dockerfile for [Giveme5W1H](https://github.com/fhamborg/Giveme5W1H)
