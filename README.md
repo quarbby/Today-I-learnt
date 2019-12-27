@@ -1,5 +1,9 @@
 # Today I Learnt 2018/ 2019
 
+### 27/12/2019 - Setting up vanilla Kubernetes Dashboard offline in Ubuntu 18.04.03 
+
+https://github.com/jax79sg/offlinekubenetesubuntu
+
 ### 22/12/2019 - Creating Anaconda environments with different python versions
 
 `conda create -n [NameOfYour VirtualEnvironment] python=3.4.4`
