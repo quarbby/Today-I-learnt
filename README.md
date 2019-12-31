@@ -1,5 +1,14 @@
 # Today I Learnt 2018/ 2019
 
+### 31/12/2019 - Update Homebrew Ruby Version
+```
+$brew install rbenv ruby-build
+$rbenv install --list
+$rbenv install 2.7.0
+$rbenv global 2.7.0
+$ruby -v
+```
+
 ### 27/12/2019 - Setting up vanilla Kubernetes Dashboard offline in Ubuntu 18.04.03 
 
 https://github.com/jax79sg/offlinekubenetesubuntu
