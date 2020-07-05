@@ -1,5 +1,10 @@
 # Today I Learnt 2020
 
+### 05/07/2020
+
+Merge all files in Unix without the header line 
+`find -name "*.csv" | xargs -n 1 tail -n +2 > merged_files.csv`
+
 ### 19/03/2020
 
 Git add all files of a type: `git add *.py`. Git add all files of a type recursively: `**/*.py`.
