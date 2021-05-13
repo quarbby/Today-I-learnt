@@ -1,6 +1,17 @@
 # Today I Learnt 2021
 
 ### 13/05/2021
+Plotting with seaborn
+```
+import seaborn as sns 
+ax = plt.figure(figsize=(5,5), dpi=300)
+ax = sns.lineplot(data=df_degree_group, x='degree', y='influence_per_neighbour')
+ax.set(xlabel='number of hops (degree) from agent node', ylabel='influence per neighbour')
+```
+
+To remove gridlines and set white background: `sns.set_style(style='white')`
+
+### 13/05/2021
 Read a bunch of csv files into a dataframe
 ```
 import pandas as pandas
