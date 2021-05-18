@@ -1,5 +1,14 @@
 # Today I Learnt 2021
 
+### 18/05/2021
+Seaborn correlation plot
+```
+f, ax = plt.subplots(figsize=(10, 8))
+sns.heatmap(corr_plot, mask=np.zeros_like(corr_plot, dtype=np.bool), cmap=sns.diverging_palette(220, 10, as_cmap=True),
+            square=True, ax=ax, xticklabels=corr_plot.columns.values,
+            yticklabels=corr_plot.columns.values)
+```            
+
 ### 13/05/2021
 Plotting with seaborn
 ```
