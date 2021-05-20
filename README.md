@@ -7,9 +7,9 @@ df_agent_values = pd.read_csv(ora_agent_union_filename, dtype={'Node ID': 'int64
 
 ```
 
-To read csv and ignore bad lines
+To read csv and ignore bad lines, add
 ```
-add error_bad_lines=False
+error_bad_lines=False
 ```
 
 ### 18/05/2021
