@@ -1,5 +1,12 @@
 # Today I Learnt 2021
 
+### 20/05/2021
+Sklearn classification report to pandas dataframe, that you can output to a csv
+```
+report = classification_report(y_test, y_pred, output_dict=True)
+df = pandas.DataFrame(report).transpose()
+```
+
 ### 19/05/2021
 Read pandas dataframe with a specific dtype for a specific column
 ```
