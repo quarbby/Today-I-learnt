@@ -1,5 +1,17 @@
 # Today I Learnt 2021
 
+### 19/05/2021
+Read pandas dataframe with a specific dtype for a specific column
+```
+df_agent_values = pd.read_csv(ora_agent_union_filename, dtype={'Node ID': 'int64'})
+
+```
+
+To read csv and ignore bad lines
+```
+add error_bad_lines=False
+```
+
 ### 18/05/2021
 Seaborn correlation plot
 ```
