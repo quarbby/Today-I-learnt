@@ -1,5 +1,19 @@
 # Today I Learnt 2021
 
+
+### 01/06/2021
+Split a file into smaller files of n lines, eg n=10000
+```
+split -l 10000 <FILENAME>
+```
+
+### 01/06/2021
+
+Find files in a directory without an extension and add it 
+```
+find /path -type f -not -name "*.*" -exec mv "{}" "{}".json \;
+```
+
 ### 20/05/2021
 Sklearn classification report to pandas dataframe, that you can output to a csv
 ```
