@@ -1,5 +1,10 @@
 # Today I Learnt 2021
 
+### 04/06/2021
+Merge all files in directory:
+```
+$ cat * > merged-file
+```
 
 ### 01/06/2021
 Split a file into smaller files of n lines, eg n=10000
