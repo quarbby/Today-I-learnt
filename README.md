@@ -1,5 +1,11 @@
 # Today I Learnt 2021
 
+### 14/06/2021
+Move all files with a certain suffix to a directory. ie suffix is `_convertedtov1`, filename is `v1conversion`
+```
+find . -name '*_convertedtov1.json.gz' -exec mv {} v1conversion \;
+```
+
 ### 04/06/2021
 Merge all files in directory:
 ```
