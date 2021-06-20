@@ -1,5 +1,11 @@
 # Today I Learnt 2021
 
+### 19/06/2021
+Add string to every line in a file using bash
+```
+sed -e 's/$/string after each line/' -i filename
+```
+
 ### 14/06/2021
 Move all files with a certain suffix to a directory. ie suffix is `_convertedtov1`, filename is `v1conversion`
 ```
