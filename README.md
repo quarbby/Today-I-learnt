@@ -1,5 +1,11 @@
 # Today I Learnt 2021
 
+### 24/06/2021
+Check if all elements in a nested array are positive 
+```
+[all(n > 0 for n in i) for i in my_array]
+```
+
 ### 19/06/2021
 Add string to every line in a file using bash
 ```
