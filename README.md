@@ -1,5 +1,11 @@
 # Today I Learnt 2021
 
+### 25/06/2021
+Split a string column into multiple columns, eg dob to day month year columns
+```
+df[["day", "month", "year"]] = df["dob"].str.split("-", expand = True)
+```
+
 ### 24/06/2021
 Check if all elements in a nested array are positive 
 ```
