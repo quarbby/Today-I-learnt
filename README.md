@@ -1,5 +1,24 @@
 # Today I Learnt 2021
 
+### 30/06/2021
+Clean Twitter texts - take away anything with @mentions, urls and punctuations
+```
+def preprocess_text(df):
+    df = df.dropna(subset=['text'])
+
+    for idx, row in df.iterrows():
+        try:
+            text = row['text']
+            text_cleaned = ' '.join(re.sub("(@[A-Za-z0-9]+)|([^0-9A-Za-z \t])|(\w+:\/\/\S+)"," ", text).split())
+            text_cleaned = re.sub(r'^https?:\/\/.*[\r\n]*', '', text_cleaned)
+            text_cleaned = ' '.join([w for w in text_cleaned.split() if not w.lower() in stop_words])
+            df.at[idx, 'text_cleaned'] = text_cleaned
+        except:
+            print(idx)
+
+    return df
+```
+
 ### 25/06/2021
 Split a string column into multiple columns, eg dob to day month year columns
 ```
