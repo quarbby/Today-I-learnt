@@ -3,6 +3,9 @@
 ### 30/06/2021
 Clean Twitter texts - take away anything with @mentions, urls and punctuations
 ```
+from nltk.corpus import stopwords
+stop_words = stopwords.words('english')
+
 def preprocess_text(df):
     df = df.dropna(subset=['text'])
 
