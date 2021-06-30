@@ -1,6 +1,12 @@
 # Today I Learnt 2021
 
 ### 30/06/2021
+TQDM import in jupyter notebook:
+```
+from tqdm.notebook import tqdm
+```
+
+### 30/06/2021
 Clean Twitter texts - take away anything with @mentions, urls and punctuations
 ```
 from nltk.corpus import stopwords
