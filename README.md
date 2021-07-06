@@ -1,6 +1,12 @@
 # Today I Learnt 2021
 
 ### 06/07/2021
+Find and replace all using bash
+```
+sed -i "s/'/ /g" FILENAME.csv
+```
+
+### 06/07/2021
 
 Split a large file into many small files, keeping the header line for each smaller file
 
