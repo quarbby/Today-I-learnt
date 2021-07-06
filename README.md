@@ -1,5 +1,21 @@
 # Today I Learnt 2021
 
+### 06/07/2021
+
+Split a large file into many small files, keeping the header line for each smaller file
+
+```
+#!/bin/bash
+awk -v l=11000 '(NR==1){header=$0;next}
+                (NR%l==2) {
+                   close(file); 
+                   file=sprintf("%s.%0.5d.csv",FILENAME,++c)
+                   sub(/csv[.]/,"",file)
+                   print header > file
+                }
+                {print > file}' FILENAME.csv
+```                
+
 ### 30/06/2021
 TQDM import in jupyter notebook:
 ```
