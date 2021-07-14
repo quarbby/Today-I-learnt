@@ -1,5 +1,11 @@
 # Today I Learnt 2021
 
+### 14/07/2021
+Creating a wheel file; ref https://www.realpythonproject.com/how-to-create-a-wheel-file-for-your-python-package-and-import-it-in-another-project/
+```
+python setup.py bdist_wheel
+```
+
 ### 06/07/2021
 Find and replace all using bash
 ```
