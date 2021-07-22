@@ -1,5 +1,11 @@
 # Today I Learnt 2021
 
+### 22/07/2021
+Read pandas dataframe, empty places as string instead of annoying NaN's
+```
+pd.read_csv('test.csv', keep_default_na=False)
+```
+
 ### 14/07/2021
 Creating a wheel file; ref https://www.realpythonproject.com/how-to-create-a-wheel-file-for-your-python-package-and-import-it-in-another-project/
 ```
