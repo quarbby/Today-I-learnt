@@ -1,5 +1,12 @@
 # Today I Learnt 2021
 
+### 26/07/2021
+Add blue text to Overleaf 
+```
+\usepackage[table]{xcolor}
+\newcommand\lyn[1]{\textcolor{blue}{#1}}
+```
+
 ### 22/07/2021
 Read pandas dataframe, empty places as string instead of annoying NaN's
 ```
