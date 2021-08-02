@@ -1,5 +1,11 @@
 # Today I Learnt 2021
 
+### 02/08/2021
+Unzip .gz files to another folder
+```
+for f in *.json.gz; do gunzip -c "$f" > <FOLDERNAME>/"${f%.*}"; done
+```
+
 ### 26/07/2021
 Add blue text to Overleaf 
 ```
