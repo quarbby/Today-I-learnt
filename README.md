@@ -1,5 +1,11 @@
 # Today I Learnt 2021
 
+### 04/08/2021
+Pandas groupby authorid and find percentage change of succeeding row for a certain column
+```
+df['posts_perc_change'] = df.groupby('authorid')['post_pred_score'].apply(pd.Series.pct_change)
+```
+
 ### 02/08/2021
 Unzip .gz files to another folder
 ```
