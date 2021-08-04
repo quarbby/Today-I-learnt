@@ -4,6 +4,8 @@
 Pandas groupby authorid and find percentage change of succeeding row for a certain column
 ```
 df['posts_perc_change'] = df.groupby('authorid')['post_pred_score'].apply(pd.Series.pct_change)
+df['posts_diff_change'] = df.groupby('authorid')['post_pred_score'].apply(pd.Series.diff)
+
 ```
 
 ### 02/08/2021
