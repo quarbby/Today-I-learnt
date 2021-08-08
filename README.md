@@ -1,5 +1,10 @@
 # Today I Learnt 2021
 
+### 07/08/2021
+Add a cursor to every line in Visual Studio Code
+- Ctrl A to select all text
+- Alt Shift I
+
 ### 04/08/2021
 Pandas groupby authorid and find percentage change of succeeding row for a certain column
 ```
