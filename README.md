@@ -1,5 +1,13 @@
 # Today I Learnt 2021
 
+### 14/08/2021
+Get elements from list2 that is not in the first list 
+```
+import numpy as np
+main_list = np.setdiff1d(list_2,list_1)
+# yields the elements in `list_2` that are NOT in `list_1`
+```
+
 ### 07/08/2021
 Add a cursor to every line in Visual Studio Code
 - Ctrl A to select all text
