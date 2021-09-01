@@ -1,5 +1,13 @@
 # Today I Learnt 2021
 
+### 01/09/2021
+Generate requirements.txt for a python project in a folder
+```
+pip install pipreqs
+
+pipreqs /path/to/project
+```
+
 ### 14/08/2021
 Get elements from list2 that is not in the first list 
 ```
