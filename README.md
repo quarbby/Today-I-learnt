@@ -166,6 +166,11 @@ To read csv and ignore bad lines, add
 error_bad_lines=False
 ```
 
+To ignore the warnings, add
+```
+warn_bad_lines=False
+```
+
 ### 18/05/2021
 Seaborn correlation plot
 ```
