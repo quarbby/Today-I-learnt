@@ -1,5 +1,12 @@
 # Today I Learnt 2021
 
+### 05/09/2021
+Unzip a bunch of .gz files 
+```
+To keep the .gz file: gunzip -k *.gz
+Without keeping .gz file: gunzip *.gz
+```
+
 ### 01/09/2021
 Generate requirements.txt for a python project in a folder
 ```
