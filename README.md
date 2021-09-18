@@ -1,5 +1,11 @@
 # Today I Learnt 2021
 
+### 18/09/2021
+Intersection of two lists in python 
+```
+list(set(list1) & set(list2))
+```
+
 ### 05/09/2021
 Unzip a bunch of .gz files 
 ```
