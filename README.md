@@ -7,6 +7,11 @@ import itertools
 permutations_of_two = list(itertools.permutations(hashtag_list,2))
 ```
 
+To get the unique permutations: 
+```
+unique_combinations = list(set(tuple(i) for i in map(sorted, event_permutations)))
+```
+
 ### 18/09/2021
 Intersection of two lists in python 
 ```
