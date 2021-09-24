@@ -1,5 +1,12 @@
 # Today I Learnt 2021
 
+### 24/09/2021
+Permutate a list in python, with two in each set 
+```
+import itertools
+permutations_of_two = list(itertools.permutations(hashtag_list,2))
+```
+
 ### 18/09/2021
 Intersection of two lists in python 
 ```
