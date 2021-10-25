@@ -1,5 +1,20 @@
 # Today I Learnt 2021
 
+### 25 Oct 2021
+Postgres SQL queries for string contains
+
+```
+WHERE foo LIKE '%bar%'
+
+WHERE foo ILIKE '%bar%' --case insensitive
+
+WHERE foo ~* 'bar' --regex
+
+WHERE foo ~* '\ybar\y' --matches bar but not foobar (\y is word boundary)
+
+WHERE foo::tsvector @@ 'bar'::tsquery --matches bar but not foobar
+```
+
 ### 24/09/2021
 Permutate a list in python, with two in each set 
 ```
