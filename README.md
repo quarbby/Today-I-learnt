@@ -1,5 +1,8 @@
 # Today I Learnt 2021
 
+### 30 Nov 2021
+Zip up subfolders in a directory one by one: `find . -type d -maxdepth 1 -exec zip -r {}.zip {} \;`
+
 ### 31 Oct 2021
 Python set a train, validation, test split for pandas dataframe 
 ```
