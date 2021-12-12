@@ -176,6 +176,7 @@ pd.read_csv('test.csv', keep_default_na=False)
 ### 14/07/2021
 Creating a wheel file; ref https://www.realpythonproject.com/how-to-create-a-wheel-file-for-your-python-package-and-import-it-in-another-project/
 ```
+pip install wheel setuptools
 python setup.py bdist_wheel
 ```
 
