@@ -1,5 +1,12 @@
 # Today I Learnt 
 
+### 23 Dec 2021
+Remove URLs from a string in python using regex
+```
+def remove_URL(text):
+    return re.sub(r"http\S+", "", text)
+```
+
 ### 30 Nov 2021
 Zip up subfolders in a directory one by one: `find . -type d -maxdepth 1 -exec zip -r {}.zip {} \;`
 
