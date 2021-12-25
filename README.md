@@ -1,5 +1,12 @@
 # Today I Learnt 
 
+### 25 Dec 2021
+You can use the `library(sqldf)` in R to make selection statements from a dataframe.
+In this case, I am finding a substring from a column in the dataframe.
+```
+sqldf("SELECT * FROM df WHERE a_description LIKE '%mother%'")
+```
+
 ### 23 Dec 2021
 Remove URLs from a string in python using regex
 ```
