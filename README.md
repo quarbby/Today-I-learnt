@@ -1,5 +1,21 @@
 # Today I Learnt 
 
+### 26 Dec 2021
+Current favourite R ggplot theme
+```
+p2 <- ggplot(data=combined_filtered, aes(x=reorder(x, -count), y=count)) + 
+  geom_point(stat='identity') + 
+  facet_wrap(~data_type, ncol=1, scales="free") +
+  labs(x="x", y="Count") +
+  theme_light() +
+  theme(axis.text.x = element_text(angle=90,size=8),
+        panel.grid.major.x = element_blank(),
+        panel.grid.minor.x = element_blank(),
+        panel.grid.minor.y = element_blank(),
+  )
+print(p2)
+```
+
 ### 25 Dec 2021
 You can use the `library(sqldf)` in R to make selection statements from a dataframe.
 In this case, I am finding a substring from a column in the dataframe.
