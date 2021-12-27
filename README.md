@@ -1,5 +1,13 @@
 # Today I Learnt 
 
+### 27 Dec 2021
+Remove punctuations from string in python and regex
+
+```
+import re
+res = re.sub(r'[^\w\s]', '', test_str)
+```
+
 ### 26 Dec 2021
 Current favourite R ggplot theme
 ```
