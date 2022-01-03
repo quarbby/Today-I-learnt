@@ -1,5 +1,21 @@
 # Today I Learnt 
 
+### 3 Jan 2022
+[Zeygna](https://github.com/nkthiebaut/zeugma) is a easy to use text classification wrapper 
+```
+from sklearn.linear_model import LogisticRegresion
+from zeugma.embeddings import EmbeddingTransformer
+
+glove = EmbeddingTransformer('glove')
+x_train = glove.transform(corpus_train)
+
+model = LogisticRegression()
+model.fit(x_train, y_train)
+
+x_test = glove.transform(corpus_test)
+model.predict(x_test)
+```
+
 ### 28 Dec 2021
 To format a HTML document in visual studio code: `Shift + Alt + L`
 
