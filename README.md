@@ -1,5 +1,13 @@
 # Today I Learnt 
 
+### 6 Jan 2022
+Find common rows between two dataframes in R
+```
+common <- intersect(data.frame1$col, data.frame2$col)  
+data.frame1[common,] # give you common rows in data frame 1  
+data.frame2[common,] # give you common rows in data frame 2
+```
+
 ### 3 Jan 2022
 [Zeygna](https://github.com/nkthiebaut/zeugma) is a easy to use text classification wrapper 
 ```
