@@ -8,6 +8,26 @@ data.frame1[common,] # give you common rows in data frame 1
 data.frame2[common,] # give you common rows in data frame 2
 ```
 
+Postgresql select count of intersection of two tables - Note the `I` is needed! 
+```
+SELECT COUNT(*) FROM 
+(
+	SELECT agent FROM table1
+		INTERSECT 
+	SELECT agent FROM table2
+) I 
+```
+
+Postgresql merge the rows of two tables
+```
+CREATE TABLE table3 AS 
+(
+	SELECT * FROM table1
+	UNION
+	SELECT * FROM table2
+);
+```
+
 ### 3 Jan 2022
 [Zeygna](https://github.com/nkthiebaut/zeugma) is a easy to use text classification wrapper 
 ```
