@@ -45,7 +45,7 @@ model.predict(x_test)
 ```
 
 ### 28 Dec 2021
-To format a HTML document in visual studio code: `Shift + Alt + L`
+To format a HTML document in visual studio code: `Shift + Alt + I`
 
 ### 27 Dec 2021
 Remove punctuations from string in python and regex
