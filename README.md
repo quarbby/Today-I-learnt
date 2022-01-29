@@ -1,5 +1,26 @@
 # Today I Learnt 
 
+### 29 Jan 2022
+When a data file is too huge to read in pandas and you need to process row by row in Python, use csv DictReader and DictWriter
+
+```
+for w in tqdm(movies, desc='files'):
+    with open(os.path.join(file_dir,w), 'r', encoding='utf-8') as read_obj, \
+        open(os.path.join(output_dir, 'movies.csv'), 'w', encoding='utf-8', newline='') as write_obj:
+
+        csv_dict_reader = DictReader(read_obj)
+        column_names = csv_dict_reader.fieldnames
+        column_names.append('identities')
+
+        csv_dict_writer = DictWriter(write_obj, column_names)
+        csv_dict_writer.writeheader()
+
+        for row in tqdm(csv_dict_reader, desc='rows'):
+            description = row['a_description']
+            row['identities'] = 'me'  # this is how to add an additional column
+            csv_dict_writer.writerow(row)
+```
+
 ### 6 Jan 2022
 Find common rows between two dataframes in R
 ```
