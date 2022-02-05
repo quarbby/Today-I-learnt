@@ -1,5 +1,15 @@
 # Today I Learnt 
 
+### 5 Feb 2022
+Finding every combination pairs between two lists in Python
+```
+import itertools
+a = [1,2,3]
+b = [4,5,6]
+for r in itertools.product(a, b):
+    print(r[0], r[1])
+```
+
 ### 29 Jan 2022
 When a data file is too huge to read in pandas and you need to process row by row in Python, use csv DictReader and DictWriter
 
