@@ -1,5 +1,11 @@
 # Today I Learnt 
 
+### 10 Feb 2022
+Dumping out a mongodb database into a json file (becomes json lines):
+```
+mongoexport --host mongodb1.example.net --port 37017 --username user --password "pass" --collection contacts --db marketing --out mdb1-examplenet.json
+```
+
 ### 9 Feb 2022
 Python implementation of Levenshtein Distance
 ```
