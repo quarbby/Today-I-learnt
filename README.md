@@ -1,5 +1,9 @@
 # Today I Learnt 
 
+### 11 Feb 2022
+Using regex in Python to remove @-mentions, hashtags and URLs:
+`' '.join(re.sub("(@[A-Za-z0-9]+)|([^0-9A-Za-z \t])|(\w+:\/\/\S+)"," ",x).split())`
+
 ### 10 Feb 2022
 Dumping out a mongodb database into a json file (becomes json lines):
 ```
