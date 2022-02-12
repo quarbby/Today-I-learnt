@@ -1,6 +1,75 @@
 # Today I Learnt 
 
 ### 11 Feb 2022
+Align Word2Vec matrices from different corpuses 
+
+This issue happens because the embeddings for each group are created separately, hence, their geometric positions in vector space are not directly comparable. To compare them, we first have to align the embeddings.
+One way to align matrices is called Procrustes alignment, which uses singular value decomposition; Hamilton et al 2016a use this method to align their historical word embeddings. Note that to do this alignment, each matrix first needs to be subset to the common vocabulary and reindexed appropriately.
+
+[Reference Collab](https://colab.research.google.com/drive/16cM5NXedlrvU2mp-HcYKs9OIMkYItTS1?usp=sharing#scrollTo=RbIw-eWTkpVQ)
+
+```
+def procrustes(A, B):
+    """
+    Learn the best rotation matrix to align matrix B to A
+    https://en.wikipedia.org/wiki/Orthogonal_Procrustes_problem
+    """
+    # U, _, Vt = np.linalg.svd(B.dot(A.T))
+    U, _, Vt = np.linalg.svd(B.T.dot(A))
+    return U.dot(Vt)
+
+def intersect_vocab (idx1, idx2):
+  """ Intersect the two vocabularies
+
+  Parameters:
+  ===========
+  idx1 (dict): the mapping for vocabulary in the first group
+  idx2 (dict): the mapping for vocabulary in the second group
+
+  Returns:
+  ========
+  common_idx, common_iidx (tuple): the common mapping for vocabulary in both groups
+  """
+  common = idx1.keys() & idx2.keys()
+  common_vocab = [v for v in common]
+
+  common_idx, common_iidx = {v:i for i,v in enumerate (common_vocab)}, {i:v for i,v in enumerate (common_vocab)}
+  return common_vocab, (common_idx, common_iidx)
+
+def align_matrices (mat1, mat2, idx1, idx2):
+  """ Align the embedding matrices and their vocabularies.
+
+  Parameters:
+  ===========
+  mat1 (numpy.ndarray): embedding matrix for first group
+  mat2 (numpy.ndarray): embedding matrix for second group
+
+  index1 (dict): the mapping dictionary for first group
+  index2 (dict): the mapping dictionary for the second group
+
+  Returns:
+  ========
+  remapped_mat1 (numpy.ndarray): the aligned matrix for first group
+  remapped_mat2 (numpy.ndarray): the aligned matrix for second group
+  common_vocab (tuple): the mapping dictionaries for both the matrices
+  """  
+  common_vocab, (common_idx, common_iidx) = intersect_vocab (idx1, idx2)
+  row_nums1 = [idx1[v] for v in common_vocab]
+  row_nums2 = [idx2[v] for v in common_vocab]
+
+  #print (len(common_vocab), len (common_idx), len (common_iidx))
+  remapped_mat1 = mat1[row_nums1, :]
+  remapped_mat2 = mat2[row_nums2, :]
+  #print (mat1.shape, mat2.shape, remapped_mat1.shape, remapped_mat2.shape)
+  omega = procrustes (remapped_mat1, remapped_mat2)
+  #print (omega.shape)
+  # rotated_mat2 = np.dot (omega, remapped_mat2)
+  rotated_mat2 = np.dot (remapped_mat2, omega)
+
+  return remapped_mat1, rotated_mat2, (common_idx, common_iidx)
+```
+
+### 11 Feb 2022
 Using regex in Python to remove @-mentions, hashtags and URLs:
 `' '.join(re.sub("(@[A-Za-z0-9]+)|([^0-9A-Za-z \t])|(\w+:\/\/\S+)"," ",x).split())`
 
