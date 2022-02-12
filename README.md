@@ -1,5 +1,9 @@
 # Today I Learnt 
 
+### 12 Feb 2022
+Bash find total number of lines of all files of .json type in directory
+` find . -type f -name "*.json"|xargs cat |wc -l`
+
 ### 11 Feb 2022
 Align Word2Vec matrices from different corpuses 
 
