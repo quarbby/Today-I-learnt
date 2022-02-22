@@ -1,5 +1,15 @@
 # Today I Learnt 
 
+### 22 Feb 2022
+Ignore hidden files in list directory python
+```
+import glob
+import os
+
+def listdir_nohidden(path):
+    return glob.glob(os.path.join(path, '*'))
+```
+
 ### 12 Feb 2022
 Bash find total number of lines of all files of .json type in directory
 ` find . -type f -name "*.json"|xargs cat |wc -l`
