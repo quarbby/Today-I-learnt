@@ -1,5 +1,10 @@
 # Today I Learnt 
 
+### 22 Mar 2022
+Finding CPU Information on Linux: `cat /proc/cpuinfo `
+
+Finding GPU Information on Linux: `cat /proc/driver/nvidia/gpus/<GPU NUMBER>/information`
+
 ### 22 Feb 2022
 Ignore hidden files in list directory python
 ```
