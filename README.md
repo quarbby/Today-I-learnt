@@ -478,6 +478,7 @@ Clean Twitter texts - take away anything with @mentions, urls and punctuations
 ```
 from nltk.corpus import stopwords
 stop_words = stopwords.words('english')
+stop_words.extend(['rt'])
 
 def preprocess_text(df):
     df = df.dropna(subset=['text'])
