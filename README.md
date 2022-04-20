@@ -1,6 +1,16 @@
 # Today I Learnt 
 
 ### 19 Apr 2022
+Extend NLTK stopword list 
+
+```
+from nltk.corpus import stopwords
+
+stop_words = stopwords.words('english')
+stopwords.extend(['rt'])
+```
+
+### 19 Apr 2022
 Pandas dataframe merge two dataframes on different columns:
 
 `merge_df = pd.merge(cues_df, labels_df, left_on='Author', right_on='id', how='left')`
