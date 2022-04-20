@@ -1,7 +1,14 @@
 # Today I Learnt 
 
 ### 19 Apr 2022
-Pandas dataframe merge two dataframes on different columns: `merge_df = pd.merge(cues_df, labels_df, left_on='Author', right_on='id', how='left')`
+Pandas dataframe merge two dataframes on different columns:
+
+`merge_df = pd.merge(cues_df, labels_df, left_on='Author', right_on='id', how='left')`
+
+
+Rename columns of a pandas dataframe:
+
+`merge_df.rename(columns={'A':'A_renamed'}, inplace=True)`
 
 ### 22 Mar 2022
 Finding CPU Information on Linux: `cat /proc/cpuinfo `
