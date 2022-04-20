@@ -7,7 +7,7 @@ Extend NLTK stopword list
 from nltk.corpus import stopwords
 
 stop_words = stopwords.words('english')
-stopwords.extend(['rt'])
+stop_words.extend(['rt'])
 ```
 
 ### 19 Apr 2022
