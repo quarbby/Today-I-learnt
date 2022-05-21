@@ -1,5 +1,24 @@
 # Today I Learnt 
 
+### 21 May 2022
+Matplotlib/seaborn 
+
+```
+import matplotlib.pyplot as plt
+%matplotlib inline
+import seaborn as sns
+sns.set()
+```
+
+1. Change Figure size: `plt.figure(figsize=(10,7))`
+2. Change font size `sns.set(font_scale=1.5)`
+3. Change labels 
+```
+p = sns.scatterplot(data=df, x='x', y='y')
+p.set_xlabel('X Score')
+p.set_ylabel('Y Score')
+```
+
 ### 19 Apr 2022
 Extend NLTK stopword list 
 
