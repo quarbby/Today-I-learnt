@@ -1,5 +1,13 @@
 # Today I Learnt 
 
+### 3 Jul 2022 
+Youtube-dl library with auto subs 
+
+```
+pip install youtube-dl
+youtube-dl --write-auto-sub --sub-format srt http://youtube.com... 
+```
+
 ### 21 May 2022
 Matplotlib/seaborn 
 
