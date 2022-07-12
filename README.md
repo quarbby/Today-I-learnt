@@ -1,5 +1,12 @@
 # Today I Learnt 
 
+### 12 Jul 2022
+I always forget how to set figure size in matplotlib
+```
+from matplotlib import pyplot as plt
+plt.figure(figsize=(1,1))
+```
+
 ### 3 Jul 2022 
 Youtube-dl library with auto subs 
 
