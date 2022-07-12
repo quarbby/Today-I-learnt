@@ -1,6 +1,20 @@
 # Today I Learnt 
 
 ### 12 Jul 2022
+How to set font sizes and other params in matplotlib
+```
+fig, ax = plt.subplots()
+
+params = {'legend.fontsize': 'x-large',
+          'figure.figsize': (10,10),
+         'axes.labelsize': 'x-large',
+         'axes.titlesize':'x-large',
+         'xtick.labelsize':'x-large',
+         'ytick.labelsize':'x-large'}
+plt.rcParams.update(params)
+```
+
+### 12 Jul 2022
 I always forget how to set figure size in matplotlib
 ```
 from matplotlib import pyplot as plt
