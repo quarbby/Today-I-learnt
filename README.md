@@ -1,5 +1,47 @@
 # Today I Learnt 
 
+### 22 Aug 2022 
+Quick Python LDA 
+
+```
+from sklearn.decomposition import LatentDirichletAllocation as LDA
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction import text
+
+import pandas as pd
+import numpy as np
+
+def get_lda_topics(text_array):
+#     all_stop_words = text.ENGLISH_STOP_WORDS
+#     if len(stop_words) > 0:
+#         all_stop_words = text.ENGLISH_STOP_WORDS.union(stop_words)
+
+#     count_vectorizer = CountVectorizer(stop_words=all_stop_words)
+    count_vectorizer = CountVectorizer()
+    count_data = count_vectorizer.fit_transform(text_array)
+    
+    number_topics = 5
+
+    lda = LDA(n_components=number_topics, n_jobs=-1)
+    lda.fit(count_data)
+
+    lda_component_data = []
+
+    words = count_vectorizer.get_feature_names()
+    for topic_idx, topic in enumerate(lda.components_):
+        topic_cut = " ".join([words[i]
+                        for i in topic.argsort()[:-20 - 1:-1]])
+        lda_component_data.append(topic_cut)
+
+    return lda_component_data
+    
+df = pd.read_csv(CSV_FILE)
+df = df[df['message'].notnull()]
+messages = df['message'].tolist()
+
+get_lda_topics(messages)
+```
+
 ### 12 Jul 2022
 How to set font sizes and other params in matplotlib
 ```
