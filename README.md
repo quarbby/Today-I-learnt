@@ -1,5 +1,13 @@
 # Today I Learnt 
 
+### 26 Sept 2022
+Seaborn variables 
+```
+import seaborn as sns
+sns.set_style('white')
+sns.set(font_scale=1.2)
+```
+
 ### 22 Aug 2022 
 Quick Python LDA 
 
