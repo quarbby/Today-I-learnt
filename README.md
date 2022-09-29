@@ -1,5 +1,11 @@
 # Today I Learnt 
 
+### 29 Sept 2022
+Linux list the number of lines in multiple files 
+```
+find . -name '*.json' | xargs wc -l
+```
+
 ### 26 Sept 2022
 Seaborn variables 
 ```
