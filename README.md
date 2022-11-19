@@ -1,5 +1,42 @@
 # Today I Learnt 
 
+### 19 Nov 2022
+GSDMM topic modelling 
+```
+from gsdmm import MovieGroupProcess
+import gensim
+
+df = preprocess_text(df)
+df = df.dropna(subset=['text_cleaned'])
+
+mgp = MovieGroupProcess(K=5, alpha=0.1, beta=0.1, n_iters=5)
+
+docs = [doc.rsplit() for doc in df['text_cleaned'].tolist()]
+vocab = set(x for doc in docs for x in doc)
+word_dict = gensim.corpora.Dictionary(docs)
+n_terms = len(vocab)
+
+topics = mgp.fit(docs, n_terms)
+
+def get_most_important_words_from_topics(cluster_word_distribution, top_cluster, values):
+    '''prints the top words in each cluster'''
+    for cluster in top_cluster:
+        sort_dicts =sorted(cluster_word_distribution[cluster].items(), key=lambda k: k[1], reverse=True)[:values]
+        print('Cluster %s : %s'%(cluster,sort_dicts))
+        print(' — — — — — — — — —')
+	
+doc_count = np.array(mgp.cluster_doc_count)
+print('Number of documents per topics :', doc_count)
+print('*'*20)
+
+# Topics sorted by document inside
+top_index = doc_count.argsort()[::-1]
+print('Most important clusters (by number of docs inside):', top_index)
+print('*'*20)
+
+get_most_important_words_from_topics(mgp.cluster_word_distribution, top_index, 20)
+```
+
 ### 29 Sept 2022
 Linux list the number of lines in multiple files 
 ```
