@@ -1,5 +1,9 @@
 # Today I Learnt 
 
+### 6 Jan 2023
+Installing an old version 1.14 of tensorflow, because it is not found on pip anymore
+`pip3 install https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.14.0-py3-none-any.whl`
+
 ### 19 Nov 2022
 GSDMM topic modelling 
 ```
