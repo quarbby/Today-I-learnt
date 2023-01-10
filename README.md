@@ -1,5 +1,21 @@
 # Today I Learnt 
 
+### 10 Jan 2023
+Update a forked repo with the main one 
+
+```
+git remote add upstream ORIGINAL_REPOSITORY_URL
+
+# Fetch all branches including master from original repository
+git fetch upstream
+
+# Merge this data in local master branch
+git merge upstream/master
+
+# Push changes to forked repository
+git push origin master
+```
+
 ### 6 Jan 2023
 Installing an old version 1.14 of tensorflow, because it is not found on pip anymore
 `pip3 install https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.14.0-py3-none-any.whl`
