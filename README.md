@@ -3,8 +3,11 @@
 ### 16 Feb 2023
 Create a Pull request using Github Desktop
 
-### 9 Feb 2023
-Test
+Branch > New Branch > Create Branch > Bring my changes to <BRANCH NAME>
+Commit to <BRANCH NAME>
+Publish Branch
+Create Pull Request 
+Edit Pull Request on the Github webpage 
 
 ### 10 Jan 2023
 Update a forked repo with the main one 
