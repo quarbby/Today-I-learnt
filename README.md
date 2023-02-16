@@ -1,5 +1,8 @@
 # Today I Learnt 
 
+### 16 Feb 2023
+Create a Pull request using Github Desktop
+
 ### 10 Jan 2023
 Update a forked repo with the main one 
 
