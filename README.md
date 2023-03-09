@@ -1,17 +1,20 @@
 # Today I Learnt 
 
+### 8 Mar 2023
+If having trouble doing `\autoref` in Overleaf, remember to add in preamble `\includepackage{hyperref}`
+
 ### 16 Feb 2023
-Create a Pull request using Github Desktop
+How to Create a Pull request using Github Desktop
 
-Branch > New Branch > Create Branch > Bring my changes to <BRANCH NAME>
+1. Branch > New Branch > Create Branch > Bring my changes to <BRANCH NAME>
 
-Commit to <BRANCH NAME>
+2. Commit to <BRANCH NAME>
 
-Publish Branch
+3. Publish Branch
 
-Create Pull Request 
+4. Create Pull Request 
 
-Edit Pull Request on the Github webpage 
+5. Edit Pull Request on the Github webpage 
 
 ### 10 Jan 2023
 Update a forked repo with the main one 
