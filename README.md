@@ -1,6 +1,9 @@
 # Today I Learnt 
 
 ### 8 Mar 2023
+PyQt4 Wheel archive: https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyqt4
+
+### 8 Mar 2023
 If having trouble doing `\autoref` in Overleaf, remember to add in preamble `\includepackage{hyperref}`
 
 ### 16 Feb 2023
