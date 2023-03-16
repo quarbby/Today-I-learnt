@@ -1,5 +1,9 @@
 # Today I Learnt 
 
+### 16 Mar 2023
+In Excel, making the first letter of a certain cell capital while the rest is small letters
+`=REPLACE(LOWER(D:D),1,1,UPPER(LEFT(D:D,1)))`
+
 ### 8 Mar 2023
 PyQt4 Wheel archive: https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyqt4
 
