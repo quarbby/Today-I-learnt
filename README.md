@@ -1,5 +1,9 @@
 # Today I Learnt 
 
+### 6 May 2023 
+Take a random selection of N lines from input file to output file using bash
+`shuf -n N input > output`
+
 ### 16 Mar 2023
 In Excel, making the first letter of a certain cell capital while the rest is small letters
 `=REPLACE(LOWER(D:D),1,1,UPPER(LEFT(D:D,1)))`
