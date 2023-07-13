@@ -1,5 +1,8 @@
 # Today I Learnt 
 
+### 13 July 2023
+Upgrade a pip package `pip install <package_name> --upgrade`
+
 ### 6 May 2023 
 Take a random selection of N lines from input file to output file using bash
 `shuf -n N input > output`
