@@ -1,5 +1,18 @@
 # Today I Learnt 
 
+### 19 Aug 2023
+Putting in-line bib entry for LaTeX
+
+Read documentation [here](https://gking.harvard.edu/files/bibentry2.pdf)
+
+```
+\usepackage{bibentry}
+\nobiblography*
+
+...
+\bibentry{citeentry}
+```
+
 ### 13 July 2023
 Upgrade a pip package `pip install <package_name> --upgrade`
 
