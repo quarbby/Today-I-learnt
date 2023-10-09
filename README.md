@@ -1,5 +1,9 @@
 # Today I Learnt 
 
+### 9 Oct 2023
+Zip in linux
+`zip -r <filename>.zip <filename> -q`
+
 ### 19 Aug 2023
 Putting in-line bib entry for LaTeX
 
