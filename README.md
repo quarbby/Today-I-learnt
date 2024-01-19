@@ -1,6 +1,37 @@
 # Today I Learnt 
 
 ### 19 Jan 2024
+Plotting Facet Plots in R with Matlab Colours
+
+```
+library(RColorBrewer)
+
+matlab_colors <- brewer.pal(3, "Set2")
+
+ggplot(data = df_longer, aes(x = Type, y = values, fill = Type)) +
+  geom_bar(stat = "identity", alpha = 0.7) +
+  facet_grid(. ~ plottype, scales = 'free_y') +
+  scale_fill_manual(values = matlab_colors) +
+  geom_text(aes(label = round(values, 2)), fontface = "bold", vjust = 1.4, colour = "black", size = 3) +
+  theme_minimal() +
+  theme(
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank(),
+    panel.grid.minor.y = element_blank(),
+    axis.text = element_text(size = 10),  # Adjust the size as needed
+    axis.title = element_text(size = 12),  # Adjust the size as needed
+    legend.position = "bottom",
+    legend.title = element_blank(),
+    strip.text = element_text(size = 12),
+    strip.background = element_blank(),
+  ) +
+  labs(
+    x = "User Type",
+    y = "Values (x 1000)"
+  )
+```
+
+### 19 Jan 2024
 
 Named Entity Resolution or Extraction from HuggingFace
 
