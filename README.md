@@ -1,5 +1,18 @@
 # Today I Learnt 
 
+### 19 Jan 2024
+
+Named Entity Resolution or Extraction from HuggingFace
+
+```
+from transformers import AutoTokenizer, AutoModelForTokenClassification
+from transformers import pipeline
+
+tokenizer = AutoTokenizer.from_pretrained('Twitter/twhin-bert-base')
+model = AutoModelForTokenClassification.from_pretrained('Twitter/twhin-bert-base')
+nlp = pipeline("ner", model=model, tokenizer=tokenizer)
+```
+
 ### 9 Oct 2023
 Zip in linux
 `zip -r <filename>.zip <filename> -q`
