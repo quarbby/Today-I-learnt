@@ -1,5 +1,22 @@
 # Today I Learnt 
 
+### 2 Feb 2024
+Placing graphics side by side in Overleaf
+```
+\usepackage{graphicx}
+\usepackage{subfig}
+
+\begin{document}
+
+\begin{figure}[!tbp]
+  \centering
+  \subfloat[Flower one.]{\includegraphics[width=0.4\textwidth]{flower1.jpg}\label{fig:f1}}
+  \hfill
+  \subfloat[Flower two.]{\includegraphics[width=0.4\textwidth]{flower2.jpg}\label{fig:f2}}
+  \caption{My flowers.}
+\end{figure}
+```
+
 ### 19 Jan 2024
 Plotting Facet Plots in R with Matlab Colours
 
