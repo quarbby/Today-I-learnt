@@ -1,5 +1,8 @@
 # Today I Learnt 
 
+### 8 May 2024
+Installing LaTeX on VS Code: `https://mathjiajia.github.io/vscode-and-latex/`
+
 ### 3 Aug 2024
 Change a json array into a json lines file 
 ```
