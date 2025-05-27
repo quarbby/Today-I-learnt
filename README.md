@@ -1,5 +1,36 @@
 # Today I Learnt 
 
+### 27 May 2025
+Enlarge an image
+```
+from PIL import Image
+
+# Load your image
+img = Image.open("your_image.jpg")
+
+# Get original size
+original_width, original_height = img.size
+
+# Scale up by 2.3x
+scale_factor = 2.3
+new_width = int(original_width * scale_factor)
+new_height = int(original_height * scale_factor)
+img_scaled = img.resize((new_width, new_height), Image.LANCZOS)
+
+# Calculate crop box (center crop)
+left = (new_width - original_width) // 2
+top = (new_height - original_height) // 2
+right = left + original_width
+bottom = top + original_height
+
+# Crop to original size
+img_zoomed = img_scaled.crop((left, top, right, bottom))
+
+# Save or show result
+img_zoomed.save("zoomed_image.jpg")
+img_zoomed.show()
+```
+
 ### 8 May 2024
 Installing LaTeX on VS Code: `https://mathjiajia.github.io/vscode-and-latex/`
 
